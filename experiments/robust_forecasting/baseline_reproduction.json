@@ -1,0 +1,194 @@
+[
+  {
+    "test": "fox",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "fox",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "fox",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "fox",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  },
+  {
+    "test": "harrison",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "harrison",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "harrison",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "harrison",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  },
+  {
+    "test": "santos",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "santos",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "santos",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "santos",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  },
+  {
+    "test": "shaw",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "shaw",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "shaw",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "shaw",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  },
+  {
+    "test": "wheeler",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "wheeler",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "wheeler",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "wheeler",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  },
+  {
+    "test": "wilson",
+    "available": "aminer+suricata+wazuh",
+    "reference": "temporal_boosting",
+    "max_error": 0.0
+  },
+  {
+    "test": "wilson",
+    "available": "aminer",
+    "reference": "boosting_only_aminer",
+    "max_error": 0.0
+  },
+  {
+    "test": "wilson",
+    "available": "suricata",
+    "reference": "boosting_only_suricata",
+    "max_error": 0.0
+  },
+  {
+    "test": "wilson",
+    "available": "wazuh",
+    "reference": "boosting_only_wazuh",
+    "max_error": 0.0
+  }
+]

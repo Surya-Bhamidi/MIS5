@@ -1,0 +1,20 @@
+[
+  {
+    "mode": "available_boosting",
+    "improved_settings": 12,
+    "worse_settings": 15,
+    "mean_assumed_improvement": 0.0006885108188795558
+  },
+  {
+    "mode": "state_augmented_boosting",
+    "improved_settings": 6,
+    "worse_settings": 21,
+    "mean_assumed_improvement": -0.0031128597098299487
+  },
+  {
+    "mode": "validated_state_fusion",
+    "improved_settings": 6,
+    "worse_settings": 21,
+    "mean_assumed_improvement": -0.003099645355285627
+  }
+]

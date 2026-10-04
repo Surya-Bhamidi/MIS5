@@ -1,0 +1,52 @@
+{
+  "repository": "https://github.com/prakulhiremath/PARD-in-Network-Traffic-using-Switching-State-Space-Models-",
+  "commit": "ae7fb258f4795d704d8fc4fb76eb253522bd5753",
+  "source_files_sha256_verified": 11,
+  "executed": "unmodified author SwitchingSSM.filter and fit on synthetic audit inputs",
+  "native_filtered_prefix_max_error": 0.0,
+  "native_fit_iterations": 3,
+  "native_fit_log_likelihoods": [
+    -2283.5347886142245,
+    -2197.183109877955,
+    -2171.7867786593033
+  ],
+  "native_fit_regime_parameters_unchanged": [
+    "A",
+    "C",
+    "Q",
+    "R"
+  ],
+  "viterbi_prefix_differences_across_20_probes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "standard_experiment_findings": [
+    "run_switching.py calls build_observation_sequence separately on train and test.",
+    "That builder fits its scaler and PCA to each supplied sequence.",
+    "The runner trains/evaluates only observations[0], the first window.",
+    "The runner evaluates retrospective viterbi_path for contemporaneous labels.",
+    "The reviewed fit method updates transition_matrix and initial_regime_probs, not A/C/Q/R.",
+    "The reviewed runner does not implement the paper first-onset forecast/KL alert evaluation."
+  ],
+  "comparison_status": "excluded from full-system superiority comparison",
+  "reason": "Native outputs, preprocessing and available experimental path do not reproduce our first-onset task or the paper complete predictive evaluation. Author filtered probabilities pass a causal-prefix check; retrospective decoding and independently fitted test preprocessing must not enter an online forecast benchmark.",
+  "paper": "https://arxiv.org/html/2604.02299v1"
+}

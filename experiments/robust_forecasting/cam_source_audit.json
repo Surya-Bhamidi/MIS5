@@ -1,0 +1,119 @@
+[
+  {
+    "scenario": "scenario_1_sudo_localaccount",
+    "reports": 14394,
+    "observed_sources": {
+      "wazuh": 13488,
+      "suricata": 906
+    },
+    "first_report": 1758537682.218,
+    "last_report": 1758547282.601,
+    "recorded_hours": 2.666773055593173,
+    "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+    "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+    "missing_input_sources": [
+      "aminer"
+    ],
+    "eligible": true,
+    "onset": 1758539601.67584,
+    "pre_endpoint_minutes": 31.99096399943034,
+    "negative_minutes_at_15": 16.99096399943034,
+    "coverage_assumption": "Continuous collection between observed first and last report; no heartbeat verification"
+  },
+  {
+    "scenario": "scenario_2_cron",
+    "reports": 657,
+    "observed_sources": {
+      "wazuh": 653,
+      "suricata": 4
+    },
+    "first_report": 1759312652.789,
+    "last_report": 1759315560.623,
+    "recorded_hours": 0.8077316666311688,
+    "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+    "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+    "missing_input_sources": [
+      "aminer"
+    ],
+    "eligible": false,
+    "exclusion": "No published Privilege Escalation tactic in this template"
+  },
+  {
+    "scenario": "scenario_3_ssh_apt",
+    "reports": 544,
+    "observed_sources": {
+      "wazuh": 457,
+      "suricata": 87
+    },
+    "first_report": 1765534563.193,
+    "last_report": 1765538516.842,
+    "recorded_hours": 1.09823583331373,
+    "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+    "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+    "missing_input_sources": [
+      "aminer"
+    ],
+    "eligible": true,
+    "onset": 1765535390.037143,
+    "pre_endpoint_minutes": 13.780735715230305,
+    "negative_minutes_at_15": 0,
+    "coverage_assumption": "Continuous collection between observed first and last report; no heartbeat verification"
+  },
+  {
+    "scenario": "scenario_4",
+    "reports": 598,
+    "observed_sources": {
+      "wazuh": 503,
+      "suricata": 95
+    },
+    "first_report": 1765795604.222,
+    "last_report": 1765799701.426,
+    "recorded_hours": 1.13811222228739,
+    "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+    "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+    "missing_input_sources": [
+      "aminer"
+    ],
+    "eligible": true,
+    "onset": 1765796713.363792,
+    "pre_endpoint_minutes": 18.485696534315746,
+    "negative_minutes_at_15": 3.485696534315746,
+    "coverage_assumption": "Continuous collection between observed first and last report; no heartbeat verification"
+  },
+  {
+    "scenario": "scenario_5",
+    "reports": 1293,
+    "observed_sources": {
+      "wazuh": 1019,
+      "suricata": 274
+    },
+    "first_report": 1760006976.45,
+    "last_report": 1760009151.987,
+    "recorded_hours": 0.604315833316909,
+    "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+    "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+    "missing_input_sources": [
+      "aminer"
+    ],
+    "eligible": false,
+    "exclusion": "No published Privilege Escalation tactic in this template"
+  },
+  {
+    "scenario": "scenario_6_macro_binary",
+    "reports": 659,
+    "observed_sources": {
+      "wazuh": 644,
+      "suricata": 15
+    },
+    "first_report": 1765275121.737,
+    "last_report": 1765282806.119,
+    "recorded_hours": 2.1345505555470785,
+    "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+    "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+    "missing_input_sources": [
+      "aminer"
+    ],
+    "eligible": false,
+    "exclusion": "No published Privilege Escalation tactic in this template"
+  }
+]

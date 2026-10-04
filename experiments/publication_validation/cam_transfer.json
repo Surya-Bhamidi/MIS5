@@ -1,0 +1,1161 @@
+{
+  "status": "missing-sensor/domain-shift diagnostic, execution-proxy endpoint",
+  "frozen_fitting_campaigns": [
+    "russellmitchell",
+    "santos",
+    "shaw",
+    "wardbeck",
+    "wheeler",
+    "wilson"
+  ],
+  "frozen_validation_campaign": "harrison",
+  "reconstruction_max_errors": {
+    "duration_hmm": 0.0,
+    "temporal_boosting": 0.0,
+    "conditional_fusion": 0.0,
+    "equal_fusion": 0.0
+  },
+  "vocabulary": [
+    "aminer:CharsetDetector:29",
+    "aminer:CharsetDetector:7",
+    "aminer:EntropyDetector:30",
+    "aminer:EntropyDetector:6",
+    "aminer:EventCountClusterDetector:11",
+    "aminer:EventCountClusterDetector:32",
+    "aminer:EventCountClusterDetector:33",
+    "aminer:EventCountClusterDetector:34",
+    "aminer:EventFrequencyDetector:12",
+    "aminer:EventFrequencyDetector:31",
+    "aminer:MatchValueAverageChangeDetector:36",
+    "aminer:NewMatchPathDetector:3",
+    "aminer:NewMatchPathValueComboDetector:14",
+    "aminer:NewMatchPathValueComboDetector:15",
+    "aminer:NewMatchPathValueComboDetector:16",
+    "aminer:NewMatchPathValueComboDetector:17",
+    "aminer:NewMatchPathValueComboDetector:18",
+    "aminer:NewMatchPathValueComboDetector:19",
+    "aminer:NewMatchPathValueComboDetector:20",
+    "aminer:NewMatchPathValueComboDetector:21",
+    "aminer:NewMatchPathValueComboDetector:22",
+    "aminer:NewMatchPathValueComboDetector:23",
+    "aminer:NewMatchPathValueComboDetector:24",
+    "aminer:NewMatchPathValueComboDetector:25",
+    "aminer:NewMatchPathValueDetector:27",
+    "aminer:NewMatchPathValueDetector:4",
+    "aminer:NewMatchPathValueDetector:5",
+    "suricata:2013504",
+    "suricata:2016149",
+    "suricata:2016778",
+    "suricata:2024364",
+    "suricata:2025105",
+    "suricata:2025109",
+    "suricata:2027757",
+    "suricata:2027758",
+    "suricata:2027863",
+    "suricata:2027865",
+    "suricata:2029340",
+    "suricata:2029706",
+    "suricata:2029707",
+    "suricata:2029709",
+    "suricata:2220000",
+    "suricata:2220006",
+    "suricata:2221001",
+    "suricata:2221004",
+    "suricata:2221010",
+    "suricata:2230000",
+    "suricata:2230002",
+    "suricata:2230003",
+    "suricata:2230010",
+    "suricata:2230027",
+    "wazuh:20100",
+    "wazuh:20101",
+    "wazuh:20151",
+    "wazuh:20152",
+    "wazuh:20161",
+    "wazuh:20162",
+    "wazuh:2501",
+    "wazuh:30305",
+    "wazuh:30306",
+    "wazuh:31101",
+    "wazuh:31104",
+    "wazuh:31122",
+    "wazuh:31151",
+    "wazuh:31509",
+    "wazuh:31510",
+    "wazuh:31516",
+    "wazuh:52507",
+    "wazuh:5304",
+    "wazuh:5402",
+    "wazuh:5403",
+    "wazuh:5501",
+    "wazuh:5502",
+    "wazuh:5503",
+    "wazuh:5551",
+    "wazuh:5706",
+    "wazuh:5715",
+    "wazuh:80730",
+    "wazuh:9701",
+    "wazuh:9705",
+    "wazuh:9751",
+    "aminer:OTHER",
+    "suricata:OTHER",
+    "wazuh:OTHER"
+  ],
+  "source_audit": [
+    {
+      "scenario": "scenario_1_sudo_localaccount",
+      "reports": 14394,
+      "observed_sources": {
+        "wazuh": 13488,
+        "suricata": 906
+      },
+      "first_report": 1758537682.218,
+      "last_report": 1758547282.601,
+      "recorded_hours": 2.666773055593173,
+      "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+      "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+      "missing_input_sources": [
+        "aminer"
+      ],
+      "eligible": true,
+      "onset": 1758539601.67584,
+      "pre_endpoint_minutes": 31.99096399943034,
+      "negative_minutes_at_15": 16.99096399943034,
+      "coverage_assumption": "Continuous collection between observed first and last report; no heartbeat verification"
+    },
+    {
+      "scenario": "scenario_2_cron",
+      "reports": 657,
+      "observed_sources": {
+        "wazuh": 653,
+        "suricata": 4
+      },
+      "first_report": 1759312652.789,
+      "last_report": 1759315560.623,
+      "recorded_hours": 0.8077316666311688,
+      "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+      "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+      "missing_input_sources": [
+        "aminer"
+      ],
+      "eligible": false,
+      "exclusion": "No published Privilege Escalation tactic in this template"
+    },
+    {
+      "scenario": "scenario_3_ssh_apt",
+      "reports": 544,
+      "observed_sources": {
+        "wazuh": 457,
+        "suricata": 87
+      },
+      "first_report": 1765534563.193,
+      "last_report": 1765538516.842,
+      "recorded_hours": 1.09823583331373,
+      "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+      "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+      "missing_input_sources": [
+        "aminer"
+      ],
+      "eligible": true,
+      "onset": 1765535390.037143,
+      "pre_endpoint_minutes": 13.780735715230305,
+      "negative_minutes_at_15": 0,
+      "coverage_assumption": "Continuous collection between observed first and last report; no heartbeat verification"
+    },
+    {
+      "scenario": "scenario_4",
+      "reports": 598,
+      "observed_sources": {
+        "wazuh": 503,
+        "suricata": 95
+      },
+      "first_report": 1765795604.222,
+      "last_report": 1765799701.426,
+      "recorded_hours": 1.13811222228739,
+      "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+      "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+      "missing_input_sources": [
+        "aminer"
+      ],
+      "eligible": true,
+      "onset": 1765796713.363792,
+      "pre_endpoint_minutes": 18.485696534315746,
+      "negative_minutes_at_15": 3.485696534315746,
+      "coverage_assumption": "Continuous collection between observed first and last report; no heartbeat verification"
+    },
+    {
+      "scenario": "scenario_5",
+      "reports": 1293,
+      "observed_sources": {
+        "wazuh": 1019,
+        "suricata": 274
+      },
+      "first_report": 1760006976.45,
+      "last_report": 1760009151.987,
+      "recorded_hours": 0.604315833316909,
+      "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+      "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+      "missing_input_sources": [
+        "aminer"
+      ],
+      "eligible": false,
+      "exclusion": "No published Privilege Escalation tactic in this template"
+    },
+    {
+      "scenario": "scenario_6_macro_binary",
+      "reports": 659,
+      "observed_sources": {
+        "wazuh": 644,
+        "suricata": 15
+      },
+      "first_report": 1765275121.737,
+      "last_report": 1765282806.119,
+      "recorded_hours": 2.1345505555470785,
+      "endpoint_status": "first executed privilege tactic; successful outcome not verified",
+      "naive_attacker_times_interpreted_as": "UTC; checked against UTC Wazuh capture date/time",
+      "missing_input_sources": [
+        "aminer"
+      ],
+      "eligible": false,
+      "exclusion": "No published Privilege Escalation tactic in this template"
+    }
+  ],
+  "results": [
+    {
+      "scenario": "scenario_1_sudo_localaccount",
+      "mode": "duration_hmm",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.5,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.0322580680580368
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.48333333333333334,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.06451614462171465
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.43333333333333335,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.1612904841872382
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.35,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.3225822537466792
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.03254788948054172,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.4821050802627605
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.016666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.08147282683254214,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9634167524813676
+        }
+      }
+    },
+    {
+      "scenario": "scenario_3_ssh_apt",
+      "mode": "duration_hmm",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.18333333333333332,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.08333333329395427
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.16666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.16666666658790882
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.11666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.416666666469828
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.03333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.8333333283906809
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.03254788948054172,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9999894486357676
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.08147282683254214,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9999894486357676
+        }
+      }
+    },
+    {
+      "scenario": "scenario_4",
+      "mode": "duration_hmm",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.2833333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.05555555552930285
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.11111111105860588
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.21666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.277777777646552
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.13333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.5555555553038842
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.05,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.03254788948054172,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.8333333325288196
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.08147282683254214,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9999929645630353
+        }
+      }
+    },
+    {
+      "scenario": "scenario_1_sudo_localaccount",
+      "mode": "temporal_boosting",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.5,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.0071510707935938415,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.032173117946489055
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.48333333333333334,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2706493933627539,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.06442152451563499
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.43333333333333335,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2706493933627539,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.1611163007341518
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.35,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.5141685857329868,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.3222478575694176
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.6576122288271277,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.4834152915334022
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.016666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8710391505148548,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9671616325933181
+        }
+      }
+    },
+    {
+      "scenario": "scenario_3_ssh_apt",
+      "mode": "temporal_boosting",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.18333333333333332,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.0071510707935938415,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.0833224461124363
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.16666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2706493933627539,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.16664488795438756
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.11666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2706493933627539,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.41660840049550973
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.03333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.5141685857329868,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.8331829408821129
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.6576122288271277,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.999819527429871
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8710391505148548,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.999819527429871
+        }
+      }
+    },
+    {
+      "scenario": "scenario_4",
+      "mode": "temporal_boosting",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.2833333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.0071510707935938415,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.055548298831785886
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2706493933627539,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.11109659339308672
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.21666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2706493933627539,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.27773893529352106
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.13333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.5141685857329868,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.5554552966358492
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.05,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.6576122288271277,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.833182940882113
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8710391505148548,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9998195274298711
+        }
+      }
+    },
+    {
+      "scenario": "scenario_1_sudo_localaccount",
+      "mode": "conditional_fusion",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.5,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.009476850790163763,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.03222449941983872
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.48333333333333334,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2157810605477852,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.06447679263909964
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.43333333333333335,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.19974167871492077,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.16073541442893657
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.35,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.3667958014766164,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.3216435434030149
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.6624543908933914,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.4827436726389732
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.016666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8026740259578216,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9664085197041129
+        }
+      }
+    },
+    {
+      "scenario": "scenario_3_ssh_apt",
+      "mode": "conditional_fusion",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.18333333333333332,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.009476850790163763,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.08332571573433917
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.16666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2157810605477852,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.1666514284342124
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.11666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.19974167871492077,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.41651662708834875
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.03333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.3667958014766164,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.8330061447405073
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.6624543908933914,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9995848446706835
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8026740259578216,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9995848446706835
+        }
+      }
+    },
+    {
+      "scenario": "scenario_4",
+      "mode": "conditional_fusion",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.2833333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.009476850790163763,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.05555047785312511
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.2157810605477852,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.11110095298637394
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.21666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.19974167871492077,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.27767776220438356
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.13333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.3667958014766164,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.5553554841144276
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.05,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.6624543908933914,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.8330229035478998
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8026740259578216,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.999603173245964
+        }
+      }
+    },
+    {
+      "scenario": "scenario_1_sudo_localaccount",
+      "mode": "equal_fusion",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.5,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.002658585123851565,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.03225506358505512
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.48333333333333334,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.00623041993299159,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.06451299302575726
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.43333333333333335,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.16128694784025363
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.35,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.29571135550828825,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.32257590373769457
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.5623559489934226,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.4835297827955477
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.016666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8165205081606166,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9673625719792113
+        }
+      }
+    },
+    {
+      "scenario": "scenario_3_ssh_apt",
+      "mode": "equal_fusion",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.18333333333333332,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.002658585123851565,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.08333321294718586
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.16666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.00623041993299159,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.16666642589380734
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.11666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.4166660647231857
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.03333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.29571135550828825,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.8333321137494368
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.5623559489934226,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9999980944692336
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8165205081606166,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9999979600849537
+        }
+      }
+    },
+    {
+      "scenario": "scenario_4",
+      "mode": "equal_fusion",
+      "scores": {
+        "1": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.2833333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.002658585123851565,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.05555547529829826
+        },
+        "2": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.26666666666666666,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.00623041993299159,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.11111095059604842
+        },
+        "5": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.21666666666666667,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 1.000001,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.2777773764898354
+        },
+        "10": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.13333333333333333,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.29571135550828825,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.5555547529781896
+        },
+        "15": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.05,
+          "false_warnings_per_24h": 0.0,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.5623559489934226,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.8333321258867579
+        },
+        "30": {
+          "warning_recall": 0,
+          "lead_minutes": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 0.0,
+          "false_warnings_per_24h": null,
+          "negative_warning_minutes": 0.0,
+          "threshold": 0.8165205081606166,
+          "strict_warning_recall": 0,
+          "strict_lead_minutes": null,
+          "brier": 0.9999981583896721
+        }
+      }
+    }
+  ]
+}

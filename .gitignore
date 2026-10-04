@@ -1,0 +1,47 @@
+# Local environments, dependencies and build outputs
+.venv/
+venv/
+env/
+node_modules/
+dist/
+dist-ssr/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Dataset inputs and local databases stay on the research machine
+/data/*
+!/data/README.md
+*.tar.gz
+*.tgz
+*.zip
+*.pcap
+*.pcapng
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+/experiments/selective_fusion/inner_predictions/
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/
+
+# Temporary outputs
+*.log
+*.partial
+*.tmp
+*.local
+.DS_Store
+Thumbs.db

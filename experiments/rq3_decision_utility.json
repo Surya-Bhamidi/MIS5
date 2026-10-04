@@ -1,0 +1,223 @@
+{
+  "rq": "RQ3",
+  "title": "Expected Utility & Regret: Decision Network vs Fixed Rules",
+  "total_alerts": 7029,
+  "mean_dn_utility": 114.641,
+  "mean_rule_utility": 84.202,
+  "utility_improvement": 30.439,
+  "mean_dn_regret": 0.175,
+  "mean_rule_regret": 30.615,
+  "regret_reduction_pct": 99.4,
+  "cumulative_utility_timeline": [
+    {
+      "step": 1,
+      "phase": 1,
+      "cumulative_decision_network_utility": 15.0,
+      "cumulative_fixed_rule_utility": 15.0,
+      "net_utility_gain": 0.0
+    },
+    {
+      "step": 251,
+      "phase": 1,
+      "cumulative_decision_network_utility": 3765.0,
+      "cumulative_fixed_rule_utility": 3765.0,
+      "net_utility_gain": 0.0
+    },
+    {
+      "step": 501,
+      "phase": 1,
+      "cumulative_decision_network_utility": 7515.0,
+      "cumulative_fixed_rule_utility": 7515.0,
+      "net_utility_gain": 0.0
+    },
+    {
+      "step": 751,
+      "phase": 1,
+      "cumulative_decision_network_utility": 11265.0,
+      "cumulative_fixed_rule_utility": 11265.0,
+      "net_utility_gain": 0.0
+    },
+    {
+      "step": 1001,
+      "phase": 4,
+      "cumulative_decision_network_utility": 23155.0,
+      "cumulative_fixed_rule_utility": 17980.0,
+      "net_utility_gain": 5175.0
+    },
+    {
+      "step": 1251,
+      "phase": 5,
+      "cumulative_decision_network_utility": 54675.0,
+      "cumulative_fixed_rule_utility": 31355.0,
+      "net_utility_gain": 23320.0
+    },
+    {
+      "step": 1501,
+      "phase": 5,
+      "cumulative_decision_network_utility": 87175.0,
+      "cumulative_fixed_rule_utility": 58205.0,
+      "net_utility_gain": 28970.0
+    },
+    {
+      "step": 1751,
+      "phase": 5,
+      "cumulative_decision_network_utility": 119675.0,
+      "cumulative_fixed_rule_utility": 86185.0,
+      "net_utility_gain": 33490.0
+    },
+    {
+      "step": 2001,
+      "phase": 5,
+      "cumulative_decision_network_utility": 152175.0,
+      "cumulative_fixed_rule_utility": 109645.0,
+      "net_utility_gain": 42530.0
+    },
+    {
+      "step": 2251,
+      "phase": 5,
+      "cumulative_decision_network_utility": 184675.0,
+      "cumulative_fixed_rule_utility": 136495.0,
+      "net_utility_gain": 48180.0
+    },
+    {
+      "step": 2501,
+      "phase": 5,
+      "cumulative_decision_network_utility": 217175.0,
+      "cumulative_fixed_rule_utility": 165605.0,
+      "net_utility_gain": 51570.0
+    },
+    {
+      "step": 2751,
+      "phase": 5,
+      "cumulative_decision_network_utility": 249675.0,
+      "cumulative_fixed_rule_utility": 191325.0,
+      "net_utility_gain": 58350.0
+    },
+    {
+      "step": 3001,
+      "phase": 5,
+      "cumulative_decision_network_utility": 282175.0,
+      "cumulative_fixed_rule_utility": 217045.0,
+      "net_utility_gain": 65130.0
+    },
+    {
+      "step": 3251,
+      "phase": 5,
+      "cumulative_decision_network_utility": 314675.0,
+      "cumulative_fixed_rule_utility": 242765.0,
+      "net_utility_gain": 71910.0
+    },
+    {
+      "step": 3501,
+      "phase": 5,
+      "cumulative_decision_network_utility": 347175.0,
+      "cumulative_fixed_rule_utility": 257185.0,
+      "net_utility_gain": 89990.0
+    },
+    {
+      "step": 3751,
+      "phase": 5,
+      "cumulative_decision_network_utility": 379675.0,
+      "cumulative_fixed_rule_utility": 278385.0,
+      "net_utility_gain": 101290.0
+    },
+    {
+      "step": 4001,
+      "phase": 5,
+      "cumulative_decision_network_utility": 412175.0,
+      "cumulative_fixed_rule_utility": 299585.0,
+      "net_utility_gain": 112590.0
+    },
+    {
+      "step": 4251,
+      "phase": 5,
+      "cumulative_decision_network_utility": 444675.0,
+      "cumulative_fixed_rule_utility": 314005.0,
+      "net_utility_gain": 130670.0
+    },
+    {
+      "step": 4501,
+      "phase": 5,
+      "cumulative_decision_network_utility": 477175.0,
+      "cumulative_fixed_rule_utility": 339725.0,
+      "net_utility_gain": 137450.0
+    },
+    {
+      "step": 4751,
+      "phase": 5,
+      "cumulative_decision_network_utility": 509675.0,
+      "cumulative_fixed_rule_utility": 365445.0,
+      "net_utility_gain": 144230.0
+    },
+    {
+      "step": 5001,
+      "phase": 5,
+      "cumulative_decision_network_utility": 542175.0,
+      "cumulative_fixed_rule_utility": 393425.0,
+      "net_utility_gain": 148750.0
+    },
+    {
+      "step": 5251,
+      "phase": 5,
+      "cumulative_decision_network_utility": 574675.0,
+      "cumulative_fixed_rule_utility": 412365.0,
+      "net_utility_gain": 162310.0
+    },
+    {
+      "step": 5501,
+      "phase": 5,
+      "cumulative_decision_network_utility": 607175.0,
+      "cumulative_fixed_rule_utility": 439215.0,
+      "net_utility_gain": 167960.0
+    },
+    {
+      "step": 5751,
+      "phase": 5,
+      "cumulative_decision_network_utility": 639675.0,
+      "cumulative_fixed_rule_utility": 469455.0,
+      "net_utility_gain": 170220.0
+    },
+    {
+      "step": 6001,
+      "phase": 5,
+      "cumulative_decision_network_utility": 672175.0,
+      "cumulative_fixed_rule_utility": 494045.0,
+      "net_utility_gain": 178130.0
+    },
+    {
+      "step": 6251,
+      "phase": 5,
+      "cumulative_decision_network_utility": 704675.0,
+      "cumulative_fixed_rule_utility": 511855.0,
+      "net_utility_gain": 192820.0
+    },
+    {
+      "step": 6501,
+      "phase": 5,
+      "cumulative_decision_network_utility": 737175.0,
+      "cumulative_fixed_rule_utility": 541435.0,
+      "net_utility_gain": 195740.0
+    },
+    {
+      "step": 6751,
+      "phase": 5,
+      "cumulative_decision_network_utility": 769675.0,
+      "cumulative_fixed_rule_utility": 560375.0,
+      "net_utility_gain": 209300.0
+    },
+    {
+      "step": 7001,
+      "phase": 5,
+      "cumulative_decision_network_utility": 802175.0,
+      "cumulative_fixed_rule_utility": 590475.0,
+      "net_utility_gain": 211700.0
+    },
+    {
+      "step": 7029,
+      "phase": 5,
+      "cumulative_decision_network_utility": 805815.0,
+      "cumulative_fixed_rule_utility": 591855.0,
+      "net_utility_gain": 213960.0
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+[
+  {
+    "scenario": "fox",
+    "scheduled_onset": 1642511670.0,
+    "executed_login": 1642511671.428203,
+    "successful_change_user": 1642511672.403,
+    "successful_root": 1642511683.331,
+    "execution_offset_seconds": 1.4282031059265137,
+    "change_user_offset_seconds": 2.4030001163482666,
+    "root_offset_seconds": 13.331000089645386,
+    "change_user_proof": {
+      "timestamp": 1642511672.403,
+      "account": "phopkins",
+      "line": 2087,
+      "audit_record": "type=USER_START msg=audit(1642511672.403:2449): pid=28816 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"phopkins\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1642511683.331,
+      "account": "root",
+      "line": 2090,
+      "audit_record": "type=USER_START msg=audit(1642511683.331:2452): pid=28841 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  },
+  {
+    "scenario": "harrison",
+    "scheduled_onset": 1644309397.0,
+    "executed_login": 1644309397.934187,
+    "successful_change_user": 1644309399.052,
+    "successful_root": 1644309417.308,
+    "execution_offset_seconds": 0.9341869354248047,
+    "change_user_offset_seconds": 2.052000045776367,
+    "root_offset_seconds": 20.308000087738037,
+    "change_user_proof": {
+      "timestamp": 1644309399.052,
+      "account": "jward",
+      "line": 2463,
+      "audit_record": "type=USER_START msg=audit(1644309399.052:2918): pid=28321 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"jward\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/0 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1644309417.308,
+      "account": "root",
+      "line": 2466,
+      "audit_record": "type=USER_START msg=audit(1644309417.308:2921): pid=28346 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/0 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  },
+  {
+    "scenario": "russellmitchell",
+    "scheduled_onset": 1642999059.0,
+    "executed_login": 1642999060.530254,
+    "successful_change_user": 1642999060.627,
+    "successful_root": 1642999086.243,
+    "execution_offset_seconds": 1.5302538871765137,
+    "change_user_offset_seconds": 1.627000093460083,
+    "root_offset_seconds": 27.243000030517578,
+    "change_user_proof": {
+      "timestamp": 1642999060.627,
+      "account": "jhall",
+      "line": 1863,
+      "audit_record": "type=USER_START msg=audit(1642999060.627:2229): pid=27950 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"jhall\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1642999086.243,
+      "account": "root",
+      "line": 1866,
+      "audit_record": "type=USER_START msg=audit(1642999086.243:2232): pid=27966 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  },
+  {
+    "scenario": "santos",
+    "scheduled_onset": 1642420697.0,
+    "executed_login": 1642420697.564038,
+    "successful_change_user": 1642420698.024,
+    "successful_root": 1642420709.056,
+    "execution_offset_seconds": 0.5640380382537842,
+    "change_user_offset_seconds": 1.0239999294281006,
+    "root_offset_seconds": 12.055999994277954,
+    "change_user_proof": {
+      "timestamp": 1642420698.024,
+      "account": "gmorgan",
+      "line": 1977,
+      "audit_record": "type=USER_START msg=audit(1642420698.024:2282): pid=20749 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"gmorgan\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1642420709.056,
+      "account": "root",
+      "line": 1980,
+      "audit_record": "type=USER_START msg=audit(1642420709.056:2285): pid=20772 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  },
+  {
+    "scenario": "shaw",
+    "scheduled_onset": 1643469650.0,
+    "executed_login": 1643469651.110435,
+    "successful_change_user": 1643469651.8,
+    "successful_root": 1643469664.836,
+    "execution_offset_seconds": 1.1104350090026855,
+    "change_user_offset_seconds": 1.7999999523162842,
+    "root_offset_seconds": 14.835999965667725,
+    "change_user_proof": {
+      "timestamp": 1643469651.8,
+      "account": "gmarsh",
+      "line": 2617,
+      "audit_record": "type=USER_START msg=audit(1643469651.800:2946): pid=28625 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"gmarsh\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/0 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1643469664.836,
+      "account": "root",
+      "line": 2620,
+      "audit_record": "type=USER_START msg=audit(1643469664.836:2949): pid=28649 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/0 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  },
+  {
+    "scenario": "wardbeck",
+    "scheduled_onset": 1642942500.0,
+    "executed_login": 1642942500.975188,
+    "successful_change_user": 1642942501.359,
+    "successful_root": 1642942515.995,
+    "execution_offset_seconds": 0.9751880168914795,
+    "change_user_offset_seconds": 1.3589999675750732,
+    "root_offset_seconds": 15.994999885559082,
+    "change_user_proof": {
+      "timestamp": 1642942501.359,
+      "account": "blord",
+      "line": 2654,
+      "audit_record": "type=USER_START msg=audit(1642942501.359:2984): pid=28708 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"blord\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1642942515.995,
+      "account": "root",
+      "line": 2657,
+      "audit_record": "type=USER_START msg=audit(1642942515.995:2987): pid=28732 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  },
+  {
+    "scenario": "wheeler",
+    "scheduled_onset": 1643565112.0,
+    "executed_login": 1643565112.646188,
+    "successful_change_user": 1643565112.779,
+    "successful_root": 1643565130.343,
+    "execution_offset_seconds": 0.6461880207061768,
+    "change_user_offset_seconds": 0.7790000438690186,
+    "root_offset_seconds": 18.342999935150146,
+    "change_user_proof": {
+      "timestamp": 1643565112.779,
+      "account": "kford",
+      "line": 2697,
+      "audit_record": "type=USER_START msg=audit(1643565112.779:3097): pid=6892 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"kford\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/2 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1643565130.343,
+      "account": "root",
+      "line": 2700,
+      "audit_record": "type=USER_START msg=audit(1643565130.343:3100): pid=6907 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/2 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  },
+  {
+    "scenario": "wilson",
+    "scheduled_onset": 1644234498.0,
+    "executed_login": 1644234498.573565,
+    "successful_change_user": 1644234499.014,
+    "successful_root": 1644234519.654,
+    "execution_offset_seconds": 0.5735650062561035,
+    "change_user_offset_seconds": 1.0139999389648438,
+    "root_offset_seconds": 21.65400004386902,
+    "change_user_proof": {
+      "timestamp": 1644234499.014,
+      "account": "jwilkinson",
+      "line": 2631,
+      "audit_record": "type=USER_START msg=audit(1644234499.014:3030): pid=6084 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"jwilkinson\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "attacker_change_user",
+        "escalate"
+      ]
+    },
+    "root_proof": {
+      "timestamp": 1644234519.654,
+      "account": "root",
+      "line": 2634,
+      "audit_record": "type=USER_START msg=audit(1644234519.654:3033): pid=6111 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'",
+      "labels": [
+        "escalated_command",
+        "escalated_sudo_command",
+        "escalate"
+      ]
+    }
+  }
+]

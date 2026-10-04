@@ -1,0 +1,114 @@
+{
+  "fox": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.01252744142814
+    ],
+    "coefficients": [
+      [
+        27.660165598161658,
+        -0.2026470605358826
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  },
+  "harrison": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.109898990728127
+    ],
+    "coefficients": [
+      [
+        27.51150797004915,
+        -0.06749765812731237
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  },
+  "russellmitchell": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.2574845497597895
+    ],
+    "coefficients": [
+      [
+        29.119562484195992,
+        0.03637648299066908
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  },
+  "santos": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.378694596437525
+    ],
+    "coefficients": [
+      [
+        30.610099805590696,
+        0.12786236147408497
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  },
+  "shaw": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.4505834110251525
+    ],
+    "coefficients": [
+      [
+        31.164307768314334,
+        0.1966804217959671
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  },
+  "wardbeck": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.279697648345653
+    ],
+    "coefficients": [
+      [
+        29.077577814025815,
+        0.0728301745840685
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  },
+  "wheeler": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.1944165445727513
+    ],
+    "coefficients": [
+      [
+        27.404883813953187,
+        0.041712847975688506
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  },
+  "wilson": {
+    "constructed_positive_pairs": 12000,
+    "proxy_negative_pairs": 12000,
+    "intercept": [
+      -3.281532341018465
+    ],
+    "coefficients": [
+      [
+        31.432542249167344,
+        -0.034390776557712686
+      ]
+    ],
+    "probabilities_not_validated_on_real_event_identity": true
+  }
+}

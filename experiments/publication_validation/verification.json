@@ -1,0 +1,59 @@
+{
+  "regressions": {
+    "passed": true,
+    "tests": 28,
+    "output": "test_select_new_warning_instead_of_persistent_earlier_alarm (test_comparison_thresholds.TestComparisonThresholds.test_select_new_warning_instead_of_persistent_earlier_alarm) ... ok\ntest_zero_validation_budget_rejects_unavoidable_false_alarm (test_comparison_thresholds.TestComparisonThresholds.test_zero_validation_budget_rejects_unavoidable_false_alarm) ... ok\ntest_future_events_do_not_change_window_features (test_ingestion_causality.TestIngestionCausality.test_future_events_do_not_change_window_features) ... ok\ntest_labels_do_not_change_signatures (test_ingestion_causality.TestIngestionCausality.test_labels_do_not_change_signatures) ... ok\ntest_later_sensor_report_does_not_change_prefix (test_ingestion_causality.TestIngestionCausality.test_later_sensor_report_does_not_change_prefix) ... ok\ntest_bayesian_network_inference (test_pipeline.TestPipelineComponents.test_bayesian_network_inference) ... ok\ntest_decision_network_evaluation (test_pipeline.TestPipelineComponents.test_decision_network_evaluation) ... ok\ntest_hmm_forward_and_projection (test_pipeline.TestPipelineComponents.test_hmm_forward_and_projection) ... ok\ntest_pipeline_ablation_modes (test_pipeline.TestPipelineComponents.test_pipeline_ablation_modes) ... ok\ntest_pipeline_step_processing (test_pipeline.TestPipelineComponents.test_pipeline_step_processing) ... ok\ntest_what_if_simulation (test_pipeline.TestPipelineComponents.test_what_if_simulation) ... ok\ntest_delay_uses_only_previously_available_predictions (test_publication_validation.TestPublicationValidation.test_delay_uses_only_previously_available_predictions) ... ok\ntest_gru_prefix_causality (test_publication_validation.TestPublicationValidation.test_gru_prefix_causality) ... ok\ntest_hmm_likelihood_matches_exhaustive_hidden_paths (test_publication_validation.TestPublicationValidation.test_hmm_likelihood_matches_exhaustive_hidden_paths) ... ok\ntest_persistent_false_alarm_does_not_become_new_timely_alarm (test_publication_validation.TestPublicationValidation.test_persistent_false_alarm_does_not_become_new_timely_alarm) ... ok\ntest_range_refuses_full_archive_before_body (test_publication_validation.TestPublicationValidation.test_range_refuses_full_archive_before_body) ... ok\ntest_range_validates_length_bounds_and_positions (test_publication_validation.TestPublicationValidation.test_range_validates_length_bounds_and_positions) ... ok\ntest_success_endpoint_requires_attack_label_session_and_account (test_publication_validation.TestPublicationValidation.test_success_endpoint_requires_attack_label_session_and_account) ... ok\ntest_forecast_is_future_first_onset_not_current_detection (test_research_contracts.TestResearchContracts.test_forecast_is_future_first_onset_not_current_detection) ... ok\ntest_onset_ignores_earlier_ordinary_ack (test_research_contracts.TestResearchContracts.test_onset_ignores_earlier_ordinary_ack) ... ok\ntest_pcap_time_formats_and_truncation (test_research_contracts.TestResearchContracts.test_pcap_time_formats_and_truncation) ... ok\ntest_vocabulary_is_fitted_without_test_tokens (test_research_contracts.TestResearchContracts.test_vocabulary_is_fitted_without_test_tokens) ... ok\ntest_blending_preserves_bounds_and_horizon_order (test_robust_forecasting.TestRobustForecasting.test_blending_preserves_bounds_and_horizon_order) ... ok\ntest_context_controls_use_only_elapsed_time_and_past_counts (test_robust_forecasting.TestRobustForecasting.test_context_controls_use_only_elapsed_time_and_past_counts) ... ok\ntest_filter_and_state_summaries_are_prefix_causal (test_robust_forecasting.TestRobustForecasting.test_filter_and_state_summaries_are_prefix_causal) ... ok\ntest_fitted_pipeline_abstains_and_uses_no_test_truth (test_robust_forecasting.TestRobustForecasting.test_fitted_pipeline_abstains_and_uses_no_test_truth) ... ok\ntest_state_confirmation_changes_alarms_without_changing_probabilities (test_robust_forecasting.TestRobustForecasting.test_state_confirmation_changes_alarms_without_changing_probabilities) ... ok\ntest_unavailable_observation_is_marginalized (test_robust_forecasting.TestRobustForecasting.test_unavailable_observation_is_marginalized) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 1.176s\n\nOK\n"
+  },
+  "research_invariants": {
+    "passed": true,
+    "suites": [
+      "original pilot",
+      "extended BN/HMM/Decision Network",
+      "adapted HMM",
+      "GRU causal prefixes"
+    ]
+  },
+  "endpoint_evidence": {
+    "passed": true,
+    "campaigns": 8,
+    "checks": [
+      "selected-member SHA-256",
+      "one-based published annotation indexing",
+      "successful attack-labelled sessions",
+      "execution/outcome ordering"
+    ]
+  },
+  "adapted_baselines": {
+    "passed": true,
+    "folds": 24,
+    "checks": [
+      "split isolation",
+      "finite bounded cumulative risk",
+      "independently recomputed Brier"
+    ]
+  },
+  "frozen_endpoint_rescores": {
+    "passed": true,
+    "rows": 8064,
+    "checks": [
+      "unchanged saved forecasts",
+      "delay uses past only",
+      "warning starts independently recomputed",
+      "endpoint-specific Brier"
+    ]
+  },
+  "external_diagnostic": {
+    "passed": true,
+    "templates_inspected": 6,
+    "eligible_templates": 3,
+    "forecast_files": 12,
+    "checks": [
+      "selected-member SHA-256",
+      "frozen AIT validation reproduction",
+      "bounded probabilities",
+      "independent Brier",
+      "zero exposure rate undefined"
+    ]
+  },
+  "timestamp_utc": "2026-10-04T13:42:16.241262+00:00"
+}

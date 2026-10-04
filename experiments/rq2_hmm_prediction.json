@@ -1,0 +1,24 @@
+{
+  "rq": "RQ2",
+  "title": "HMM Temporal Next-Phase Prediction Accuracy vs Baseline",
+  "results": {
+    "LLDOS_1.0_InDistribution": {
+      "events_evaluated": 7029,
+      "hmm_1step_accuracy": 0.9935,
+      "baseline_1step_accuracy": 0.9994,
+      "relative_gain_1step": -0.0059,
+      "hmm_2step_accuracy": 0.9933,
+      "baseline_2step_accuracy": 0.9989,
+      "relative_gain_2step": -0.0056
+    },
+    "LLDOS_2.0.2_OutOfDistribution": {
+      "events_evaluated": 32,
+      "hmm_1step_accuracy": 0.6452,
+      "baseline_1step_accuracy": 0.871,
+      "relative_gain_1step": -0.2258,
+      "hmm_2step_accuracy": 0.5333,
+      "baseline_2step_accuracy": 0.7333,
+      "relative_gain_2step": -0.2
+    }
+  }
+}

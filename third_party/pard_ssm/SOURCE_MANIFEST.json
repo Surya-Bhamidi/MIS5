@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/prakulhiremath/PARD-in-Network-Traffic-using-Switching-State-Space-Models-",
+  "commit": "ae7fb258f4795d704d8fc4fb76eb253522bd5753",
+  "files": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "018432eecbe6a00cfb1ec881e2c501449761fedd5d4c66f7854ec28352e6e65f",
+    "requirements.txt": "57e03f0bb5ddec4e78488537798e93961a167059ec732b36b846aa96e127b37d",
+    "src/models/linear_ssm.py": "caed51880a450e7183afa4ff1894c3934a37a19dce8ef9998ab30ddfc5937cb5",
+    "src/models/switching_ssm.py": "ec098bf80cc7959719153364381d01081c7c86e7034d5470b8fb9577ba8f75da",
+    "src/inference/kalman_filter.py": "157dc967e829c41f1c864b634f0b66061dff00324092c2c12840bf2aa43ff7f2",
+    "src/inference/variational_switching.py": "db8239608a0c90e55a220a080a5675049d802ae73734e47666af09b5557cf362",
+    "experiments/run_switching.py": "b4ecb9bc41a8be8e46e24bbe857abed64db1546d9fbaa6e1299654c5bff4e749",
+    "src/data_processing/feature_engineering.py": "f002e9ca28d1e8bbf1e79598422a4e2030566fe18e2c0c8b9f1a20053c7e6c56",
+    "src/data_processing/dataset_loader.py": "0fd169f3a2908cfff5f27b3687a23bc66d655ac4d9126138b2291070dca55c18",
+    "tests/test_switching_ssm.py": "8b5622792eb7ee486611215ca09a33fa945c32099a12548e76d4f25c9a23f8b0"
+  }
+}

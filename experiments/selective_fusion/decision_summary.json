@@ -1,0 +1,38 @@
+[
+  {
+    "mode": "raw_counts",
+    "improved_settings": 12,
+    "worse_settings": 15,
+    "mean_assumed_improvement": 0.0007184415518522769
+  },
+  {
+    "mode": "raw_selective",
+    "improved_settings": 27,
+    "worse_settings": 0,
+    "mean_assumed_improvement": 0.0014330281548936483
+  },
+  {
+    "mode": "pooled_counts",
+    "improved_settings": 19,
+    "worse_settings": 8,
+    "mean_assumed_improvement": 0.0007796295970342703
+  },
+  {
+    "mode": "pooled_state",
+    "improved_settings": 18,
+    "worse_settings": 9,
+    "mean_assumed_improvement": 0.00027726951237929136
+  },
+  {
+    "mode": "pooled_fixed_blend",
+    "improved_settings": 14,
+    "worse_settings": 13,
+    "mean_assumed_improvement": 0.0008903137799925693
+  },
+  {
+    "mode": "pooled_selective",
+    "improved_settings": 12,
+    "worse_settings": 15,
+    "mean_assumed_improvement": 0.0008093933098714051
+  }
+]

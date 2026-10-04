@@ -1,0 +1,5 @@
+# Preserve the exact bytes recorded in research SHA-256 manifests.
+* -text
+*.npz binary
+*.png binary
+*.pdf binary

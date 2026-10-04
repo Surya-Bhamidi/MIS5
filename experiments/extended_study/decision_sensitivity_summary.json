@@ -1,0 +1,134 @@
+{
+  "ait": {
+    "boosting_current_only": {
+      "settings": 27,
+      "mean_assumed_improvement": 0.000672605238844069,
+      "improved_settings": 26,
+      "worse_settings": 1,
+      "minimum_setting_improvement": -0.0018306078352732548,
+      "maximum_setting_improvement": 0.005703335541758812
+    },
+    "boosting_only_aminer": {
+      "settings": 27,
+      "mean_assumed_improvement": 0.000744897230957249,
+      "improved_settings": 21,
+      "worse_settings": 6,
+      "minimum_setting_improvement": -0.0003916881116701673,
+      "maximum_setting_improvement": 0.004937757832571202
+    },
+    "boosting_only_suricata": {
+      "settings": 27,
+      "mean_assumed_improvement": 0.001974943259962216,
+      "improved_settings": 22,
+      "worse_settings": 5,
+      "minimum_setting_improvement": -0.0012745671129438738,
+      "maximum_setting_improvement": 0.01091115874091599
+    },
+    "boosting_only_wazuh": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.0025783737675461518,
+      "improved_settings": 1,
+      "worse_settings": 26,
+      "minimum_setting_improvement": -0.011443690661631192,
+      "maximum_setting_improvement": 0.0012496392711560528
+    },
+    "conditional_fusion": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.0012531965340019625,
+      "improved_settings": 11,
+      "worse_settings": 16,
+      "minimum_setting_improvement": -0.009770246300296985,
+      "maximum_setting_improvement": 0.005230479247738223
+    },
+    "detector_hmm": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.003309145896692452,
+      "improved_settings": 5,
+      "worse_settings": 22,
+      "minimum_setting_improvement": -0.020054782611481525,
+      "maximum_setting_improvement": 0.011779422925669285
+    },
+    "duration_hmm": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.0023605099394867733,
+      "improved_settings": 12,
+      "worse_settings": 15,
+      "minimum_setting_improvement": -0.023864340312960322,
+      "maximum_setting_improvement": 0.006381358691253008
+    },
+    "equal_fusion": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.00811647986724078,
+      "improved_settings": 18,
+      "worse_settings": 9,
+      "minimum_setting_improvement": -0.11351540882647829,
+      "maximum_setting_improvement": 0.04531395146778461
+    },
+    "static_bn": {
+      "settings": 27,
+      "mean_assumed_improvement": 0.0005826183456260973,
+      "improved_settings": 15,
+      "worse_settings": 11,
+      "minimum_setting_improvement": -0.0013167884891848933,
+      "maximum_setting_improvement": 0.010550593315030415
+    },
+    "temporal_boosting": {
+      "settings": 27,
+      "mean_assumed_improvement": 0.0006885108188795559,
+      "improved_settings": 12,
+      "worse_settings": 15,
+      "minimum_setting_improvement": -0.0014360473520402105,
+      "maximum_setting_improvement": 0.007817191054212877
+    },
+    "temporal_logistic": {
+      "settings": 27,
+      "mean_assumed_improvement": 0.003844775404069568,
+      "improved_settings": 24,
+      "worse_settings": 3,
+      "minimum_setting_improvement": -0.007761476929097736,
+      "maximum_setting_improvement": 0.022349472095626443
+    }
+  },
+  "darpa": {
+    "detector_hmm": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.04077946554149086,
+      "improved_settings": 7,
+      "worse_settings": 20,
+      "minimum_setting_improvement": -0.21878481012658213,
+      "maximum_setting_improvement": 0.1470126582278488
+    },
+    "duration_hmm": {
+      "settings": 27,
+      "mean_assumed_improvement": 0.004210595405532073,
+      "improved_settings": 13,
+      "worse_settings": 14,
+      "minimum_setting_improvement": -0.22472405063291223,
+      "maximum_setting_improvement": 0.16122531645569604
+    },
+    "static_bn": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.021229442100328285,
+      "improved_settings": 11,
+      "worse_settings": 16,
+      "minimum_setting_improvement": -0.4025974683544309,
+      "maximum_setting_improvement": 0.24246582278481021
+    },
+    "temporal_boosting": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.09224425691514308,
+      "improved_settings": 9,
+      "worse_settings": 18,
+      "minimum_setting_improvement": -1.3166202531645577,
+      "maximum_setting_improvement": 0.46766582278480984
+    },
+    "temporal_logistic": {
+      "settings": 27,
+      "mean_assumed_improvement": -0.07702541022034692,
+      "improved_settings": 7,
+      "worse_settings": 20,
+      "minimum_setting_improvement": -0.4836658227848101,
+      "maximum_setting_improvement": 0.35688607594936705
+    }
+  }
+}

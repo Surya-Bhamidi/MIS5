@@ -1,0 +1,488 @@
+{
+  "raw": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.002775053226784118,
+        "mean_average_precision": 0.014158060085768509,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.0865942956613187
+      },
+      "15": {
+        "mean_brier": 0.012090286432956704,
+        "mean_average_precision": 0.08010858581502044,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.3465314442689491
+      },
+      "30": {
+        "mean_brier": 0.03306719632112435,
+        "mean_average_precision": 0.18332750448534996,
+        "warned_episodes": 1,
+        "false_warning_episodes": 50,
+        "negative_warning_minutes": 2153.0,
+        "mean_modeled_decision_cost": 0.36696037251133395
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008664746491916204,
+        "mean_average_precision": 0.012350193878646665,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017183105013372897
+      },
+      "15": {
+        "mean_brier": 0.0025765211316772516,
+        "mean_average_precision": 0.07540880622264273,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.051549315040118684
+      },
+      "30": {
+        "mean_brier": 0.017600997174614174,
+        "mean_average_precision": 0.1322741355657734,
+        "warned_episodes": 1,
+        "false_warning_episodes": 56,
+        "negative_warning_minutes": 2129.0,
+        "mean_modeled_decision_cost": 0.20989336762591068
+      }
+    }
+  },
+  "exact": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.002773453795209489,
+        "mean_average_precision": 0.013108396331187988,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.08667165023472069
+      },
+      "15": {
+        "mean_brier": 0.012090695392931375,
+        "mean_average_precision": 0.0762729364314129,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.34645593453826895
+      },
+      "30": {
+        "mean_brier": 0.03305490175946735,
+        "mean_average_precision": 0.185339523032592,
+        "warned_episodes": 1,
+        "false_warning_episodes": 50,
+        "negative_warning_minutes": 2153.0,
+        "mean_modeled_decision_cost": 0.36708720436666575
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008686615828300878,
+        "mean_average_precision": 0.012667599348072734,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017183105013372897
+      },
+      "15": {
+        "mean_brier": 0.002576529126488777,
+        "mean_average_precision": 0.07029603600188851,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.051549315040118684
+      },
+      "30": {
+        "mean_brier": 0.017385651128800875,
+        "mean_average_precision": 0.13580828777875203,
+        "warned_episodes": 1,
+        "false_warning_episodes": 25,
+        "negative_warning_minutes": 2250.0,
+        "mean_modeled_decision_cost": 0.20628122734247015
+      }
+    }
+  },
+  "hard": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.0027778617568194096,
+        "mean_average_precision": 0.014572719132945944,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.0902561358914819
+      },
+      "15": {
+        "mean_brier": 0.012213033224097787,
+        "mean_average_precision": 0.07146763191408997,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.3520464677013668
+      },
+      "30": {
+        "mean_brier": 0.0334535963756472,
+        "mean_average_precision": 0.17196177553311837,
+        "warned_episodes": 1,
+        "false_warning_episodes": 85,
+        "negative_warning_minutes": 5115.0,
+        "mean_modeled_decision_cost": 0.37198460105714337
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008751064546241719,
+        "mean_average_precision": 0.012351183252323211,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017207916446481272
+      },
+      "15": {
+        "mean_brier": 0.002728053233470979,
+        "mean_average_precision": 0.06498896235470362,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.05179742937120245
+      },
+      "30": {
+        "mean_brier": 0.02091181713803597,
+        "mean_average_precision": 0.130081459028937,
+        "warned_episodes": 1,
+        "false_warning_episodes": 60,
+        "negative_warning_minutes": 5211.0,
+        "mean_modeled_decision_cost": 0.21011743005755265
+      }
+    }
+  },
+  "soft": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.002773802802957308,
+        "mean_average_precision": 0.013281702072207394,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.08661675344069347
+      },
+      "15": {
+        "mean_brier": 0.012091470762268965,
+        "mean_average_precision": 0.07693160669252469,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.34638273881289927
+      },
+      "30": {
+        "mean_brier": 0.03305634562557326,
+        "mean_average_precision": 0.18693914153096944,
+        "warned_episodes": 1,
+        "false_warning_episodes": 49,
+        "negative_warning_minutes": 2155.0,
+        "mean_modeled_decision_cost": 0.366957448308056
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008846213411489707,
+        "mean_average_precision": 0.012844281555324393,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017226629021331572
+      },
+      "15": {
+        "mean_brier": 0.00263031924008969,
+        "mean_average_precision": 0.07255481705089269,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.051617650481185745
+      },
+      "30": {
+        "mean_brier": 0.018996600996199882,
+        "mean_average_precision": 0.13741588695819,
+        "warned_episodes": 1,
+        "false_warning_episodes": 26,
+        "negative_warning_minutes": 2251.0,
+        "mean_modeled_decision_cost": 0.20624257551810404
+      }
+    }
+  },
+  "direct_logistic": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.0008584520950670796,
+        "mean_average_precision": 0.002178761296131848,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017183105013372897
+      },
+      "15": {
+        "mean_brier": 0.0025709772621342808,
+        "mean_average_precision": 0.0046516753035491165,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.051549315040118684
+      },
+      "30": {
+        "mean_brier": 0.005133871810343295,
+        "mean_average_precision": 0.008924397320535479,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.10366458971996088
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008585106580350386,
+        "mean_average_precision": 0.001940371836743342,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017183105013372897
+      },
+      "15": {
+        "mean_brier": 0.0025718884445530147,
+        "mean_average_precision": 0.004124604658012424,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.051549315040118684
+      },
+      "30": {
+        "mean_brier": 0.0051353816456886255,
+        "mean_average_precision": 0.007115185577805716,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.10356579044029945
+      }
+    }
+  },
+  "bn_no_filter": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.0009520443387382338,
+        "mean_average_precision": 0.0019353295581970987,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017916796887460035
+      },
+      "15": {
+        "mean_brier": 0.0026784237439562856,
+        "mean_average_precision": 0.005232061600980254,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.052958139836034424
+      },
+      "30": {
+        "mean_brier": 0.0052873255394171245,
+        "mean_average_precision": 0.012030594659568893,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.10673032478606588
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008724200783532834,
+        "mean_average_precision": 0.001640048750351121,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017356047591507662
+      },
+      "15": {
+        "mean_brier": 0.002587418121880673,
+        "mean_average_precision": 0.003952045170486458,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.05181663360891487
+      },
+      "30": {
+        "mean_brier": 0.005151089256788572,
+        "mean_average_precision": 0.011545787068473142,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.10395442340431797
+      }
+    }
+  },
+  "standard_hmm": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.002773453795209489,
+        "mean_average_precision": 0.013108396331187986,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.08667165023472069
+      },
+      "15": {
+        "mean_brier": 0.012090695392931377,
+        "mean_average_precision": 0.0762729364314129,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.34645593453826895
+      },
+      "30": {
+        "mean_brier": 0.033054901759467355,
+        "mean_average_precision": 0.185339523032592,
+        "warned_episodes": 1,
+        "false_warning_episodes": 50,
+        "negative_warning_minutes": 2153.0,
+        "mean_modeled_decision_cost": 0.36708720436666575
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008686615462537559,
+        "mean_average_precision": 0.012667599348072734,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017183105013372897
+      },
+      "15": {
+        "mean_brier": 0.0025765290901476395,
+        "mean_average_precision": 0.0702960360018885,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.051549315040118684
+      },
+      "30": {
+        "mean_brier": 0.017385651126721417,
+        "mean_average_precision": 0.13580828777875203,
+        "warned_episodes": 1,
+        "false_warning_episodes": 25,
+        "negative_warning_minutes": 2250.0,
+        "mean_modeled_decision_cost": 0.20628122734247015
+      }
+    }
+  },
+  "temporal_logistic": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.0008587766700348771,
+        "mean_average_precision": 0.0019224198871513277,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017183105013372897
+      },
+      "15": {
+        "mean_brier": 0.002575804171346494,
+        "mean_average_precision": 0.003612789947138333,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.05167786903142413
+      },
+      "30": {
+        "mean_brier": 0.005109158335274892,
+        "mean_average_precision": 0.09921223330455012,
+        "warned_episodes": 2,
+        "false_warning_episodes": 7,
+        "negative_warning_minutes": 37.0,
+        "mean_modeled_decision_cost": 0.09540179313146296
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008590530274942035,
+        "mean_average_precision": 0.0016118640066195723,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.017183105013372897
+      },
+      "15": {
+        "mean_brier": 0.0025748588208485282,
+        "mean_average_precision": 0.003387161509045545,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.05162264315900801
+      },
+      "30": {
+        "mean_brier": 0.005045366511085604,
+        "mean_average_precision": 0.09857771249500859,
+        "warned_episodes": 1,
+        "false_warning_episodes": 1,
+        "negative_warning_minutes": 4.0,
+        "mean_modeled_decision_cost": 0.09363533556726726
+      }
+    }
+  },
+  "temporal_boosting": {
+    "scores": {
+      "5": {
+        "mean_brier": 0.0010233864728130333,
+        "mean_average_precision": 0.011329368174388595,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.01994571348933022
+      },
+      "15": {
+        "mean_brier": 0.0030570701980555757,
+        "mean_average_precision": 0.009904578210541626,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.05849674621093846
+      },
+      "30": {
+        "mean_brier": 0.005567482460333511,
+        "mean_average_precision": 0.06143708540733413,
+        "warned_episodes": 0,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 7.0,
+        "mean_modeled_decision_cost": 0.10188372931835202
+      }
+    },
+    "calibrated_scores": {
+      "5": {
+        "mean_brier": 0.0008921256564922412,
+        "mean_average_precision": 0.0017038401035440105,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.019038538747996152
+      },
+      "15": {
+        "mean_brier": 0.002619687154853427,
+        "mean_average_precision": 0.0040657073761847205,
+        "warned_episodes": 0,
+        "false_warning_episodes": 0,
+        "negative_warning_minutes": 0.0,
+        "mean_modeled_decision_cost": 0.05330864862521807
+      },
+      "30": {
+        "mean_brier": 0.005202120117155027,
+        "mean_average_precision": 0.038179490009556616,
+        "warned_episodes": 0,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 7.0,
+        "mean_modeled_decision_cost": 0.10552178346894403
+      }
+    }
+  }
+}

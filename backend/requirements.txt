@@ -1,0 +1,6 @@
+# Demonstration API dependencies from the tested local environment.
+fastapi==0.131.0
+uvicorn==0.41.0
+pgmpy==1.1.2
+numpy==2.4.2
+pandas==2.3.3

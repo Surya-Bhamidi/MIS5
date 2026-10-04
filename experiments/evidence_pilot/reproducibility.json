@@ -1,0 +1,16 @@
+{
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.2",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0",
+  "source_sha256": {
+    "evidence_pilot.py": "4cf8bdbd2836d330c2ebba54ac944f425c7c3ad629b5a547896291418f13b574",
+    "report_evidence_pilot.py": "be1bc85532cdb26f9628b8a691dfbce599be41156b149ff3266f3aa00ff0db9b",
+    "fetch_ait.py": "1f9b40aa1c14cfb5093d2fa25b11418a603bf20d6f630d1c4c410d36b5dd510b"
+  },
+  "split": "6 train / 1 calibration / 1 test, rotated over eight scenarios",
+  "clock_seconds": 60,
+  "endpoint": "scheduled privilege escalation start",
+  "result_status": "exploratory pilot; academic novelty and generalization unestablished"
+}

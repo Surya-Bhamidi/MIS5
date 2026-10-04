@@ -1,0 +1,1103 @@
+{
+  "natural": {
+    "raw": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.002775053226784118,
+          "mean_pr_auc": 0.014158060085768509,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.0865942956613187
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012090286432956704,
+          "mean_pr_auc": 0.08010858581502044,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.3465314442689491
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.03306719632112435,
+          "mean_pr_auc": 0.18332750448534996,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 50,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2153.0,
+          "mean_modeled_decision_cost": 0.36696037251133395
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008664746491916204,
+          "mean_pr_auc": 0.012350193878646665,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025765211316772516,
+          "mean_pr_auc": 0.07540880622264273,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.017600997174614174,
+          "mean_pr_auc": 0.1322741355657734,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 56,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2129.0,
+          "mean_modeled_decision_cost": 0.20989336762591068
+        }
+      },
+      "max_replay_change": 0.0
+    },
+    "exact": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.002773453795209489,
+          "mean_pr_auc": 0.013108396331187988,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.08667165023472069
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012090695392931375,
+          "mean_pr_auc": 0.0762729364314129,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.34645593453826895
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.03305490175946735,
+          "mean_pr_auc": 0.185339523032592,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 50,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2153.0,
+          "mean_modeled_decision_cost": 0.36708720436666575
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008686615828300878,
+          "mean_pr_auc": 0.012667599348072734,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.002576529126488777,
+          "mean_pr_auc": 0.07029603600188851,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.017385651128800875,
+          "mean_pr_auc": 0.13580828777875203,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 25,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2250.0,
+          "mean_modeled_decision_cost": 0.20628122734247015
+        }
+      },
+      "max_replay_change": 0.0
+    },
+    "hard": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0027778617568194096,
+          "mean_pr_auc": 0.014572719132945944,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.0902561358914819
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012213033224097787,
+          "mean_pr_auc": 0.07146763191408997,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.3520464677013668
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.0334535963756472,
+          "mean_pr_auc": 0.17196177553311837,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 85,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 5115.0,
+          "mean_modeled_decision_cost": 0.37198460105714337
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008751064546241719,
+          "mean_pr_auc": 0.012351183252323211,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017207916446481272
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.002728053233470979,
+          "mean_pr_auc": 0.06498896235470362,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.05179742937120245
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.02091181713803597,
+          "mean_pr_auc": 0.130081459028937,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 60,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 5211.0,
+          "mean_modeled_decision_cost": 0.21011743005755265
+        }
+      },
+      "max_replay_change": 0.0
+    },
+    "soft": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.002773802802957308,
+          "mean_pr_auc": 0.013281702072207394,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.08661675344069347
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012091470762268965,
+          "mean_pr_auc": 0.07693160669252469,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.34638273881289927
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.03305634562557326,
+          "mean_pr_auc": 0.18693914153096944,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 49,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2155.0,
+          "mean_modeled_decision_cost": 0.366957448308056
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008846213411489707,
+          "mean_pr_auc": 0.012844281555324393,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017226629021331572
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.00263031924008969,
+          "mean_pr_auc": 0.07255481705089269,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051617650481185745
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.018996600996199882,
+          "mean_pr_auc": 0.13741588695819,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 26,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2251.0,
+          "mean_modeled_decision_cost": 0.20624257551810404
+        }
+      },
+      "max_replay_change": 0.0
+    },
+    "direct_logistic": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008584520950670796,
+          "mean_pr_auc": 0.002178761296131848,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025709772621342808,
+          "mean_pr_auc": 0.0046516753035491165,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.005133871810343295,
+          "mean_pr_auc": 0.008924397320535479,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.10366458971996088
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008585106580350386,
+          "mean_pr_auc": 0.001940371836743342,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025718884445530147,
+          "mean_pr_auc": 0.004124604658012424,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.0051353816456886255,
+          "mean_pr_auc": 0.007115185577805716,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.10356579044029945
+        }
+      },
+      "max_replay_change": 0.0
+    }
+  },
+  "exact_replay": {
+    "raw": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.002796753230640321,
+          "mean_pr_auc": 0.004186453138734808,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.09325035420531595
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.01246345072023999,
+          "mean_pr_auc": 0.028095040000137284,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.3570602059097112
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.034119566953312364,
+          "mean_pr_auc": 0.12652978191358896,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 46,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2043.0,
+          "mean_modeled_decision_cost": 0.37885054040445154
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008665283467692454,
+          "mean_pr_auc": 0.0033406484857287175,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.002577667888319449,
+          "mean_pr_auc": 0.02546357789966041,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.017460567760399313,
+          "mean_pr_auc": 0.08929131881019076,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 52,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2021.0,
+          "mean_modeled_decision_cost": 0.21402674983945508
+        }
+      },
+      "max_replay_change": 0.9985564086683523
+    },
+    "exact": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.002773453795209489,
+          "mean_pr_auc": 0.013108396331187988,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.08667165023472069
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012090695392931375,
+          "mean_pr_auc": 0.0762729364314129,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.34645593453826895
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.03305490175946735,
+          "mean_pr_auc": 0.185339523032592,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 50,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2153.0,
+          "mean_modeled_decision_cost": 0.36708720436666575
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008686615828300878,
+          "mean_pr_auc": 0.012667599348072734,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.002576529126488777,
+          "mean_pr_auc": 0.07029603600188851,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.017385651128800875,
+          "mean_pr_auc": 0.13580828777875203,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 25,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2250.0,
+          "mean_modeled_decision_cost": 0.20628122734247015
+        }
+      },
+      "max_replay_change": 0.0
+    },
+    "hard": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0027778617568194096,
+          "mean_pr_auc": 0.014572719132945944,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.0902561358914819
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012213033224097787,
+          "mean_pr_auc": 0.07146763191408997,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.3520464677013668
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.0334535963756472,
+          "mean_pr_auc": 0.17196177553311837,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 85,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 5115.0,
+          "mean_modeled_decision_cost": 0.37198460105714337
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008751064546241719,
+          "mean_pr_auc": 0.012351183252323211,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017207916446481272
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.002728053233470979,
+          "mean_pr_auc": 0.06498896235470362,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.05179742937120245
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.02091181713803597,
+          "mean_pr_auc": 0.130081459028937,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 60,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 5211.0,
+          "mean_modeled_decision_cost": 0.21011743005755265
+        }
+      },
+      "max_replay_change": 0.0
+    },
+    "soft": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.002773802802957308,
+          "mean_pr_auc": 0.013281702072207394,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.08661675344069347
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012091470762268965,
+          "mean_pr_auc": 0.07693160669252469,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.34638273881289927
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.03305634562557326,
+          "mean_pr_auc": 0.18693914153096944,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 49,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2155.0,
+          "mean_modeled_decision_cost": 0.366957448308056
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008846213411489707,
+          "mean_pr_auc": 0.012844281555324393,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017226629021331572
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.00263031924008969,
+          "mean_pr_auc": 0.07255481705089269,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051617650481185745
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.018996600996199882,
+          "mean_pr_auc": 0.13741588695819,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 26,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2251.0,
+          "mean_modeled_decision_cost": 0.20624257551810404
+        }
+      },
+      "max_replay_change": 0.0
+    },
+    "direct_logistic": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008584520950670796,
+          "mean_pr_auc": 0.002178761296131848,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025709772621342808,
+          "mean_pr_auc": 0.0046516753035491165,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.005133871810343295,
+          "mean_pr_auc": 0.008924397320535479,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.10366458971996088
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008585106580350386,
+          "mean_pr_auc": 0.001940371836743342,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025718884445530147,
+          "mean_pr_auc": 0.004124604658012424,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.0051353816456886255,
+          "mean_pr_auc": 0.007115185577805716,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.10356579044029945
+        }
+      },
+      "max_replay_change": 0.0
+    }
+  },
+  "alias_jitter": {
+    "raw": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0028055585874332523,
+          "mean_pr_auc": 0.006060080066686241,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.09097233246442013
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012316991505472354,
+          "mean_pr_auc": 0.045904011348795175,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.35463739704510155
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.03359672339919624,
+          "mean_pr_auc": 0.1584893129782604,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 49,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2052.0,
+          "mean_modeled_decision_cost": 0.37593660839334997
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008666249924530519,
+          "mean_pr_auc": 0.005040674175707656,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025775219759627314,
+          "mean_pr_auc": 0.042824136984361896,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.017566411889777485,
+          "mean_pr_auc": 0.1152485083374163,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 53,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2036.0,
+          "mean_modeled_decision_cost": 0.21413409726433213
+        }
+      },
+      "max_replay_change": 0.5070308315472759
+    },
+    "exact": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0028078620073407113,
+          "mean_pr_auc": 0.004729682059328868,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.09087917426849514
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012325031730030677,
+          "mean_pr_auc": 0.03751114915875454,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.3554365422268452
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.0336594348061071,
+          "mean_pr_auc": 0.13161530664183013,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 49,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2052.0,
+          "mean_modeled_decision_cost": 0.3770551661157623
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008688441523725761,
+          "mean_pr_auc": 0.004758282682197304,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.002577986939515582,
+          "mean_pr_auc": 0.03449158784013669,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.017359523169778374,
+          "mean_pr_auc": 0.09464693416747783,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 21,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2145.0,
+          "mean_modeled_decision_cost": 0.21110173434638324
+        }
+      },
+      "max_replay_change": 0.5070308315472759
+    },
+    "hard": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0028230086176152043,
+          "mean_pr_auc": 0.0041009891940140914,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.09213823529969652
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.012432101329083407,
+          "mean_pr_auc": 0.016993822315055543,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.35735977984948664
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.03400081577349613,
+          "mean_pr_auc": 0.09916005670257752,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 80,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 4969.0,
+          "mean_modeled_decision_cost": 0.38180671963984675
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.000875536219001297,
+          "mean_pr_auc": 0.0023897002893629605,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017207916446481272
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0027297898169526347,
+          "mean_pr_auc": 0.01003722213175236,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.05182224080431083
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.02094220478207195,
+          "mean_pr_auc": 0.0667859989285799,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 59,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 5060.0,
+          "mean_modeled_decision_cost": 0.2126405165053116
+        }
+      },
+      "max_replay_change": 0.4786423652190316
+    },
+    "soft": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.002784050021151029,
+          "mean_pr_auc": 0.014610259644689007,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.08740028040999119
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.01214494860661991,
+          "mean_pr_auc": 0.08258050552148592,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.3478113677870889
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.033254534633979274,
+          "mean_pr_auc": 0.17290409021425587,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 50,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2134.0,
+          "mean_modeled_decision_cost": 0.3687111967307844
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008846701857134615,
+          "mean_pr_auc": 0.014379480534299013,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017226629021331572
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.002630649659742746,
+          "mean_pr_auc": 0.0797234265452586,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051617650481185745
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.019014593367972867,
+          "mean_pr_auc": 0.12580568162842398,
+          "warned_episodes": 1,
+          "median_lead_minutes_when_warned": 29.3,
+          "false_warning_episodes": 25,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 2230.0,
+          "mean_modeled_decision_cost": 0.20721958899121856
+        }
+      },
+      "max_replay_change": 0.6941979575740556
+    },
+    "direct_logistic": {
+      "scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.0008584342656781004,
+          "mean_pr_auc": 0.0020695045746696563,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025708049187367246,
+          "mean_pr_auc": 0.004868233235202992,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.005134690886427901,
+          "mean_pr_auc": 0.008719568465746095,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.10368450686463902
+        }
+      },
+      "calibrated_scores": {
+        "5": {
+          "episodes": 8,
+          "mean_brier": 0.000858546175998253,
+          "mean_pr_auc": 0.0016725970131963848,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 791.6333333333333,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.017183105013372897
+        },
+        "15": {
+          "episodes": 8,
+          "mean_brier": 0.0025720260503718055,
+          "mean_pr_auc": 0.003912744182216684,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 790.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.051549315040118684
+        },
+        "30": {
+          "episodes": 8,
+          "mean_brier": 0.005136424135916628,
+          "mean_pr_auc": 0.006722721286529081,
+          "warned_episodes": 0,
+          "median_lead_minutes_when_warned": null,
+          "false_warning_episodes": 0,
+          "negative_exposure_hours": 788.3,
+          "negative_warning_minutes": 0.0,
+          "mean_modeled_decision_cost": 0.10356579044029945
+        }
+      },
+      "max_replay_change": 0.032242615461815685
+    }
+  }
+}

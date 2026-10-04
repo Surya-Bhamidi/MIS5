@@ -1,0 +1,842 @@
+[
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer+suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "suricata+wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "suricata",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "wazuh",
+    "prefix_max_error": 0.0,
+    "probability_change": 0.0
+  }
+]

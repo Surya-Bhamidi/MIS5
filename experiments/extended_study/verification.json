@@ -1,0 +1,30 @@
+{
+  "pilot_invariants": {
+    "passed": true,
+    "output": "All 9 research-pilot invariants passed"
+  },
+  "component_invariants": {
+    "passed": true,
+    "output": "Combination checks passed: HMM equivalence, feature causality, probability bounds/horizons"
+  },
+  "extended_invariants": {
+    "passed": true,
+    "output": "Extended checks passed: causal features/filtering, probability bounds, horizon coherence, duration rows and delayed utility"
+  },
+  "application_and_archive_regressions": {
+    "passed": true,
+    "tests_run": 13,
+    "output": "test_future_events_do_not_change_window_features (test_ingestion_causality.TestIngestionCausality.test_future_events_do_not_change_window_features) ... ok\ntest_labels_do_not_change_signatures (test_ingestion_causality.TestIngestionCausality.test_labels_do_not_change_signatures) ... ok\ntest_later_sensor_report_does_not_change_prefix (test_ingestion_causality.TestIngestionCausality.test_later_sensor_report_does_not_change_prefix) ... ok\ntest_bayesian_network_inference (test_pipeline.TestPipelineComponents.test_bayesian_network_inference) ... ok\ntest_decision_network_evaluation (test_pipeline.TestPipelineComponents.test_decision_network_evaluation) ... ok\ntest_hmm_forward_and_projection (test_pipeline.TestPipelineComponents.test_hmm_forward_and_projection) ... ok\ntest_pipeline_ablation_modes (test_pipeline.TestPipelineComponents.test_pipeline_ablation_modes) ... ok\ntest_pipeline_step_processing (test_pipeline.TestPipelineComponents.test_pipeline_step_processing) ... ok\ntest_what_if_simulation (test_pipeline.TestPipelineComponents.test_what_if_simulation) ... ok\ntest_forecast_is_future_first_onset_not_current_detection (test_research_contracts.TestResearchContracts.test_forecast_is_future_first_onset_not_current_detection) ... ok\ntest_onset_ignores_earlier_ordinary_ack (test_research_contracts.TestResearchContracts.test_onset_ignores_earlier_ordinary_ack) ... ok\ntest_pcap_time_formats_and_truncation (test_research_contracts.TestResearchContracts.test_pcap_time_formats_and_truncation) ... ok\ntest_vocabulary_is_fitted_without_test_tokens (test_research_contracts.TestResearchContracts.test_vocabulary_is_fitted_without_test_tokens) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.013s\n\nOK\n"
+  },
+  "prediction_and_report_audit": {
+    "passed": true,
+    "fold_prediction_files": 98,
+    "checks": [
+      "split isolation",
+      "finite bounded monotone probabilities",
+      "independently recomputed pre-onset Brier",
+      "warning/false-episode totals match per-campaign scores"
+    ]
+  },
+  "timestamp_utc": "2026-10-04T09:31:39.744613+00:00"
+}

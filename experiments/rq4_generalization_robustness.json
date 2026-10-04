@@ -1,0 +1,62 @@
+{
+  "rq": "RQ4",
+  "title": "Generalization & Robustness: LLDOS 2.0.2 Drop & Sensitivity Analysis",
+  "cross_scenario_generalization": {
+    "lldos1_in_distribution_accuracy": 0.992,
+    "lldos2_stealthier_out_of_distribution_accuracy": 0.9688,
+    "generalization_delta": -0.0232,
+    "notes": "LLDOS 2.0.2 represents stealthier adversary using subtle vectors with reduced alert counts."
+  },
+  "noise_sensitivity_curve": [
+    {
+      "noise_rate": "0%",
+      "accuracy": 0.8989
+    },
+    {
+      "noise_rate": "5%",
+      "accuracy": 0.9034
+    },
+    {
+      "noise_rate": "10%",
+      "accuracy": 0.9538
+    },
+    {
+      "noise_rate": "20%",
+      "accuracy": 0.8323
+    },
+    {
+      "noise_rate": "35%",
+      "accuracy": 0.7821
+    },
+    {
+      "noise_rate": "50%",
+      "accuracy": 0.8023
+    }
+  ],
+  "missing_alert_evasion_curve": [
+    {
+      "missing_rate": "0%",
+      "accuracy": 0.8061
+    },
+    {
+      "missing_rate": "5%",
+      "accuracy": 0.8039
+    },
+    {
+      "missing_rate": "10%",
+      "accuracy": 0.8026
+    },
+    {
+      "missing_rate": "20%",
+      "accuracy": 0.7664
+    },
+    {
+      "missing_rate": "30%",
+      "accuracy": 0.9032
+    },
+    {
+      "missing_rate": "40%",
+      "accuracy": 0.4299
+    }
+  ]
+}

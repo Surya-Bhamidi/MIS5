@@ -1,0 +1,90 @@
+{
+  "fox": {
+    "events": 457943,
+    "bins": 5145,
+    "onset": 1642511670.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 10423,
+      "0": 439665,
+      "1": 7855
+    }
+  },
+  "harrison": {
+    "events": 581972,
+    "bins": 6307,
+    "onset": 1644309397.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 10136,
+      "1": 64155,
+      "0": 507681
+    }
+  },
+  "russellmitchell": {
+    "events": 37114,
+    "bins": 4628,
+    "onset": 1642999059.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 3901,
+      "0": 26212,
+      "1": 7001
+    }
+  },
+  "santos": {
+    "events": 121110,
+    "bins": 5069,
+    "onset": 1642420697.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 4197,
+      "1": 41263,
+      "0": 75650
+    }
+  },
+  "shaw": {
+    "events": 51943,
+    "bins": 6711,
+    "onset": 1643469650.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 1692,
+      "0": 39274,
+      "1": 10977
+    }
+  },
+  "wardbeck": {
+    "events": 83589,
+    "bins": 6565,
+    "onset": 1642942500.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 2994,
+      "0": 58532,
+      "1": 22063
+    }
+  },
+  "wheeler": {
+    "events": 612179,
+    "bins": 6862,
+    "onset": 1643565112.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 12199,
+      "0": 532921,
+      "1": 67059
+    }
+  },
+  "wilson": {
+    "events": 591446,
+    "bins": 6499,
+    "onset": 1644234498.0,
+    "dropped": 0,
+    "sensor_counts": {
+      "2": 8799,
+      "0": 531226,
+      "1": 51421
+    }
+  }
+}

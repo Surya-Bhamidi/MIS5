@@ -1,0 +1,104 @@
+{
+  "LLDOS_1.0": {
+    "scenario": "events_lldos1",
+    "total_alerts": 600,
+    "configurations": {
+      "B0": {
+        "name": "B0: Rule-Based Baseline",
+        "accuracy": 0.0,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 15.0,
+        "time_to_detection_steps": -1
+      },
+      "B1": {
+        "name": "B1: BN-Only (Static)",
+        "accuracy": 1.0,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 15.0,
+        "time_to_detection_steps": -1
+      },
+      "B2": {
+        "name": "B2: BN + HMM (Heuristic)",
+        "accuracy": 1.0,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 5.0,
+        "time_to_detection_steps": -1
+      },
+      "B3": {
+        "name": "B3: Full Pipeline (BN+HMM+DN)",
+        "accuracy": 1.0,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 15.0,
+        "time_to_detection_steps": -1
+      }
+    }
+  },
+  "LLDOS_2.0.2": {
+    "scenario": "events_lldos2",
+    "total_alerts": 32,
+    "configurations": {
+      "B0": {
+        "name": "B0: Rule-Based Baseline",
+        "accuracy": 0.2812,
+        "false_alarm_rate": 0.0,
+        "mean_utility": -8.75,
+        "time_to_detection_steps": 17
+      },
+      "B1": {
+        "name": "B1: BN-Only (Static)",
+        "accuracy": 0.4062,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 25.0,
+        "time_to_detection_steps": 13
+      },
+      "B2": {
+        "name": "B2: BN + HMM (Heuristic)",
+        "accuracy": 0.9688,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 72.19,
+        "time_to_detection_steps": 13
+      },
+      "B3": {
+        "name": "B3: Full Pipeline (BN+HMM+DN)",
+        "accuracy": 0.9688,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 73.44,
+        "time_to_detection_steps": 13
+      }
+    }
+  },
+  "Synthetic": {
+    "scenario": "events_synthetic",
+    "total_alerts": 247,
+    "configurations": {
+      "B0": {
+        "name": "B0: Rule-Based Baseline",
+        "accuracy": 0.8866,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 63.66,
+        "time_to_detection_steps": 31
+      },
+      "B1": {
+        "name": "B1: BN-Only (Static)",
+        "accuracy": 0.8259,
+        "false_alarm_rate": 0.0121,
+        "mean_utility": 111.34,
+        "time_to_detection_steps": 17
+      },
+      "B2": {
+        "name": "B2: BN + HMM (Heuristic)",
+        "accuracy": 0.8623,
+        "false_alarm_rate": 0.0,
+        "mean_utility": 115.43,
+        "time_to_detection_steps": 17
+      },
+      "B3": {
+        "name": "B3: Full Pipeline (BN+HMM+DN)",
+        "accuracy": 0.8623,
+        "false_alarm_rate": 0.0121,
+        "mean_utility": 114.92,
+        "time_to_detection_steps": 17
+      }
+    }
+  }
+}

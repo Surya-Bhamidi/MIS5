@@ -1,0 +1,7226 @@
+[
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.6042099536130784,
+          "intercept": -2.0428534349481184,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.6407074094916893,
+          "intercept": -1.3918085123069563,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7126555366747895,
+          "intercept": -0.5016687804962656,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7749244290415583,
+          "intercept": -0.051596467288108336,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7607007848807635,
+          "intercept": -0.21540443386284613,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6958308793282898,
+          "intercept": -0.558137992098947,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8425163592493328,
+          "intercept": -0.053950238819793425,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8283793263992232,
+          "intercept": -0.05552454831294488,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8517849672989303,
+          "intercept": -0.0888224310688747,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.9001763183639221,
+          "intercept": -0.6679042930596897,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.8277296381867516,
+          "intercept": -0.8014121988173799,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6732953279618694,
+          "intercept": -1.395795192394294,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8327486920955759,
+          "intercept": -0.0743819422538143,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8145904231833293,
+          "intercept": -0.04980246122221659,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7411570293340651,
+          "intercept": -0.5206237221598183,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.9041678544955012,
+          "intercept": 0.31238823745190575,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.828180215435395,
+          "intercept": -0.054372882243095715,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.80800389702819,
+          "intercept": -0.08258108211250666,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.7900133875817408,
+          "intercept": -0.07139665114881638,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7545212663160893,
+          "intercept": -0.07326700863953238,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6318364647443646,
+          "intercept": -0.8417793457837122,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5189862531371258,
+          "intercept": -1.4392373473300484,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5572992493304785,
+          "intercept": -1.0113188242118347,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.512145291231938,
+          "intercept": -0.998746613149109,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 1.0026923356828599,
+          "intercept": -0.08909981666918543,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8472824980612361,
+          "intercept": -0.7776864659011048,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6914899523150393,
+          "intercept": -1.2865784808229563,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.693075027273953,
+          "intercept": -0.9471804115283989,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6095708511314447,
+          "intercept": -1.2480510831016411,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5413891120279297,
+          "intercept": -1.534730069333603,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8669407131794463,
+          "intercept": -0.0745467824640666,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8540581992345461,
+          "intercept": -0.08546350220469269,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5804992197149337,
+          "intercept": -1.984714118046644,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5382345849445683,
+          "intercept": -1.8683156725572316,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6217612387655282,
+          "intercept": -1.2686244256148058,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5948905381953634,
+          "intercept": -1.03927815783168,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "fox",
+    "validation": "harrison",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8274937364825834,
+          "intercept": -0.07793773656361631,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7871554040330964,
+          "intercept": -0.08434009452461108,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6749902395909738,
+          "intercept": -0.6913758327036441,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.6211985017160312,
+          "intercept": -0.8121889049783118,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.579606686175042,
+          "intercept": -0.8361895602829714,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5209548603749464,
+          "intercept": -0.951356112526257,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36148,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.7885336706096108,
+          "intercept": -0.08897318587305764,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7697022471016559,
+          "intercept": -0.07662040629342842,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7478514623672287,
+          "intercept": -0.046892900259316334,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7926870350933785,
+          "intercept": 0.1671080094026019,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7775773754031315,
+          "intercept": -0.07492817907025397,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6897937354981075,
+          "intercept": -0.42120927684483744,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8342748601066537,
+          "intercept": -0.06028018880058065,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8051850780379285,
+          "intercept": -0.048260626912950924,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7918378727711455,
+          "intercept": -0.07665993600655019,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8803897110217771,
+          "intercept": -0.07516619907258644,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7775785601316756,
+          "intercept": -0.729856460953665,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.668702249307278,
+          "intercept": -0.8641355835823387,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8571199605126457,
+          "intercept": -0.2269604895284833,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.6992850308573493,
+          "intercept": -1.2397712303641526,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7392064661885359,
+          "intercept": -0.6251330262704871,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.9073693872785995,
+          "intercept": -0.09796187615984303,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 1.0448511148856399,
+          "intercept": -0.5629023596673756,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.8843456578056378,
+          "intercept": -0.635455495250419,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.786850091697088,
+          "intercept": -0.09922007971898256,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5554763666681941,
+          "intercept": -2.0026478496457205,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6816136564635311,
+          "intercept": -0.5689749774932227,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.6402921812339929,
+          "intercept": -0.5959393791509625,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.575152830767568,
+          "intercept": -0.9856011470368584,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.4935983079735142,
+          "intercept": -1.1448048598818887,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.9222036561421908,
+          "intercept": -0.0775621113249797,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7119194253046832,
+          "intercept": -1.521767091442374,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6384477957791862,
+          "intercept": -1.516673933461068,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.650178921106868,
+          "intercept": -1.1612677716046291,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6359082570939235,
+          "intercept": -1.3715727288214148,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5213805218345577,
+          "intercept": -1.6445817609331455,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8332314576180571,
+          "intercept": -0.07681116622621181,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7964498614936271,
+          "intercept": -0.07579638164113976,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7238777193771062,
+          "intercept": -0.07774165668515289,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5306540792193356,
+          "intercept": -1.4915086399380393,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5095890595374132,
+          "intercept": -1.4861648557826592,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5052258438855439,
+          "intercept": -1.1753394111806892,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "harrison",
+    "validation": "russellmitchell",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8006017624482761,
+          "intercept": -0.09580935761814267,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5909018730235924,
+          "intercept": -1.6966222550834045,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6440381034090219,
+          "intercept": -0.7760978393827171,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.6066387223753704,
+          "intercept": -0.796534601675143,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6056233400666049,
+          "intercept": -0.6913131384296656,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.48077241827921713,
+          "intercept": -1.102847329282394,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 36665,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8019119205518322,
+          "intercept": -0.11711684902895685,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7663054381884916,
+          "intercept": -0.08261809948254194,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7550622745952965,
+          "intercept": -0.047403385404927306,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7511187306413346,
+          "intercept": -0.06755197910906256,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7573290203620634,
+          "intercept": -0.0687400231986753,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6912349847568772,
+          "intercept": -0.3392032032058536,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8732439037179787,
+          "intercept": -0.06179108055556255,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8694281352849542,
+          "intercept": -0.04876190508000194,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8662863103577255,
+          "intercept": -0.09532505483377073,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.899361526745162,
+          "intercept": -0.08371152322634051,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7680727512214689,
+          "intercept": -0.8357362660233998,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.7548196664185831,
+          "intercept": -0.5972201879326999,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.6235991819965316,
+          "intercept": -2.023670058896343,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.6587956231837526,
+          "intercept": -1.3921844945886712,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8031879310529031,
+          "intercept": -0.0596535587674302,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8058868584816764,
+          "intercept": -0.0728650763753934,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.8064549849126953,
+          "intercept": -0.08688594644196845,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.7379110229405857,
+          "intercept": -0.36214931193005717,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.5840885781896759,
+          "intercept": -2.307791257224653,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5970724525734616,
+          "intercept": -1.7824954763731997,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5531405291446178,
+          "intercept": -1.7236399024534288,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5868717987135796,
+          "intercept": -1.0655921891848332,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5966389538552559,
+          "intercept": -0.9279081674169677,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.49980160112309363,
+          "intercept": -1.079256598503168,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.9896333125185975,
+          "intercept": -0.08853000012079039,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.6083676200655787,
+          "intercept": -2.3457457461432973,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6635266981386999,
+          "intercept": -1.6462023382807702,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.6482690487792921,
+          "intercept": -1.3821756499607132,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6524899655559812,
+          "intercept": -1.3756501709096667,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5512597901832519,
+          "intercept": -1.6248131564706887,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8180826378168253,
+          "intercept": -0.08343196913739004,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7968349026777282,
+          "intercept": -0.07947299768739872,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.2908017911697185,
+          "intercept": -4.181485732985004,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.37268006067336895,
+          "intercept": -2.8265803606605746,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.37063071544506454,
+          "intercept": -2.623820514713256,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.44193956942006,
+          "intercept": -1.6848797451911461,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "russellmitchell",
+    "validation": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.6011256678084872,
+          "intercept": -2.1159427820305163,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5969458830631008,
+          "intercept": -1.7882348995772392,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5633359281442442,
+          "intercept": -1.4730900548504922,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5902815791692263,
+          "intercept": -0.8934921911929954,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5749981958620971,
+          "intercept": -1.0092240094556866,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5194051296814359,
+          "intercept": -0.9968674231086461,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "shaw",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 37903,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.7908759241409867,
+          "intercept": -0.07525423884361089,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7585438115499591,
+          "intercept": -0.07616333546759721,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6969963300018959,
+          "intercept": -0.5447841194768097,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7183964260234266,
+          "intercept": -0.6024535521185135,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.709100017781166,
+          "intercept": -0.6103980976866654,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6906443432229425,
+          "intercept": -0.6186802285604721,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.9057683144492503,
+          "intercept": -0.09682652019603846,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8487165294842618,
+          "intercept": -0.0826568304636638,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7826127537453872,
+          "intercept": -0.82386088471715,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7835483035191935,
+          "intercept": -0.663493398569951,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7363549253248091,
+          "intercept": -1.0026680824115517,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.8055368387243269,
+          "intercept": -0.6181944230500279,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8219816711650217,
+          "intercept": -0.07154997223894671,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8270593663373015,
+          "intercept": -0.07606827623682233,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6749151789711534,
+          "intercept": -1.2197008114436614,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8067943085023264,
+          "intercept": -0.7387238721661771,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.9633439226196278,
+          "intercept": -0.37836418268216987,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.8359816854161635,
+          "intercept": -0.7919310039938068,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.5575783575146847,
+          "intercept": -2.5378204890012155,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5242085841804578,
+          "intercept": -2.4088372585003017,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.481613306387832,
+          "intercept": -2.2987690655390156,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5366896979037801,
+          "intercept": -1.4609246774667606,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5420798959019021,
+          "intercept": -1.2936404734671532,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5233238132122099,
+          "intercept": -0.993388495732677,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.6969986840288972,
+          "intercept": -1.8541869397430744,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.6745097986163534,
+          "intercept": -2.1576422184791824,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7032341538501166,
+          "intercept": -2.079041442617269,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.6974590548517675,
+          "intercept": -1.8121436724046738,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6413118271478612,
+          "intercept": -1.8730233096888493,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5888182126035548,
+          "intercept": -1.6807217985240444,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8061236731674268,
+          "intercept": -0.07593570912498344,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.819048777730052,
+          "intercept": -0.08231151296379927,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5032321463423894,
+          "intercept": -2.274991160369447,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.4672743754206086,
+          "intercept": -2.2060993543075056,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.43501741371356856,
+          "intercept": -2.1748246571335916,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.45787447388354685,
+          "intercept": -1.5186425085300916,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "santos",
+    "validation": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.5813883655895966,
+          "intercept": -2.336991016276483,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5259251905929672,
+          "intercept": -2.362646372311132,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.484729948292259,
+          "intercept": -2.228438108802486,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5065407533637968,
+          "intercept": -1.586893170244262,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.510708347768053,
+          "intercept": -1.4025038597239252,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5077505657378028,
+          "intercept": -1.0753280121280147,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "wardbeck",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 35820,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.5972409225316293,
+          "intercept": -2.1287929354742614,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.6086633327711644,
+          "intercept": -1.6503131343693098,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6402184334655496,
+          "intercept": -0.8454228078862032,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.6280579563863811,
+          "intercept": -0.7394190314029189,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6902645417673965,
+          "intercept": -0.47811647771684235,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6711980419800694,
+          "intercept": -0.3893648144267339,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8572354341301273,
+          "intercept": -0.09778689514942694,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8500768759099024,
+          "intercept": -0.13443747490992636,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7449303609367096,
+          "intercept": -0.5996116098057723,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7393934424969982,
+          "intercept": -0.37955732233242556,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7752990415952734,
+          "intercept": -0.07563633758626848,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.810359596559212,
+          "intercept": 0.3071459065338446,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.825090798467656,
+          "intercept": -0.07561576802536803,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.803702603223974,
+          "intercept": -0.08240580255008605,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.713481634221629,
+          "intercept": -0.5254314441253599,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7484082173998148,
+          "intercept": -0.05573888203897134,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.745401322317896,
+          "intercept": -0.38938939522796256,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.7620373074444305,
+          "intercept": -0.19279733620222161,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.6038504419795204,
+          "intercept": -2.058535958982676,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5765674202070884,
+          "intercept": -1.9207873034340022,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.4819767709863102,
+          "intercept": -2.227251876860024,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.46424244581649615,
+          "intercept": -2.0038629239275845,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.476484823271983,
+          "intercept": -1.6080415040181264,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.48698849678087375,
+          "intercept": -1.0867961571838145,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8308006509646967,
+          "intercept": -0.1261718277679139,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7268152412907742,
+          "intercept": -0.840588169350628,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6852424681754103,
+          "intercept": -0.9341070985562973,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7132580927308605,
+          "intercept": -0.48203094174434585,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.666982070861871,
+          "intercept": -0.6323010608600235,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6176192863586042,
+          "intercept": -0.5107019607665084,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.776223399573319,
+          "intercept": -0.07162005020137113,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7703202466299879,
+          "intercept": -0.07875877478822134,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5223317042112098,
+          "intercept": -1.7738072188986327,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.417159394166164,
+          "intercept": -2.3667003395123145,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.3660112467252558,
+          "intercept": -2.6042976907622637,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.3852898461421259,
+          "intercept": -1.9838578777738194,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "shaw",
+    "validation": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.61800560722139,
+          "intercept": -1.9544640623130731,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5590804969374922,
+          "intercept": -2.0263084520319414,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.519843138467175,
+          "intercept": -1.8896842880055331,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5077971867644339,
+          "intercept": -1.6257865819296702,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5274316873385467,
+          "intercept": -1.214726205658347,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5073851491839286,
+          "intercept": -0.8233136523532397,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "wheeler",
+            "wilson"
+          ],
+          "preoutcome_bins": 34324,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 1.2379318590704709,
+          "intercept": -0.19056130605538232,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5388149862011665,
+          "intercept": -4.003650630857476,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 1.6611089564732056,
+          "intercept": -0.4254529980548089,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 1.8585558244584994,
+          "intercept": -0.6587005873447236,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 1.9379007788859688,
+          "intercept": -1.4216599120326001,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 1.1245768892791348,
+          "intercept": -2.277033493820096,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.7060429560295399,
+          "intercept": -1.3949507638277023,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7392106110165475,
+          "intercept": -0.8099417381645216,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.859001874413253,
+          "intercept": -0.07081888945352921,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.9505678939641197,
+          "intercept": 0.7151643176921292,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.780290947867095,
+          "intercept": -0.08438142972368042,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.8792345629860113,
+          "intercept": 0.8206722596039044,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8760803763420751,
+          "intercept": -0.07669381150864056,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8198999439157678,
+          "intercept": -0.1284753282237585,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8168352660638534,
+          "intercept": -0.026076478518171665,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 1.0523593210919318,
+          "intercept": 1.0411272053658045,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.8864336497482083,
+          "intercept": 0.11595550435056706,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.7527231528118579,
+          "intercept": -0.32973210460761837,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8245263803159512,
+          "intercept": -0.06105946708949157,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8056259919541935,
+          "intercept": -0.05143806764348266,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8567587829623529,
+          "intercept": 0.942027277963371,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8455687695324291,
+          "intercept": 1.2799280605176322,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7535663069314213,
+          "intercept": 0.6254301354266757,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.7374193696598471,
+          "intercept": 0.1945866315818753,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8778301328219412,
+          "intercept": -0.20820653859884464,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8363296287277396,
+          "intercept": -0.45820422709008474,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8275543177585566,
+          "intercept": -0.481403435739271,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.9149313200638522,
+          "intercept": -0.10642618794437467,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7733714726131177,
+          "intercept": -0.5282680943036578,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.8494224714034466,
+          "intercept": 0.4328256562166112,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8015978986963904,
+          "intercept": -0.07244643558629292,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7497210820138887,
+          "intercept": -0.0809432285225043,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5863946611493042,
+          "intercept": -1.0356434738402678,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.4619453085532828,
+          "intercept": -1.8981064003378776,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.4289904988730317,
+          "intercept": -2.060071309950223,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.4236008525076764,
+          "intercept": -1.6178110321911168,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wardbeck",
+    "validation": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.4569582104525602,
+          "intercept": -4.482733809856927,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.43339618970419347,
+          "intercept": -4.491013340606053,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5402668066359975,
+          "intercept": -3.235231849083614,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 1.6619193743394114,
+          "intercept": -0.5356535311425271,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 1.4707531967362717,
+          "intercept": -1.1307339076198706,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 1.0598156220854922,
+          "intercept": -2.03274164489176,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wilson"
+          ],
+          "preoutcome_bins": 34173,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.9965229478212602,
+          "intercept": -0.08331875218476524,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7115541557798973,
+          "intercept": -1.6801819230584951,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.700653023221007,
+          "intercept": -1.0303518936464302,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8654660008963535,
+          "intercept": -0.9492260592654674,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 1.9598898289959978,
+          "intercept": -0.2569939152968129,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 1.2279559848986332,
+          "intercept": -1.7246336079797835,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8786774209229751,
+          "intercept": -0.0871954923980023,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8202624780320346,
+          "intercept": -0.050247097947408594,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.808066041442952,
+          "intercept": -0.041932324079409326,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.9404603371680553,
+          "intercept": 0.7782498257100148,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.9543833246068527,
+          "intercept": 0.5685703241909454,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.89970690742361,
+          "intercept": -0.02140326387197844,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8270294571842469,
+          "intercept": -0.05587047398714628,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8517459878145152,
+          "intercept": -0.0832439404772351,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7581834473367187,
+          "intercept": -0.05310767745783507,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.9082069896008019,
+          "intercept": 0.4663973607709749,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 1.1829381873055285,
+          "intercept": 0.5737930497219889,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.885395188101674,
+          "intercept": -0.49210754079648156,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.7996397865064826,
+          "intercept": -0.0773839502540351,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7635989437579452,
+          "intercept": -0.08973369980356374,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7613891264507706,
+          "intercept": 0.5327289325157127,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8008331119729475,
+          "intercept": 0.8103446174095644,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7596960826441664,
+          "intercept": 0.6145895652597656,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6305025399113813,
+          "intercept": -0.3015369097928885,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.9117859282009333,
+          "intercept": -0.07433736329660501,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.9657419124013128,
+          "intercept": -0.09635286174203675,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8238982444222329,
+          "intercept": -0.0744692424549992,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8157485050738794,
+          "intercept": 0.2063983372288164,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.8387330214252313,
+          "intercept": 0.23122366587368537,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.8034216737105824,
+          "intercept": -0.10756329709331491,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8051848660053967,
+          "intercept": -0.06842337505257193,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7561759675284926,
+          "intercept": -0.06501979676858237,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6845145421966425,
+          "intercept": -0.0666224485952828,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5421995883728282,
+          "intercept": -1.200756269399258,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.4812905591590603,
+          "intercept": -1.5627841811122056,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.46425013540294574,
+          "intercept": -1.4219698017327869,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wheeler",
+    "validation": "wilson",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.7878875885838862,
+          "intercept": -0.07390383849760251,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7787913652617958,
+          "intercept": -0.08816158029836449,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7931085825538011,
+          "intercept": 0.7617060693778479,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8057037192328009,
+          "intercept": 0.837389904765967,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7532864472519579,
+          "intercept": 0.5912363819827975,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6832622385246849,
+          "intercept": 0.23755534913731005,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "fox",
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck"
+          ],
+          "preoutcome_bins": 34239,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer+suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.78291634874033,
+          "intercept": -0.06780204899435534,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7386378546953476,
+          "intercept": -0.05108344787138921,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.8533223410311793,
+          "intercept": 1.1557582355534846,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7876316827751861,
+          "intercept": 0.4465143166962562,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.8157698099884076,
+          "intercept": 0.24583928751869066,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.7033900879994026,
+          "intercept": -0.3961579026909462,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer+suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8681908147085501,
+          "intercept": -0.08429387696046305,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.8177579762788946,
+          "intercept": -0.06482114021765584,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.7862457247903776,
+          "intercept": -0.051180918676767856,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.8507727790320243,
+          "intercept": 0.2511696765673763,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7920194457512202,
+          "intercept": -0.053154002125353386,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6792498385537524,
+          "intercept": -0.7805476063008971,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8551849598727653,
+          "intercept": -0.09095393151822735,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.6834204466158089,
+          "intercept": -1.0779644435155658,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.746346445283992,
+          "intercept": -0.06463662164472418,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7339688409486124,
+          "intercept": -0.398866714466075,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.7701471572811759,
+          "intercept": -0.38800471534841807,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.6980638328592181,
+          "intercept": -0.7410811668006113,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "suricata+wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.9189073495110601,
+          "intercept": -0.16554436645051995,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.537184919732193,
+          "intercept": -2.806272140912008,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.5886384564987442,
+          "intercept": -1.9161634142877517,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.7359848414521557,
+          "intercept": -0.9040208284509779,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6913901990329266,
+          "intercept": -1.1317360065413482,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.501636857842584,
+          "intercept": -1.4432833955540147,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "aminer",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.9964492289953589,
+          "intercept": -0.08419580770177792,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7125350843816056,
+          "intercept": -1.6265897907471016,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.6623515436931887,
+          "intercept": -1.4892215243598441,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.6317756894429397,
+          "intercept": -1.3155716583737902,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.6653275637739037,
+          "intercept": -1.0534796062195049,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5539241069472837,
+          "intercept": -1.501660940954399,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "suricata",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.8298940086545279,
+          "intercept": -0.08429651917136922,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.7851562479812626,
+          "intercept": -0.07398028302710899,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.726253942110529,
+          "intercept": -0.07169263898682322,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5635016208557305,
+          "intercept": -1.3259370508188428,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5453563012773395,
+          "intercept": -1.315392997940325,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5332130754124029,
+          "intercept": -1.0217501057817282,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  },
+  {
+    "test": "wilson",
+    "validation": "fox",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "available": "wazuh",
+    "forecast_mode": "pooled_fixed_blend",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "calibrators": {
+      "pooled_fixed_blend": [
+        {
+          "horizon": 1,
+          "slope": 0.5439746471596878,
+          "intercept": -3.0635991836064953,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 2,
+          "slope": 0.5889848476499219,
+          "intercept": -2.259457492061465,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 5,
+          "slope": 0.48983389012321144,
+          "intercept": -2.670540159502029,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 10,
+          "slope": 0.5129896380145449,
+          "intercept": -1.9454762671820707,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 15,
+          "slope": 0.5607936690150794,
+          "intercept": -1.4513950664855437,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        },
+        {
+          "horizon": 30,
+          "slope": 0.5218129857663663,
+          "intercept": -1.206980888524952,
+          "constant_prior": null,
+          "rejected_negative_slope": false,
+          "fitting_campaigns": [
+            "harrison",
+            "russellmitchell",
+            "santos",
+            "shaw",
+            "wardbeck",
+            "wheeler"
+          ],
+          "preoutcome_bins": 35956,
+          "equal_campaign_weights": true
+        }
+      ]
+    },
+    "status": "reviewed development preset; previously inspected campaigns"
+  }
+]

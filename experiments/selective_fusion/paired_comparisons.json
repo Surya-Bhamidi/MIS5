@@ -1,0 +1,266 @@
+[
+  {
+    "horizon": 5,
+    "metric": "brier",
+    "campaign_improvements": {
+      "fox": -4.157960566360448e-05,
+      "harrison": -1.2715759005597687e-05,
+      "russellmitchell": -0.0,
+      "santos": 0.0006136559811060923,
+      "shaw": 9.169699992051688e-06,
+      "wardbeck": -0.0,
+      "wheeler": -1.33858665471334e-07,
+      "wilson": -0.003149200703028768
+    },
+    "mean_improvement": -0.0003226005306581622,
+    "improved_campaigns": 2,
+    "worse_campaigns": 4,
+    "descriptive_bootstrap_95_interval": [
+      -0.0011854447592214254,
+      0.0002233006076647665
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 5,
+    "metric": "average_precision",
+    "campaign_improvements": {
+      "fox": 0.1777777777777778,
+      "harrison": 0.0019607843137254832,
+      "russellmitchell": 0.0,
+      "santos": 0.6746520146520146,
+      "shaw": -0.0022326313505456608,
+      "wardbeck": 0.0,
+      "wheeler": 0.0016490758985853115,
+      "wilson": -0.17321679366034204
+    },
+    "mean_improvement": 0.08507377845390195,
+    "improved_campaigns": 4,
+    "worse_campaigns": 2,
+    "descriptive_bootstrap_95_interval": [
+      -0.043292233238042446,
+      0.27538888132444833
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 5,
+    "metric": "strict_warning_recall",
+    "campaign_improvements": {
+      "fox": 0,
+      "harrison": 0,
+      "russellmitchell": 0,
+      "santos": 0,
+      "shaw": 0,
+      "wardbeck": 0,
+      "wheeler": 0,
+      "wilson": 0
+    },
+    "mean_improvement": 0.0,
+    "improved_campaigns": 0,
+    "worse_campaigns": 0,
+    "descriptive_bootstrap_95_interval": [
+      0.0,
+      0.0
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 5,
+    "metric": "false_warning_episodes",
+    "campaign_improvements": {
+      "fox": 0,
+      "harrison": 0,
+      "russellmitchell": 0,
+      "santos": 0,
+      "shaw": 0,
+      "wardbeck": 0,
+      "wheeler": 0,
+      "wilson": 4
+    },
+    "mean_improvement": 0.5,
+    "improved_campaigns": 1,
+    "worse_campaigns": 0,
+    "descriptive_bootstrap_95_interval": [
+      0.0,
+      1.5
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 15,
+    "metric": "brier",
+    "campaign_improvements": {
+      "fox": -0.00018158015514906426,
+      "harrison": -9.443594572918173e-06,
+      "russellmitchell": 1.5608649847135376e-05,
+      "santos": 0.0009481247482376416,
+      "shaw": 0.00031983759445300343,
+      "wardbeck": -0.0,
+      "wheeler": -4.4159065774743503e-07,
+      "wilson": -0.004042733413114343
+    },
+    "mean_improvement": -0.0003688284701195365,
+    "improved_campaigns": 3,
+    "worse_campaigns": 4,
+    "descriptive_bootstrap_95_interval": [
+      -0.0014999232993265009,
+      0.000353185881945886
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 15,
+    "metric": "average_precision",
+    "campaign_improvements": {
+      "fox": 0.014007936507936636,
+      "harrison": 0.0008869599662438832,
+      "russellmitchell": 0.0,
+      "santos": 0.01904761904761898,
+      "shaw": 0.04360698178621536,
+      "wardbeck": 0.0,
+      "wheeler": 0.004811434206536739,
+      "wilson": -0.6558153054913599
+    },
+    "mean_improvement": -0.07168179674710104,
+    "improved_campaigns": 5,
+    "worse_campaigns": 1,
+    "descriptive_bootstrap_95_interval": [
+      -0.24168792511903503,
+      0.019767063611259836
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 15,
+    "metric": "strict_warning_recall",
+    "campaign_improvements": {
+      "fox": 0,
+      "harrison": 1,
+      "russellmitchell": 0,
+      "santos": 1,
+      "shaw": 0,
+      "wardbeck": 0,
+      "wheeler": 0,
+      "wilson": 1
+    },
+    "mean_improvement": 0.375,
+    "improved_campaigns": 3,
+    "worse_campaigns": 0,
+    "descriptive_bootstrap_95_interval": [
+      0.125,
+      0.75
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 15,
+    "metric": "false_warning_episodes",
+    "campaign_improvements": {
+      "fox": -1,
+      "harrison": -3,
+      "russellmitchell": 0,
+      "santos": 0,
+      "shaw": -3,
+      "wardbeck": 0,
+      "wheeler": 0,
+      "wilson": -8
+    },
+    "mean_improvement": -1.875,
+    "improved_campaigns": 0,
+    "worse_campaigns": 4,
+    "descriptive_bootstrap_95_interval": [
+      -3.875,
+      -0.375
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 30,
+    "metric": "brier",
+    "campaign_improvements": {
+      "fox": -0.0001437076173436099,
+      "harrison": 0.0002139381491506842,
+      "russellmitchell": 0.00018202139991653054,
+      "santos": 0.000455370943453414,
+      "shaw": 0.0002582999560779137,
+      "wardbeck": -0.0,
+      "wheeler": -9.71654480112251e-07,
+      "wilson": -0.004275648295947048
+    },
+    "mean_improvement": -0.00041383713989652846,
+    "improved_campaigns": 4,
+    "worse_campaigns": 3,
+    "descriptive_bootstrap_95_interval": [
+      -0.001555777929014999,
+      0.00023446163296020602
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 30,
+    "metric": "average_precision",
+    "campaign_improvements": {
+      "fox": 0.0,
+      "harrison": -0.08962024086036557,
+      "russellmitchell": 0.009090909090909038,
+      "santos": -0.007642931780862616,
+      "shaw": 0.027869788054027178,
+      "wardbeck": 0.0,
+      "wheeler": 0.013347097513677542,
+      "wilson": -0.472988453077051
+    },
+    "mean_improvement": -0.06499297888245818,
+    "improved_campaigns": 3,
+    "worse_campaigns": 3,
+    "descriptive_bootstrap_95_interval": [
+      -0.18672381565847435,
+      0.009626537523262545
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 30,
+    "metric": "strict_warning_recall",
+    "campaign_improvements": {
+      "fox": 0,
+      "harrison": 1,
+      "russellmitchell": 0,
+      "santos": 1,
+      "shaw": 0,
+      "wardbeck": 0,
+      "wheeler": 0,
+      "wilson": 0
+    },
+    "mean_improvement": 0.25,
+    "improved_campaigns": 2,
+    "worse_campaigns": 0,
+    "descriptive_bootstrap_95_interval": [
+      0.0,
+      0.625
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  },
+  {
+    "horizon": 30,
+    "metric": "false_warning_episodes",
+    "campaign_improvements": {
+      "fox": 0,
+      "harrison": -1,
+      "russellmitchell": 0,
+      "santos": 0,
+      "shaw": 0,
+      "wardbeck": 0,
+      "wheeler": 0,
+      "wilson": -4
+    },
+    "mean_improvement": -0.625,
+    "improved_campaigns": 0,
+    "worse_campaigns": 2,
+    "descriptive_bootstrap_95_interval": [
+      -1.625,
+      0.0
+    ],
+    "status": "descriptive; related campaigns and repeated development"
+  }
+]
