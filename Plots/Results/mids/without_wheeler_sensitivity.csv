@@ -1,0 +1,5 @@
+mode,campaigns,strict_warned,false_episodes
+temporal_boosting,7,4,2
+conditional_fusion,7,4,3
+pooled_counts,7,3,1
+pooled_fixed_blend,7,5,5

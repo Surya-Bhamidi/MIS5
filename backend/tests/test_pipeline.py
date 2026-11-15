@@ -14,6 +14,9 @@ from app.models.decision_network import ResponseDecisionNetwork
 from app.models.pipeline import CyberPipeline
 
 class TestPipelineComponents(unittest.TestCase):
+    def setUp(self):
+        self.pipeline.reset_stream_state()
+
     @classmethod
     def setUpClass(cls):
         cls.db = Database(DB_PATH)

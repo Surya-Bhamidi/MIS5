@@ -1,0 +1,5 @@
+model,mode,endpoint,horizon,budget,campaigns,mean_brier,mean_ap,warned,strict_warned,false_episodes,negative_warning_minutes,median_strict_lead,available,delay_minutes
+Original counts-only,temporal_boosting,successful_root,30,1,8,0.0015253958049436566,0.8319607794098436,5,4,19,69.0,20.901391667127612,,
+Earlier duration/tree hybrid,conditional_fusion,successful_root,30,1,8,0.0019965555121294275,0.7704588799622042,5,4,4,21.0,19.870750000079475,,
+Matched pooled counts-only,pooled_counts,successful_root,30,1,8,0.0014684682662843432,0.8312429124295744,4,3,1,5.0,20.080599999427797,aminer+suricata+wazuh,0
+Current hybrid 25% state blend,pooled_fixed_blend,successful_root,30,1,8,0.0014605679952360484,0.8275366938532468,6,5,5,33.0,20.484266666571298,aminer+suricata+wazuh,0

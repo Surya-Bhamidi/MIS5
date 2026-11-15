@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-04T17:21:40.502614+00:00",
+  "status": "Export of existing exploratory results; no model development or new experiment",
+  "endpoint": "successful_root",
+  "validation_budget_per_24h": 1,
+  "delay_minutes": 0,
+  "source_sha256": {
+    "experiments/current_version/summary.json": "5500126e7cb520bbd4672d03214d845fde107e87359b3ec4fb3336f9c4bd9311",
+    "experiments/current_version/config.json": "fb7f3db1e6e1efd76e2a33c7ad15d4f9421818498453626f5eb6956f47d635ac",
+    "experiments/current_version/verification.json": "c7b124dab770e09f3eaa484cdb4bb5301e2bc3369b2d9216bf58fc4f7bc63574",
+    "experiments/selective_fusion/summary.json": "363adff4be097d78b6c469e3aa9b88065a5fe8adde08d523537be40518d13d2e",
+    "experiments/selective_fusion/scored.json": "71e564770f69c735413f91a22abb29bb33c13cf92070f161735f9c9c91a98830",
+    "experiments/selective_fusion/cam_transfer.json": "e7f3b6ace4edaaac2341be296988d4b2f54d3793b199daa9093ed60922776663",
+    "experiments/published_comparison/budget_summary.json": "a395ce6432465a83b950f1e1195bce996406d6728a9a56077d9ba93efd300ce6",
+    "experiments/published_comparison/budget_fold_results.json": "0c964e8d00fd12f2e54331cd9166f33cd22cd8bd0e0a5e415683cdb305487668"
+  },
+  "script_sha256": "0b3fad20b0fdeee76de5c4562ed4868d56b3fbf15dbba24c7c9bd1bb27cd03d2",
+  "output_sha256": {
+    "01_30_minute_comparison.pdf": "181615c21af86b10eea3cef00b45335a7d9748041932a25bb93fa6013ec68f6e",
+    "01_30_minute_comparison.png": "7f0ba6395034a6cd2484ee49fcb3d3e90386bd1a96409172498508c73b6fadee",
+    "02_horizon_tradeoffs.pdf": "ad2e498e58b3eb991aa211328e94a9de5834705ca47e3cbf844df57507c8d4a8",
+    "02_horizon_tradeoffs.png": "b8e4fb0755a051faf4965636da65112a2acb88bca0657a6cdb10d8e6c102efe2",
+    "03_campaign_warning_lead_times.pdf": "ad7e11f11e7537ccfaa902515c51e19a3a6e273368c4cd7c1304b7ccb494923c",
+    "03_campaign_warning_lead_times.png": "c7db1b09636a994e10ab019731f1221b0e0407c4ad30e36659f058edd2635afc",
+    "04_campaign_dependence.pdf": "d7be278936f6cd30068a7ace957cd18945e6f675400a10e25d0a16664984e647",
+    "04_campaign_dependence.png": "7505b399a68ae0a37d9b5e61cbd609244b47dd471b35f8bf31e8573cddf5e7c3",
+    "05_sensor_availability.pdf": "83d7ab327d91740266bfce2e9e63e2a70909ff166d3c9d7cdc8308e5a5c2438e",
+    "05_sensor_availability.png": "6a96346ae92f9553c4fcf7e66b9f0b84139a119f2eb4cfd1dfaeb793086cacc5",
+    "campaign_dependence.csv": "c2d4612a90b976b81e68235f1672517f857e42f5add9f7ecffe603b7f8e2b80e",
+    "campaign_dependence.json": "4a73527b61393ff20d3c016fd938cc8807ecd80b762264214ccf9c808e56b431",
+    "campaign_results_30_minutes.csv": "5bd9ebb12189aea1b89bd5d3fad7579675b7f0dfdcfbf254bc7f53adf1c4293a",
+    "campaign_results_30_minutes.json": "e77f347061ac1d5c153ba7cc0512ab1b81555db245c5421acc14bacbae6560d0",
+    "current_preset_config.json": "fb7f3db1e6e1efd76e2a33c7ad15d4f9421818498453626f5eb6956f47d635ac",
+    "current_preset_summary.json": "5500126e7cb520bbd4672d03214d845fde107e87359b3ec4fb3336f9c4bd9311",
+    "current_preset_verification.json": "c7b124dab770e09f3eaa484cdb4bb5301e2bc3369b2d9216bf58fc4f7bc63574",
+    "external_cam_results.csv": "c3f2290518593f0b28ceadfa4fae235a6dbacb738d920ef58db51c1c694fe842",
+    "external_cam_results.json": "ec5cf6e261e9f2e6ee3205fab1319988d11f04f350851cb870a18851983ec919",
+    "full_input_comparison_15_30_minutes.csv": "d0ab302542cb47bb7aa405b3830275e9b211a15e12040a003d6ab2959784f834",
+    "full_input_comparison_15_30_minutes.json": "64f561e74eff0f82f13927c9d9a1518f9effe590740ebbaaddf968c708741a46",
+    "matched_baseline_all_horizons.csv": "4cf72d22b5916844bb2a3fbd62f8abc9598184d52bcce309b11fc8c764b2c6ac",
+    "matched_baseline_all_horizons.json": "8dcc987efb8d9ae7da18a83b07b16a417bc1cf26ea6a121a18ab34596ec6ea8e",
+    "README.md": "8dbcfb08a3eb8103a5608635eb9b6d5cd80e3968ee217f549f105b6eb46ed2af",
+    "sensor_availability_30_minutes.csv": "bd87efb3e664950a91006fc1206b8df953a8acc67f6dfdefc67ee8dfce2bc8f6",
+    "sensor_availability_30_minutes.json": "e3256eeae8ef29632121cdc1c41a55d0a315391b21203e749a40a2ea0ad21c15"
+  },
+  "checks": [
+    "unique selected source rows",
+    "eight-case warning/false-alarm reconstruction",
+    "Brier/AP reconstruction",
+    "CAM zero-warning reconstruction",
+    "unchanged inputs"
+  ]
+}

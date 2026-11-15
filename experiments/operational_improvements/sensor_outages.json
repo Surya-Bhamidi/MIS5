@@ -1,0 +1,184 @@
+{
+  "campaign": "fox",
+  "scope": "One held-out research fold, whole-campaign induced outages, threshold-only warnings; not independent data or a dynamic-outage accuracy study",
+  "horizon": 30,
+  "rows": [
+    {
+      "available": "aminer+suricata",
+      "missing": [
+        "wazuh"
+      ],
+      "zero_fill": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0,
+        "brier": 0.004783188530208018
+      },
+      "availability_expert": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2,
+        "brier": 0.00043982215184879437
+      },
+      "brier_reduction_percent": 90.80483344799987
+    },
+    {
+      "available": "aminer+wazuh",
+      "missing": [
+        "suricata"
+      ],
+      "zero_fill": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 25.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 25.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1,
+        "brier": 0.00030951590991007535
+      },
+      "availability_expert": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 24.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 24.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2,
+        "brier": 0.0002166671524295047
+      },
+      "brier_reduction_percent": 29.99805648360574
+    },
+    {
+      "available": "suricata+wazuh",
+      "missing": [
+        "aminer"
+      ],
+      "zero_fill": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0,
+        "brier": 0.005738922914081431
+      },
+      "availability_expert": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 22,
+        "notifications": 1,
+        "brier": 0.0014624824335338325
+      },
+      "brier_reduction_percent": 74.51643007879787
+    },
+    {
+      "available": "aminer",
+      "missing": [
+        "suricata",
+        "wazuh"
+      ],
+      "zero_fill": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0,
+        "brier": 0.004645848492489681
+      },
+      "availability_expert": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 1,
+        "notifications": 1,
+        "brier": 0.0008210341155218331
+      },
+      "brier_reduction_percent": 82.32757446031465
+    },
+    {
+      "available": "suricata",
+      "missing": [
+        "aminer",
+        "wazuh"
+      ],
+      "zero_fill": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0,
+        "brier": 0.005863810939379764
+      },
+      "availability_expert": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0,
+        "brier": 0.005868432614405852
+      },
+      "brier_reduction_percent": -0.07881691742568364
+    },
+    {
+      "available": "wazuh",
+      "missing": [
+        "aminer",
+        "suricata"
+      ],
+      "zero_fill": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0,
+        "brier": 0.005460380362712205
+      },
+      "availability_expert": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 26.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 26.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1,
+        "brier": 0.0024419478374607894
+      },
+      "brier_reduction_percent": 55.27879606819444
+    }
+  ]
+}

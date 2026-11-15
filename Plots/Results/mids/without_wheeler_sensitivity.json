@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "temporal_boosting",
+    "campaigns": 7,
+    "strict_warned": 4,
+    "false_episodes": 2
+  },
+  {
+    "mode": "conditional_fusion",
+    "campaigns": 7,
+    "strict_warned": 4,
+    "false_episodes": 3
+  },
+  {
+    "mode": "pooled_counts",
+    "campaigns": 7,
+    "strict_warned": 3,
+    "false_episodes": 1
+  },
+  {
+    "mode": "pooled_fixed_blend",
+    "campaigns": 7,
+    "strict_warned": 5,
+    "false_episodes": 5
+  }
+]

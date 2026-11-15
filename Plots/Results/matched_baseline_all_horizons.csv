@@ -1,0 +1,13 @@
+model,available,delay_minutes,mode,endpoint,horizon,budget,campaigns,mean_brier,mean_ap,warned,strict_warned,false_episodes,negative_warning_minutes,median_strict_lead
+Matched pooled counts-only,aminer+suricata+wazuh,0,pooled_counts,successful_root,1,1,8,0.0001704021373500661,0.09379657528938104,0,0,0,0.0,
+Current fixed 25% state blend,aminer+suricata+wazuh,0,pooled_fixed_blend,successful_root,1,1,8,0.00018941660098892657,0.12351982366342679,1,0,1,4.0,
+Matched pooled counts-only,aminer+suricata+wazuh,0,pooled_counts,successful_root,2,1,8,0.0003397154065976843,0.1591152351668527,0,0,1,2.0,
+Current fixed 25% state blend,aminer+suricata+wazuh,0,pooled_fixed_blend,successful_root,2,1,8,0.00035138169261003134,0.1964419966127532,1,0,3,7.0,
+Matched pooled counts-only,aminer+suricata+wazuh,0,pooled_counts,successful_root,5,1,8,0.0007488717271840539,0.31900469593430547,1,0,4,15.0,
+Current fixed 25% state blend,aminer+suricata+wazuh,0,pooled_fixed_blend,successful_root,5,1,8,0.0008139975040414554,0.3808372299447116,1,0,9,56.0,
+Matched pooled counts-only,aminer+suricata+wazuh,0,pooled_counts,successful_root,10,1,8,0.0011123572533686286,0.5326297207890006,2,2,1,2.0,9.10322500069936
+Current fixed 25% state blend,aminer+suricata+wazuh,0,pooled_fixed_blend,successful_root,10,1,8,0.0012740872799734796,0.47784488165977523,3,3,5,34.0,8.4842666665713
+Matched pooled counts-only,aminer+suricata+wazuh,0,pooled_counts,successful_root,15,1,8,0.001316763805851706,0.7089149330239711,3,2,2,28.0,7.901391667127609
+Current fixed 25% state blend,aminer+suricata+wazuh,0,pooled_fixed_blend,successful_root,15,1,8,0.0013437355069259437,0.6538567199265949,5,4,4,40.0,7.282433332999547
+Matched pooled counts-only,aminer+suricata+wazuh,0,pooled_counts,successful_root,30,1,8,0.0014684682662843432,0.8312429124295744,4,3,1,5.0,20.080599999427797
+Current fixed 25% state blend,aminer+suricata+wazuh,0,pooled_fixed_blend,successful_root,30,1,8,0.0014605679952360484,0.8275366938532468,6,5,5,33.0,20.484266666571298

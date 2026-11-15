@@ -45,3 +45,6 @@ __pycache__/
 *.local
 .DS_Store
 Thumbs.db
+
+# PDF layout inspection images are reproducible local previews.
+/reports/previews/

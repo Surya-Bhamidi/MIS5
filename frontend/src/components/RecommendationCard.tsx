@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldAlert, CheckCircle2, Search, ArrowUpRight, HelpCircle } from "lucide-react";
+import { ShieldAlert, CheckCircle2, Search, ArrowUpRight } from "lucide-react";
 import { Recommendation, DefensiveAction } from "../types";
 
 interface RecommendationCardProps {

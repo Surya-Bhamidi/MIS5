@@ -1,5 +1,5 @@
 import React from "react";
-import { Shield, Activity, Cpu, Layers, GitBranch, FlaskConical } from "lucide-react";
+import { Shield, Activity, Layers, GitBranch, FlaskConical } from "lucide-react";
 import { ScenarioInfo, AblationMode } from "../types";
 
 interface HeaderProps {
@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({
               </h1>
               <span className={`badge ${isStreaming ? "badge-emerald animate-pulse-glow" : "badge-cyan"}`}>
                 <Activity size={12} />
-                {isStreaming ? "LIVE INFERENCE" : "PIPELINE READY"}
+                {isStreaming ? "ARCHIVED REPLAY" : "REPLAY READY"}
               </span>
             </div>
             <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginTop: "2px" }}>
@@ -122,7 +122,7 @@ export const Header: React.FC<HeaderProps> = ({
             fontSize: "0.85rem",
           }}
         >
-          <Activity size={16} /> Live Analyst Console
+          <Activity size={16} /> Archived Analyst Console
         </button>
 
         <button

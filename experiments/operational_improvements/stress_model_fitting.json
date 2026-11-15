@@ -1,0 +1,122 @@
+[
+  {
+    "test": "fox",
+    "train": [
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "validation": "harrison",
+    "experts": 7,
+    "sha256": "cc87170d98f86df8464d44eaafcdaf653b57c8137be16fae4290753aa2a5500f",
+    "seconds": 288.36181309982203
+  },
+  {
+    "test": "harrison",
+    "train": [
+      "fox",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "validation": "russellmitchell",
+    "experts": 7,
+    "sha256": "3b6c781d333318d55bd0e7018993b69fbb939f737327b3c1b38dbada7cc9e4d1",
+    "seconds": 295.8204167999793
+  },
+  {
+    "test": "russellmitchell",
+    "train": [
+      "fox",
+      "harrison",
+      "shaw",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "validation": "santos",
+    "experts": 7,
+    "sha256": "19c233b27916f7df1efbee9b5ded553546c55b5afca9369bf75130ff4b86ac66",
+    "seconds": 284.07689910009503
+  },
+  {
+    "test": "santos",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "wardbeck",
+      "wheeler",
+      "wilson"
+    ],
+    "validation": "shaw",
+    "experts": 7,
+    "sha256": "8af20f546eda6406c07031a2a40459f94097433270dfe07bb66f9ac9c68c5dad",
+    "seconds": 258.3504916999955
+  },
+  {
+    "test": "shaw",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "wheeler",
+      "wilson"
+    ],
+    "validation": "wardbeck",
+    "experts": 7,
+    "sha256": "3c651da738cd431f07245e2b5c9f3ab160617099d6f006b4598fd639b2520619",
+    "seconds": 248.74362800014205
+  },
+  {
+    "test": "wardbeck",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wilson"
+    ],
+    "validation": "wheeler",
+    "experts": 7,
+    "sha256": "bc40f705b6f3a7e4e945aee4cf93c03d35212f327ba71f64afb4310612ae68d2",
+    "seconds": 235.24499369994737
+  },
+  {
+    "test": "wheeler",
+    "train": [
+      "fox",
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck"
+    ],
+    "validation": "wilson",
+    "experts": 7,
+    "sha256": "629fd1b22912c02cf6a31bf8bbadc2d6a3b562b63ff6011f6e86501ba95d0b59",
+    "seconds": 226.54494479997084
+  },
+  {
+    "test": "wilson",
+    "train": [
+      "harrison",
+      "russellmitchell",
+      "santos",
+      "shaw",
+      "wardbeck",
+      "wheeler"
+    ],
+    "validation": "fox",
+    "experts": 7,
+    "sha256": "fc09b6bff5e952d82a75712aa2c6dba4b6ca7b85a514f2fa86f059581eea256a",
+    "seconds": 261.7830833999906
+  }
+]

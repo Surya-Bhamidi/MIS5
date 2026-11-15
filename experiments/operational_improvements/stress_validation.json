@@ -1,0 +1,967 @@
+{
+  "passed": true,
+  "scope": "All eight original research folds; local archived attacks, induced input faults and temporary-database API operations",
+  "campaigns": 8,
+  "experts": 56,
+  "forecast_values_checked": 2007012,
+  "operation_observations": 1152,
+  "exact_retries_checked": 48,
+  "conflicts_rejected": 16,
+  "persistence_faults_recovered": 3,
+  "notifications_exercised": 4,
+  "maximum_archive_error": 0.0,
+  "maximum_stream_error": 0.0,
+  "results": [
+    {
+      "campaign": "fox",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 30870,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 30870,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 30870,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 30870,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 30870,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 30870,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 30870,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 42,
+            "Restrict": 14,
+            "Block": 4,
+            "Isolate": 4
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 42,
+            "Restrict": 14,
+            "Block": 4,
+            "Isolate": 4
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "campaign": "harrison",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 37842,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 37842,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 37842,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 37842,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 37842,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 37842,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 37842,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 43,
+            "Restrict": 13,
+            "Block": 8
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 43,
+            "Restrict": 13,
+            "Block": 8
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "campaign": "russellmitchell",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 27768,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 27768,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 27768,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 27768,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 27768,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 27768,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 27768,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 1,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 1,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 59,
+            "Restrict": 3,
+            "Block": 2
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 1,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 1,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 59,
+            "Restrict": 3,
+            "Block": 2
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "campaign": "santos",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 30414,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 30414,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 30414,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 30414,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 30414,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 30414,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 30414,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 64
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 64
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "campaign": "shaw",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 40266,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 40266,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 40266,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 40266,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 40266,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 40266,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 40266,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 60,
+            "Block": 3,
+            "Restrict": 1
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 60,
+            "Block": 3,
+            "Restrict": 1
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "campaign": "wardbeck",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 39390,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 39390,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 39390,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 39390,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 39390,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 39390,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 39390,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 60,
+            "Restrict": 1,
+            "Block": 3
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 60,
+            "Restrict": 1,
+            "Block": 3
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "campaign": "wheeler",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 41172,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 41172,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 41172,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 41172,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 41172,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 41172,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 41172,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 2,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 1,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 62,
+            "Isolate": 1,
+            "Restrict": 1
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 62,
+            "Isolate": 1,
+            "Restrict": 1
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "campaign": "wilson",
+      "experts": [
+        {
+          "available": "aminer+suricata+wazuh",
+          "forecast_values": 38994,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+suricata",
+          "forecast_values": 38994,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer+wazuh",
+          "forecast_values": 38994,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata+wazuh",
+          "forecast_values": 38994,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "aminer",
+          "forecast_values": 38994,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "suricata",
+          "forecast_values": 38994,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        },
+        {
+          "available": "wazuh",
+          "forecast_values": 38994,
+          "archive_max_error": 0.0,
+          "stream_max_error": 0.0,
+          "prefix_causal": true,
+          "target_labels_ignored": true,
+          "coherent_probabilities": true,
+          "modeled_action_losses_verified": true,
+          "metrics_verified": true
+        }
+      ],
+      "operations": [
+        {
+          "profile": "responsive",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 60,
+            "Restrict": 4
+          },
+          "passed": true
+        },
+        {
+          "profile": "confirmed",
+          "observations": 72,
+          "notifications": 0,
+          "retry_checks": 3,
+          "conflict_checks": 1,
+          "persistence_faults_recovered": 0,
+          "max_risk_error": 0.0,
+          "response_operations_verified": true,
+          "actions": {
+            "Monitor": 60,
+            "Restrict": 4
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "backend/research/stress_validate_runtime.py": "4671acdee4e29b847e16e3ccdb60a77a007a049f50a01a572122e95b799a791c",
+    "backend/app/routers/live_router.py": "864c070daf0ca773e3e6693c69ad5f4e801c5b97941f45df988ab55aff9f1a3c",
+    "backend/app/request_safety.py": "1ef0578df2a727936653d31893b05ac605b7e5471c0a864ccf8414012fd0c38b",
+    "backend/app/models/package_validation.py": "7b1b29e6609b3a0081c7d5e6ec5c34567f6425cf36776e1ccf2a97e1c593024b",
+    "backend/research/streaming_forecast.py": "ab14611f8b6ab9cbae9764e588d2f795ab62bad21a9e18d30e747bbcd3e52be0",
+    "backend/app/models/warning_policy.py": "8a5321bf1b8c9d5bcc24a016c12795412bba9a44218f0ae8892ee30c880cffd6",
+    "backend/app/models/warning_profiles.py": "99654998c5254c4225dfaf1e71116e3891c3c2dd325f55ad8d2293c472a2a6ba",
+    "backend/app/models/onset_decision.py": "316099d9edf2b06b316beca96310771d64201ccdaa1753c93b75f0660a7e719e",
+    "backend/app/models/decision_network.py": "025bc0edff84485dce6c35dfe65eb0a0741a3d4fd2ecd7f2d67103ac35444278",
+    "backend/app/models/pipeline.py": "fec623a86900bca4548583fe7a5e04696c73108cdb79af5e3ef36e6217f3307a",
+    "backend/app/routers/pipeline_router.py": "9bc308ae6fe963388b7855a1671e8d3369aa576189e7536c9dd97e4388046ef0",
+    "backend/app/routers/legacy_schemas.py": "2222f60620830f79148e6d1c16e8b2c352c805bc4cd73b453bfd3bc0ce011a91",
+    "backend/app/main.py": "1de8c2b2338aff416a090c2f2fec0171a97ab833ec687dbb0f1abcfd7e2db0e5",
+    "backend/app/artifact_store.py": "f81f078707dfb4bc801f8b0d69ce2ae8aaf0b2779f4f94af8fd07f256f0103ba",
+    "backend/app/ingestion/database.py": "b73bb00476188e9156579d4c006a3b540631570fab7dd9453da9873a9f6ca00b",
+    "backend/research/audit_operational_improvements.py": "02cbc809f1d1cfa4adc5bf632a14de55a6c1b8851a4111b03693b86e244810d8"
+  },
+  "limitation": "Functional conformance and retained-campaign evaluation; not proof of global optimality, live attack prevention or independent generalization"
+}

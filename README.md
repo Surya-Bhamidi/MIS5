@@ -61,16 +61,57 @@ Read the [full selective-fusion comparison](experiments/selective_fusion/REPORT.
 | Path | Contents |
 |---|---|
 | `backend/research/` | Causal forecasting, calibration, comparisons, verification and report scripts. |
-| `backend/app/` | FastAPI demonstration backend for threat progression and response visualization. |
+| `backend/app/` | FastAPI research dashboard API and earlier demonstration backend. |
 | `backend/tests/` | Model, ingestion, causality, endpoint and forecasting regression checks. |
-| `frontend/` | React, TypeScript and Vite demonstration dashboard. |
+| `frontend/` | React, TypeScript and Vite dashboard for verified results and campaign replay. |
 | `experiments/current_version/` | Frozen preset, 59 prediction archives, fold calibrators, thresholds and verification. |
 | `experiments/` | Protocols, reports, score tables and previous model comparisons. |
 | `docs/` | Research scope, current specification, literature audit and manuscript material. |
 | `data/README.md` | Instructions for obtaining local dataset inputs. |
 | `third_party/pard_ssm/` | Pinned author-code audit material, retaining its original license and source manifest. |
 
-The dashboard is a separate demonstration interface; its phase-classification outputs are not the evidence for the research forecast results above.
+The default dashboard reads the current frozen AIT forecasts, campaign scores and comparisons directly. It supports 15-/30-minute comparisons, seven sensor configurations, pre-outcome campaign replay, six-horizon risk inspection, modeled response recommendations and plot downloads. Replay does not retrain models or execute defenses. The earlier DARPA/synthetic phase-classification interface remains accessible through **Earlier demo**; its outputs are separate from the verified research results.
+
+## Implemented operational improvements
+
+The 30-minute streaming extension now defaults to **responsive warnings**, keeping
+the original forecast probabilities, threshold coverage and first-alert timing.
+An explicit **confirmed** profile reduces false episodes from **5 to 2** on the
+eight archived campaigns, with **5/8** timely coverage and **14 to 8** notifications,
+but can delay warnings. It is optional because the same profile lowers 15-minute
+coverage from 4/8 to 3/8.
+
+The runtime updates sensor histories while evaluating only the selected expert.
+A paired 180-observation check measures inference computation with identical
+predictions. The [current release report](experiments/operational_improvements/CURRENT_RELEASE.md)
+records the final median reduction and HTTP latency, including the costs of
+validation and rollback protection. These are local measurements, not production
+guarantees; older separate runs are retained for comparison.
+Eleven validation-selected warning candidates were evaluated; the selector had
+lead-time regressions and was not promoted to the live default.
+
+Missing-sensor comparisons improve Brier error in five of six induced outage
+settings on the fox fold, with a slight regression for Suricata alone. These
+compare existing sensor experts with a naive zero-fill comparator; automatic
+streaming routing is new, while the trained experts are unchanged. These are
+exploratory results, not a new trained-model gain.
+The local response test records acknowledgments and a no-op handler; actual
+attack prevention has not been measured. The overview dashboard shows the new
+policy comparison alongside the historical frozen results.
+The production deployment and defensive-effectiveness part remains outstanding.
+
+See the [current verified release](experiments/operational_improvements/CURRENT_RELEASE.md),
+[confirmed-profile study](experiments/operational_improvements/REPORT.md)
+and [streaming setup/API runbook](docs/OPERATIONAL_IMPROVEMENTS.md).
+
+## Improvements report
+
+Read the [15-page improvements PDF](reports/MIS5_Improvements_Explained.pdf)
+for what changed, why it was needed, how it works, measured results and remaining
+tradeoffs. The [HTML version](reports/MIS5_Improvements_Explained.html) and
+[report builder](reports/build_improvements_pdf.py) are included as well.
+Repository attributes preserve exact file bytes so the recorded evidence hashes
+remain valid across checkouts.
 
 ## Setup
 
@@ -93,7 +134,7 @@ python -m unittest discover -s backend/tests -v
 python backend/research/verify_current_version.py
 ```
 
-The current local verification passed **33 tests**. Its refitted full-sensor fox forecast matched the archived predictions exactly, including the causal-prefix check. See [verification.json](experiments/current_version/verification.json). Verification is a packaging/API check, not a new held-out experiment.
+The original frozen-package verification passed **33 tests**. Its refitted full-sensor fox forecast matched the archived predictions exactly, including the causal-prefix check. See [verification.json](experiments/current_version/verification.json). Current checks cover **95 backend tests**, all **56 sensor experts**, **2,007,012 forecast values**, **25,440 score rows** and **8,064 validation-grid threshold optima**, recorded in [operational verification](experiments/operational_improvements/verification.json). These establish implementation and arithmetic properties on retained evidence, not a new held-out experiment or global model optimality.
 
 To rebuild the frozen package from the retained selective-fusion outputs:
 
@@ -119,7 +160,15 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. The frontend calls `http://127.0.0.1:8000/api`; API documentation is available at `http://127.0.0.1:8000/docs`. Use the dashboard's synthetic scenario generator for a demonstration without DARPA archives. To populate the DARPA scenarios, place the two original archives at the repository root and run `python backend/run_ingestion.py` before starting the API.
+Open `http://127.0.0.1:5173`. The frontend uses Vite's `/api` proxy to the local backend; API documentation is available at `http://127.0.0.1:8000/docs`. The research dashboard uses the published JSON/NPZ artifacts and does not require raw datasets. Plot downloads additionally use `Plots/Results/mids`, generated with `python Plots/create_mids_plots.py`. For the **Earlier demo**, use its synthetic scenario generator without DARPA archives, or populate DARPA scenarios by placing the two original archives at the repository root and running `python backend/run_ingestion.py`.
+
+The API is limited to local loopback clients and declared local browser origins.
+Dashboard evidence is checksum-checked before cache access, using the frozen
+manifest and `experiments/operational_improvements/metrics_verification.json`.
+Earlier-demo replay now uses independent causal batches; its simulations use
+assumed model units. Cached legacy experiment reports may predate those fixes
+and are explicitly labeled. See the runbook for retries, outage handling,
+receipt timing and reproduction of the stress and browser tests.
 
 ## Research status and attribution
 

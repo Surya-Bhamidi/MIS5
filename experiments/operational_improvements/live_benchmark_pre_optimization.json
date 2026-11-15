@@ -1,0 +1,130 @@
+{
+  "scope": "Local HTTP service with accelerated archived fox telemetry, induced outages, and a current-time smoke observation; no live sensor deployment or defense",
+  "model_fold": "fox",
+  "model_sha256": "6eb794ec7fa19b4b152ed4e24ccefb88355951c16ada8bcebad18fa2c1fca274",
+  "observations": 180,
+  "http_round_trip": {
+    "samples": 180,
+    "median_ms": 59.7059999126941,
+    "p95_ms": 65.81385498866439,
+    "max_ms": 93.06230000220239
+  },
+  "server_processing": {
+    "samples": 180,
+    "median_ms": 57.547150063328445,
+    "p95_ms": 63.742809952236705,
+    "max_ms": 90.0985999032855
+  },
+  "notifications": 1,
+  "receipts_acknowledged": 1,
+  "noop_handlers_completed": 1,
+  "acknowledgment": {
+    "samples": 1,
+    "median_ms": 24.593830108642578,
+    "p95_ms": 24.593830108642578,
+    "max_ms": 24.593830108642578
+  },
+  "noop_completion": {
+    "samples": 1,
+    "median_ms": 30.69281578063965,
+    "p95_ms": 30.69281578063965,
+    "max_ms": 30.69281578063965
+  },
+  "stream_equivalence": [
+    {
+      "available": "aminer+suricata+wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "aminer+suricata",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "aminer+wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "suricata+wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "aminer",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "suricata",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    }
+  ],
+  "outage_checks": [
+    {
+      "available": "aminer+suricata+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "aminer+suricata",
+      "status": "ok",
+      "history_minutes": 6,
+      "passed": true
+    },
+    {
+      "available": "aminer+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "suricata+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "aminer",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "suricata",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "none",
+      "status": "insufficient_sensors",
+      "history_minutes": null,
+      "passed": true
+    },
+    {
+      "available": "aminer+suricata+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    }
+  ],
+  "current_time_live_smoke_passed": true,
+  "http_predictions_and_actions_verified": true,
+  "dynamic_outage_predictions_verified": true,
+  "response_effectiveness": "Not measured: acknowledgments and no-op completions are not attack prevention"
+}

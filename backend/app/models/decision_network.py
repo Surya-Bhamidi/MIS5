@@ -1,9 +1,20 @@
 from typing import Dict, Any, List, Optional
 import numpy as np
+import math
 
 from app.config import THREAT_STATES, DEFENSIVE_ACTIONS, UTILITY_MATRIX
 
 class ResponseDecisionNetwork:
+    @staticmethod
+    def validate_belief(belief):
+        if not belief or not set(belief)<=set(THREAT_STATES):raise ValueError('Use a nonempty distribution over known threat states')
+        values={state:float(value) for state,value in belief.items()}
+        if any(not math.isfinite(value) or value<0 or value>1 for value in values.values()):
+            raise ValueError('Threat probabilities must be finite and between zero and one')
+        total=math.fsum(values.values())
+        if not math.isclose(total,1.,abs_tol=.001,rel_tol=0):raise ValueError('Threat probabilities must sum to one')
+        return {state:value/total for state,value in values.items()}
+
     """
     Decision Network for optimal response selection under threat-state uncertainty.
     Balances false positive operational friction against catastrophic missed attack escalation.
@@ -19,13 +30,14 @@ class ResponseDecisionNetwork:
         Calculates Expected Utility (EU) and Regret for all candidate actions:
         EU(a) = sum_{s} P(s) * U(s, a)
         """
+        belief_distribution=self.validate_belief(belief_distribution)
         expected_utilities = {}
         for action in self.actions:
             eu = 0.0
             for state, p in belief_distribution.items():
                 u = self.utilities.get(state, {}).get(action, 0.0)
                 eu += p * u
-            expected_utilities[action] = round(eu, 3)
+            expected_utilities[action] = eu
 
         # Determine optimal response
         sorted_actions = sorted(expected_utilities.items(), key=lambda item: item[1], reverse=True)
@@ -33,7 +45,7 @@ class ResponseDecisionNetwork:
         second_best_action, second_eu = sorted_actions[1] if len(sorted_actions) > 1 else (best_action, max_eu)
 
         # Regret calculation
-        regrets = {a: round(max_eu - eu, 3) for a, eu in expected_utilities.items()}
+        regrets = {a: float(max_eu-eu) for a,eu in expected_utilities.items()}
 
         # Decompose utility trade-offs for explainability
         dominant_state = max(belief_distribution.items(), key=lambda item: item[1])[0]
@@ -75,6 +87,9 @@ class ResponseDecisionNetwork:
         Counterfactual simulation: evaluates expected operational cost and threat progression
         if analyst executes hypothetical_action versus baseline.
         """
+        current_belief=self.validate_belief(current_belief)
+        if hypothetical_action not in self.actions or baseline_action not in self.actions:
+            raise ValueError('Use known hypothetical and baseline actions')
         eval_current = self.evaluate_actions(current_belief)
         hypo_eu = eval_current["expected_utilities"].get(hypothetical_action, 0.0)
         base_eu = eval_current["expected_utilities"].get(baseline_action, 0.0)
@@ -88,6 +103,7 @@ class ResponseDecisionNetwork:
             "Isolate": 0.95
         }
         mitigation = mitigation_factors.get(hypothetical_action, 0.0)
+        base_mitigation=mitigation_factors[baseline_action]
 
         # Residual threat progression risk
         original_threat_prob = sum(current_belief.get(s, 0.0) for s in ["Compromise", "PrivEsc", "ActiveAttack"])
@@ -100,8 +116,10 @@ class ResponseDecisionNetwork:
         cum_base = 0.0
 
         for step in range(1, 6):
-            step_base_loss = -min(0.0, base_eu) * (1.0 + 0.35 * (step - 1))
-            step_hypo_loss = (-min(0.0, hypo_eu) + (1.0 - mitigation) * 15.0 * step)
+            # Apply one common illustrative loss rule to both actions. Equal
+            # actions must yield equal trajectories and zero modeled benefit.
+            step_base_loss = -min(0.0,base_eu)*(1.0+.35*(1-base_mitigation)*(step-1))
+            step_hypo_loss = -min(0.0,hypo_eu)*(1.0+.35*(1-mitigation)*(step-1))
             cum_base += step_base_loss
             cum_hypo += max(0.0, step_hypo_loss)
             loss_trajectory_base.append({"step": step, "cumulative_loss": round(cum_base, 2)})
@@ -110,6 +128,8 @@ class ResponseDecisionNetwork:
         net_benefit = round(cum_base - cum_hypo, 2)
 
         return {
+            "scope":"Legacy illustrative what-if model; assumed effects, no defense executed",
+            "effectiveness_status":"assumed_only",
             "hypothetical_action": hypothetical_action,
             "baseline_action": baseline_action,
             "hypothetical_expected_utility": hypo_eu,
@@ -137,30 +157,13 @@ class ResponseDecisionNetwork:
     ) -> str:
         """Generates crisp, analyst-friendly plain-English justification."""
         prob_pct = int(dominant_prob * 100)
-        advantage = round(max_eu - second_eu, 2)
-
-        if best_action == "Monitor":
-            return (
-                f"Threat state assessed as predominantly {dominant_state} ({prob_pct}% probability). "
-                f"Active exploitation threat mass is low ({round(active_threat_mass*100, 1)}%). "
-                f"Passive monitoring maximizes intelligence gathering while avoiding false-positive operational disruption "
-                f"(expected utility {max_eu}, outpacing {second_action} by +{advantage})."
-            )
-        elif best_action == "Restrict":
-            return (
-                f"Early reconnaissance/service discovery detected ({dominant_state} at {prob_pct}%). "
-                f"Rate-limiting and RPC query restriction slows automated scanning tools without degrading core services, "
-                f"providing optimal expected utility ({max_eu})."
-            )
-        elif best_action == "Block":
-            return (
-                f"Elevated compromise indicators detected ({dominant_state} at {prob_pct}%, active threat mass {round(active_threat_mass*100, 1)}%). "
-                f"Severing external attacker ingress via targeted IP block stops the exploit vector "
-                f"while keeping internal host services operational. Outperforms {second_action} by +{advantage} expected utility."
-            )
-        else:  # Isolate
-            return (
-                f"CRITICAL: High probability of late-stage attack ({dominant_state} at {prob_pct}%, total threat mass {round(active_threat_mass*100, 1)}%). "
-                f"Immediate host quarantine is strictly recommended to prevent trojan mstream daemon persistence "
-                f"and stop catastrophic DDoS master botnet coordination. Overrides {second_action} by +{advantage} utility."
-            )
+        advantage=max_eu-second_eu
+        comparison=(f'ties with {second_action} for highest modeled utility' if advantage==0 else
+                    f'leads {second_action} by {advantage:.6g} modeled utility units')
+        return (
+            f'Estimated dominant state: {dominant_state} ({prob_pct}% probability); '
+            f'active threat mass {active_threat_mass*100:.1f}%. '
+            f'The model selects {best_action} under the configured cost assumptions '
+            f'(expected utility {max_eu:.6g}; {comparison}). '
+            'This recommendation executes no defense and does not establish actual mitigation effectiveness.'
+        )

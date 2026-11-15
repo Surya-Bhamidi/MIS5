@@ -31,7 +31,6 @@ export const AttackGraph: React.FC<AttackGraphProps> = ({
 }) => {
   const currentPhaseIdx = PHASES.findIndex((p) => p.key === dominantState);
   const nextProj = projections.length > 0 ? projections[0] : null;
-  const twoStepProj = projections.length > 1 ? projections[1] : null;
 
   // Find which phase has highest probability at t+1
   const predictedNext = nextProj

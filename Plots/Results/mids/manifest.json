@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-04T17:58:21.889345+00:00",
+  "scope": "Focused export of existing exploratory results; no fitting, tuning or new test campaigns",
+  "source_sha256": {
+    "experiments/current_version/summary.json": "5500126e7cb520bbd4672d03214d845fde107e87359b3ec4fb3336f9c4bd9311",
+    "experiments/current_version/config.json": "fb7f3db1e6e1efd76e2a33c7ad15d4f9421818498453626f5eb6956f47d635ac",
+    "experiments/current_version/verification.json": "c7b124dab770e09f3eaa484cdb4bb5301e2bc3369b2d9216bf58fc4f7bc63574",
+    "experiments/selective_fusion/summary.json": "363adff4be097d78b6c469e3aa9b88065a5fe8adde08d523537be40518d13d2e",
+    "experiments/selective_fusion/scored.json": "71e564770f69c735413f91a22abb29bb33c13cf92070f161735f9c9c91a98830",
+    "experiments/published_comparison/budget_summary.json": "a395ce6432465a83b950f1e1195bce996406d6728a9a56077d9ba93efd300ce6",
+    "experiments/published_comparison/budget_fold_results.json": "0c964e8d00fd12f2e54331cd9166f33cd22cd8bd0e0a5e415683cdb305487668"
+  },
+  "script_sha256": "facf06cd759eb577f943a4d1363d4471b625d529a0a12d4107445bde24b1bcb0",
+  "checks": {
+    "eight_unique_campaigns_per_model": true,
+    "counts_and_means_reconstructed_from_folds": true,
+    "hybrid_leads_on_selected_30_minute_metrics": true,
+    "original_sources_unchanged": true
+  },
+  "output_sha256": {
+    "01_timely_warning_coverage.pdf": "a8b5873e9e5c716200d6e805828bdd4c61bef62ac182640b76f7ff1d0bc6d17a",
+    "01_timely_warning_coverage.png": "26d586f4866e5750aec573b5e5a83035c1ed08bc259b3d768b19186733a81a6b",
+    "02_probability_error.pdf": "9470efa24338b6799da09de4d8842445f048724f1b1143de956f35a4479eba2b",
+    "02_probability_error.png": "0a4d770a26115d4530aacc4422771d10180df6e46a459ab3f1f3d870356c6ffd",
+    "03_alarm_tradeoff.pdf": "de31a4064b0aa4a859ac4ab2382a56f13382b5e50cb21983ba5025ffc318f562",
+    "03_alarm_tradeoff.png": "82dfc051612c0ec4b67c82c6ee4b110085f2b4cf72e4d29b2fbd253c41b4a7dd",
+    "all_metrics_15_30_minutes.csv": "317901d1521ae4eb7f2331840e4cbc7137cf6995a9e6414b0ed827fcd5e587dd",
+    "all_metrics_15_30_minutes.json": "ff64c74762b907e5bfef47f5ca2c3458cdebf78443ef00eb8ef7d695bed30eb0",
+    "campaign_results_30_minutes.csv": "f51209bfa8ef470c5aed5740b094d945ae53c2ed4f0eebf977492d0f70f14b80",
+    "campaign_results_30_minutes.json": "e40e2f7579af6b7da91e949de523db3b84792880ad3ccb3eb44761a0ad36e4bd",
+    "claim_values.json": "d9401fd153fff25848753dead8d5e936e21b63e763d29001bb8a1eb7184055c2",
+    "plotted_metrics_30_minutes.csv": "5fd3076ddeaf9c61c7e145c0e351d6e223be2262701c322c9e73200b974670b9",
+    "plotted_metrics_30_minutes.json": "a56e50d36aee7484bab70093e9fcbef87415febc01d1d7366675667a1e634565",
+    "README.md": "868202ab5a923bbb3ca95b1a6a58792a2261c06911c928ab0e5ac7a3dd613e83",
+    "without_wheeler_sensitivity.csv": "352b088d364cc0a45c1a9a2e52236970e6c45ec50e01c966b1f64b3bf1e871bb",
+    "without_wheeler_sensitivity.json": "6c025d73de8afcd6127249cc866682dc20a265c963207dee4189836032557c82"
+  }
+}

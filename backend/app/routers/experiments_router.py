@@ -4,12 +4,16 @@ from typing import Dict, Any
 from app.config import DB_PATH
 from app.ingestion.database import Database
 from app.evaluation.experiment_runner import ExperimentRunner
+from app.evaluation.serialization import serialized
+from threading import RLock
 
 router = APIRouter(prefix="/api/experiments", tags=["Experiments"])
 db = Database(DB_PATH)
 runner = ExperimentRunner(db)
+runner_lock=RLock()
 
 @router.get("")
+@serialized(runner_lock)
 def get_all_experiments():
     """Returns saved results for all research questions (RQ1 through RQ5)."""
     results = db.get_all_experiment_results()
@@ -25,6 +29,7 @@ def get_all_experiments():
     return results
 
 @router.get("/{rq_id}")
+@serialized(runner_lock)
 def get_experiment_detail(rq_id: str):
     """Returns detailed metrics and charts for a specific RQ."""
     key = rq_id.upper()
@@ -41,6 +46,7 @@ def get_experiment_detail(rq_id: str):
     return res
 
 @router.post("/rerun")
+@serialized(runner_lock)
 def rerun_experiments():
     """Forces re-execution of all research questions."""
     rq1 = runner.run_rq1_bn_inference()

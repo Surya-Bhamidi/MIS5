@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "operational comparison",
+    "benchmark display",
+    "horizon tradeoff",
+    "sensor filters",
+    "no-sensor abstention",
+    "desktop and mobile layout",
+    "no browser errors"
+  ]
+}

@@ -1,0 +1,3384 @@
+{
+  "schema_version": 2,
+  "policy": {
+    "confirmations": 2,
+    "clear_confirmations": 2,
+    "clear_ratio": 0.8,
+    "cooldown_seconds": 300,
+    "max_gap_seconds": 90,
+    "max_hold_below_seconds": 120,
+    "fast_ratio": null
+  },
+  "scope": "Exploratory paired archived forecast evaluation, not a deployed intervention",
+  "metric_definitions": {
+    "false_notifications": "Outbound notifications before the target horizon",
+    "false_warning_episodes": "Confirmed warning-state episodes starting before the target horizon",
+    "timely_notification": "Campaign has an outbound notification within the target horizon",
+    "timely_warning_episode": "Campaign has a new confirmed warning-state episode within the target horizon"
+  },
+  "threshold_source": "Unchanged frozen validation thresholds, budget 1",
+  "summary": [
+    {
+      "available": "aminer",
+      "horizon": 15,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 3,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 3,
+        "negative_warning_minutes": 28,
+        "notifications": 5,
+        "mean_notification_lead_minutes": 4.487894444995455
+      },
+      "improved": {
+        "timely_notification": 3,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 3,
+        "negative_warning_minutes": 27,
+        "notifications": 5,
+        "mean_notification_lead_minutes": 3.487894444995456
+      },
+      "mean_brier_unchanged": 0.0015745270915354295
+    },
+    {
+      "available": "aminer",
+      "horizon": 30,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 2,
+        "false_notifications": 7,
+        "false_warning_episodes": 7,
+        "timely_warning_episode": 2,
+        "negative_warning_minutes": 143,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 23.870750000079475
+      },
+      "improved": {
+        "timely_notification": 3,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "timely_warning_episode": 3,
+        "negative_warning_minutes": 144,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 25.154561111662122
+      },
+      "mean_brier_unchanged": 0.0019992048676140723
+    },
+    {
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 2,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 2,
+        "negative_warning_minutes": 35,
+        "notifications": 4,
+        "mean_notification_lead_minutes": 6.9131166676680245
+      },
+      "improved": {
+        "timely_notification": 2,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 2,
+        "negative_warning_minutes": 33,
+        "notifications": 4,
+        "mean_notification_lead_minutes": 5.913116667668025
+      },
+      "mean_brier_unchanged": 0.0014589202164587453
+    },
+    {
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 4,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "timely_warning_episode": 4,
+        "negative_warning_minutes": 66,
+        "notifications": 13,
+        "mean_notification_lead_minutes": 18.486987500389418
+      },
+      "improved": {
+        "timely_notification": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 4,
+        "negative_warning_minutes": 65,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 16.736987500389418
+      },
+      "mean_brier_unchanged": 0.0015152734696445324
+    },
+    {
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 4,
+        "negative_warning_minutes": 40,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 6.986987500389417
+      },
+      "improved": {
+        "timely_notification": 3,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 3,
+        "negative_warning_minutes": 39,
+        "notifications": 6,
+        "mean_notification_lead_minutes": 7.429016666942172
+      },
+      "mean_brier_unchanged": 0.0013437355069259437
+    },
+    {
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 5,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "timely_warning_episode": 5,
+        "negative_warning_minutes": 33,
+        "notifications": 14,
+        "mean_notification_lead_minutes": 19.18061666727066
+      },
+      "improved": {
+        "timely_notification": 5,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 5,
+        "negative_warning_minutes": 29,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 19.780616667270657
+      },
+      "mean_brier_unchanged": 0.0014605679952360484
+    },
+    {
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 3,
+        "false_notifications": 8,
+        "false_warning_episodes": 8,
+        "timely_warning_episode": 3,
+        "negative_warning_minutes": 117,
+        "notifications": 12,
+        "mean_notification_lead_minutes": 9.429016666942173
+      },
+      "improved": {
+        "timely_notification": 3,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "timely_warning_episode": 3,
+        "negative_warning_minutes": 117,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 7.095683333608839
+      },
+      "mean_brier_unchanged": 0.0011206261775705024
+    },
+    {
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 4,
+        "negative_warning_minutes": 116,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 21.236987500389418
+      },
+      "improved": {
+        "timely_notification": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 4,
+        "negative_warning_minutes": 115,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 20.236987500389418
+      },
+      "mean_brier_unchanged": 0.0013407700019799913
+    },
+    {
+      "available": "suricata",
+      "horizon": 15,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "improved": {
+        "timely_notification": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "mean_brier_unchanged": 0.0024735230528156868
+    },
+    {
+      "available": "suricata",
+      "horizon": 30,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "improved": {
+        "timely_notification": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "mean_brier_unchanged": 0.0048344169415156825
+    },
+    {
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 1,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 1,
+        "negative_warning_minutes": 144,
+        "notifications": 6,
+        "mean_notification_lead_minutes": 6.955133334795634
+      },
+      "improved": {
+        "timely_notification": 0,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 0,
+        "negative_warning_minutes": 142,
+        "notifications": 4,
+        "mean_notification_lead_minutes": null
+      },
+      "mean_brier_unchanged": 0.002690774009372193
+    },
+    {
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 0,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "timely_warning_episode": 0,
+        "negative_warning_minutes": 101,
+        "notifications": 6,
+        "mean_notification_lead_minutes": null
+      },
+      "improved": {
+        "timely_notification": 0,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "timely_warning_episode": 0,
+        "negative_warning_minutes": 100,
+        "notifications": 6,
+        "mean_notification_lead_minutes": null
+      },
+      "mean_brier_unchanged": 0.0038972061047289897
+    },
+    {
+      "available": "wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 2,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "timely_warning_episode": 2,
+        "negative_warning_minutes": 110,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 9.308016667763393
+      },
+      "improved": {
+        "timely_notification": 2,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "timely_warning_episode": 2,
+        "negative_warning_minutes": 111,
+        "notifications": 7,
+        "mean_notification_lead_minutes": 8.308016667763393
+      },
+      "mean_brier_unchanged": 0.0038058796174936307
+    },
+    {
+      "available": "wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "baseline": {
+        "timely_notification": 4,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "timely_warning_episode": 4,
+        "negative_warning_minutes": 61,
+        "notifications": 14,
+        "mean_notification_lead_minutes": 21.486987500389418
+      },
+      "improved": {
+        "timely_notification": 4,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 4,
+        "negative_warning_minutes": 57,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 19.986987500389418
+      },
+      "mean_brier_unchanged": 0.004747061554011134
+    }
+  ],
+  "campaigns": [
+    {
+      "campaign": "fox",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.6184277462690795,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 12.722183334827424,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 12.722183334827424,
+        "negative_warning_minutes": 1,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 11.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 11.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0005311243646048973
+    },
+    {
+      "campaign": "fox",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.8631459248695718,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 4
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 11.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 11.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0003799477328409778
+    },
+    {
+      "campaign": "fox",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 0.5362522457892576,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.00065812813114317
+    },
+    {
+      "campaign": "fox",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 0.5446528172158642,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 25.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 25.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.00043982215184879437
+    },
+    {
+      "campaign": "fox",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 0.8014225089134064,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0002827202668218251
+    },
+    {
+      "campaign": "fox",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 0.9201865998931503,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 24.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 24.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 23.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 23.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0002166671524295047
+    },
+    {
+      "campaign": "fox",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 0.7762383472626337,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.722183334827423,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.722183334827423,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 4.722183334827423,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 4.722183334827423,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0005069027773878682
+    },
+    {
+      "campaign": "fox",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 0.8426244920160904,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 1,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0008210341155218331
+    },
+    {
+      "campaign": "fox",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0020681907287853404
+    },
+    {
+      "campaign": "fox",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.06468629506539275,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 22,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 21,
+        "notifications": 1
+      },
+      "brier": 0.0014624824335338325
+    },
+    {
+      "campaign": "fox",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0029275443789059676
+    },
+    {
+      "campaign": "fox",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.005868432614405852
+    },
+    {
+      "campaign": "fox",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.001813554063479001
+    },
+    {
+      "campaign": "fox",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 0.4453054918465803,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 26.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 26.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 25.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 25.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0024419478374607894
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.6969947760822875,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0009435519090600214
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.8674030943942992,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 11.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 11.955133334795635,
+        "negative_warning_minutes": 2,
+        "notifications": 3
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.955133334795633,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.955133334795633,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "brier": 0.0006413898814335659
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 0.7241625046649162,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0015404367049876183
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 0.1956112932948065,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 7,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "brier": 0.0007324820710056998
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 0.5423750050659155,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "brier": 0.0009518033890420477
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 0.9381892347679446,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "brier": 0.0009505602039974221
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 0.8824551529270869,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0009486603993046689
+    },
+    {
+      "campaign": "harrison",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 0.2198276509354183,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "brier": 0.0008123004592844956
+    },
+    {
+      "campaign": "harrison",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.0814170436547726,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.955133334795634,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.955133334795634,
+        "negative_warning_minutes": 4,
+        "notifications": 3
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 3,
+        "notifications": 1
+      },
+      "brier": 0.0020639306293985236
+    },
+    {
+      "campaign": "harrison",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.3919069278340957,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.003797905688515561
+    },
+    {
+      "campaign": "harrison",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0023949704400467206
+    },
+    {
+      "campaign": "harrison",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.004662223879091929
+    },
+    {
+      "campaign": "harrison",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 0.15909582384519022,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 10.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 10.955133334795635,
+        "negative_warning_minutes": 6,
+        "notifications": 4
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.955133334795635,
+        "negative_warning_minutes": 8,
+        "notifications": 3
+      },
+      "brier": 0.0018994823737683508
+    },
+    {
+      "campaign": "harrison",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 0.45707846824144427,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 3
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "brier": 0.0032670918016085315
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.21860337999376908,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "brier": 0.001426507968675004
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.27784602156099253,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "brier": 0.00044730433469739435
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 0.0988017359575984,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 4.104050000508626,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 4.104050000508626,
+        "negative_warning_minutes": 9,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 3.1040500005086265,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 3.1040500005086265,
+        "negative_warning_minutes": 8,
+        "notifications": 2
+      },
+      "brier": 0.002385801937854622
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 0.002242088529353084,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "brier": 0.0003522374513529122
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 0.16348475574042728,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "brier": 0.0014856622425392994
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 0.22082405888849715,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "brier": 0.00044769458100671393
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 0.07160757654393061,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "brier": 0.002763714456735071
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 0.02394487796103522,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 3,
+        "notifications": 1
+      },
+      "brier": 0.0009043978328006014
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.012670280388634266,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 11,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "brier": 0.002753903924493614
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.02143692292288181,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "brier": 0.002022539821121861
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 0.08600025862331019,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "brier": 0.003252249408425372
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 0.20054422060153737,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "brier": 0.006451331543891873
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 0.022911733563387562,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 11,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "brier": 0.002333344023697081
+    },
+    {
+      "campaign": "russellmitchell",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 0.016434413642967022,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "brier": 0.001298265970914385
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.506820077500266,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.484266666571299,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.484266666571299,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.001059017331539431
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.534838909497694,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.001480713516872751
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 0.6164876959225949,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0014861242625533648
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 0.5609329065195832,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 16.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 16.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 4
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 15.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 15.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.002318861870179855
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 0.7316256322792346,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 7.484266666571299,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 7.484266666571299,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0004633989473003938
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 0.5954948680026614,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0012353560717825389
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 0.3398713542012809,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0021739615427856527
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 0.6404124020326912,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.004794939003960838
+    },
+    {
+      "campaign": "santos",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.23355218226551458,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.002786748280132728
+    },
+    {
+      "campaign": "santos",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.15980649151264373,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.005110536160491882
+    },
+    {
+      "campaign": "santos",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.002827295810918083
+    },
+    {
+      "campaign": "santos",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.005435807883135353
+    },
+    {
+      "campaign": "santos",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 0.1685222709724982,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.00277000350113064
+    },
+    {
+      "campaign": "santos",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 0.07479804046408768,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.005056108635117224
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.4270115481806042,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 5,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 6,
+        "notifications": 2
+      },
+      "brier": 0.0013883383814671706
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.7811136112919654,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0007906001078072056
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 0.2146070139760499,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 26,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 25,
+        "notifications": 1
+      },
+      "brier": 0.0020721198600206193
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 0.7831583692036529,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 4,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 3,
+        "notifications": 2
+      },
+      "brier": 0.0010866696522809688
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 0.3289513126763126,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 10.080599999427795,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 10.080599999427795,
+        "negative_warning_minutes": 18,
+        "notifications": 5
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 19,
+        "notifications": 2
+      },
+      "brier": 0.0012438502475123304
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 0.9140589548694213,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0005570072768115257
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 0.29648654612301434,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 19,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 19,
+        "notifications": 2
+      },
+      "brier": 0.0017233621897778323
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 0.8708503518465459,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 26.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 26.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 25.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 25.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0010119231653485754
+    },
+    {
+      "campaign": "shaw",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0019109228097568393
+    },
+    {
+      "campaign": "shaw",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.5455594423328342,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0021178969333565797
+    },
+    {
+      "campaign": "shaw",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0022424535400588485
+    },
+    {
+      "campaign": "shaw",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 0.08350131231820902,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.004477298874748892
+    },
+    {
+      "campaign": "shaw",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0017748762894188733
+    },
+    {
+      "campaign": "shaw",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 0.6197185992060535,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 3
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 18.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 18.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "brier": 0.0013491203737099956
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0005816902784424232
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0007529468789608496
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0005087968153955165
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.001151833644865053
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0004611843868911547
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0010951305852249169
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0009739093685673593
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.001090122732059766
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0016479095199706838
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0009364602260993268
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0022853830194380313
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0039297890537531134
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0010991050213744501
+    },
+    {
+      "campaign": "wardbeck",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.00069235413701257
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.01800620627645012,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0021949737768046864
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.028150411274981347,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.004389864979118443
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 0.024345537131671972,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.002195101500920697
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 0.009397442710002112,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 46,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 46,
+        "notifications": 1
+      },
+      "brier": 0.004415958252200305
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 0.033453133384805316,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 2
+      },
+      "brier": 0.0023301349018910616
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 0.006040459301382185,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 105,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 106,
+        "notifications": 2
+      },
+      "brier": 0.004522216400380736
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 0.0957370637805016,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0021953086990621202
+    },
+    {
+      "campaign": "wheeler",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 0.0006346184144942502,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 132,
+        "notifications": 4
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 136,
+        "notifications": 4
+      },
+      "brier": 0.004390322873281844
+    },
+    {
+      "campaign": "wheeler",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.407084615718624,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 49,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 49,
+        "notifications": 1
+      },
+      "brier": 0.005838446251670457
+    },
+    {
+      "campaign": "wheeler",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.028874681893326714,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 64,
+        "notifications": 3
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 65,
+        "notifications": 3
+      },
+      "brier": 0.010855497478189268
+    },
+    {
+      "campaign": "wheeler",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 0.05809832668046811,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0022068753703051594
+    },
+    {
+      "campaign": "wheeler",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 0.33309318784398795,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.004471205716570278
+    },
+    {
+      "campaign": "wheeler",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 0.4604337671867321,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 45,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 46,
+        "notifications": 1
+      },
+      "brier": 0.0165118434392192
+    },
+    {
+      "campaign": "wheeler",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 0.47825157847919914,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 47,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 48,
+        "notifications": 1
+      },
+      "brier": 0.020733216059281887
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.3598669171428435,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 0.6609000007311503,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 0.6609000007311503,
+        "negative_warning_minutes": 25,
+        "notifications": 2
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 25,
+        "notifications": 1
+      },
+      "brier": 0.002624680044813916
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.3358347836888941,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 26,
+        "notifications": 4
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 18.66090000073115,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 18.66090000073115,
+        "negative_warning_minutes": 25,
+        "notifications": 2
+      },
+      "brier": 0.0028017765301571987
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "threshold": 0.681452528566462,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0008248525187943542
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "threshold": 0.20900341080982426,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0016243226634226706
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "threshold": 0.24001539415659603,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0017462550385659067
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "threshold": 0.2827017001051763,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 18.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 18.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0017015277442065727
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer",
+      "horizon": 15,
+      "threshold": 0.4079800851778006,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 1.6609000007311503,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 1.6609000007311503,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 0.6609000007311503,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 0.6609000007311503,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0013103972986628618
+    },
+    {
+      "campaign": "wilson",
+      "available": "aminer",
+      "horizon": 30,
+      "threshold": 0.05764707180736673,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.002168598758654624
+    },
+    {
+      "campaign": "wilson",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "threshold": 0.057431774053864716,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 1
+      },
+      "brier": 0.002456139930769361
+    },
+    {
+      "campaign": "wilson",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "threshold": 0.2650058485284692,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "brier": 0.004874330096523606
+    },
+    {
+      "campaign": "wilson",
+      "available": "suricata",
+      "horizon": 15,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.0016514124544273138
+    },
+    {
+      "campaign": "wilson",
+      "available": "suricata",
+      "horizon": 30,
+      "threshold": 1.000001,
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "improved": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "brier": 0.003379245966528173
+    },
+    {
+      "campaign": "wilson",
+      "available": "wazuh",
+      "horizon": 15,
+      "threshold": 0.060068303575295516,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 7.66090000073115,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 7.66090000073115,
+        "negative_warning_minutes": 48,
+        "notifications": 3
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.66090000073115,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.66090000073115,
+        "negative_warning_minutes": 47,
+        "notifications": 2
+      },
+      "brier": 0.002244828227861451
+    },
+    {
+      "campaign": "wilson",
+      "available": "wazuh",
+      "horizon": 30,
+      "threshold": 0.24179257919516567,
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.66090000073115,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.66090000073115,
+        "negative_warning_minutes": 1,
+        "notifications": 4
+      },
+      "improved": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 16.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 16.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "brier": 0.0031383876169836927
+    }
+  ]
+}

@@ -1,32 +1,34 @@
-# React + TypeScript + Vite
+# MIS5 research dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The default view shows verified frozen AIT results: model comparison, campaign warnings, sensor-availability controls, 15-/30-minute horizons, archived forecast playback and presentation plots. Response recommendations use the research Decision Network's default assumed costs; they do not execute defenses.
 
-Currently, two official plugins are available:
+Run the backend from the project root:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The operational panel distinguishes the responsive live default from the optional
+confirmed profile and shows the rejected validation candidate. It also reports
+the latest local latency and paired inference comparison. These remain archived
+comparisons; the page does not connect sensors or execute defensive actions.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```powershell
+python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Then run the frontend from this folder:
+
+```powershell
+npm ci
+npm run dev
+```
+
+Open http://127.0.0.1:5173. Requests to `/api` are proxied to port 8000. The default research view reads existing JSON/NPZ evidence under `experiments/`; raw datasets and model refitting are unnecessary. If needed, generate plot assets from the project root with `python Plots/create_mids_plots.py`.
+
+**Earlier demo** opens the retained DARPA/synthetic interface. Its phase-classification outputs and SQLite experiment results are separate from the current AIT research scores.
+
+Replay uses independent causal batches and local seeking. Scenario, mode, horizon
+and simulation controls discard stale HTTP replies. Identical simulated actions
+have identical loss curves; both series share a scale and use model units.
+Cached legacy RQ reports can predate the simulation corrections and carry a
+separate caveat. The API accepts local peers and approved local browser origins;
+it does not provide production user authentication.
+
+Checks: `npm run build`, `npm run lint`, and `python -m unittest discover -s backend/tests` from the project root. Offline replay inspects previously recorded results, not live deployment or independent generalization.

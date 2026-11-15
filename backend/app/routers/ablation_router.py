@@ -4,12 +4,16 @@ from typing import Dict, Any, Optional
 from app.config import DB_PATH
 from app.ingestion.database import Database
 from app.evaluation.experiment_runner import ExperimentRunner
+from app.evaluation.serialization import serialized
+from threading import RLock
 
 router = APIRouter(prefix="/api/ablation", tags=["Ablation"])
 db = Database(DB_PATH)
 runner = ExperimentRunner(db)
+runner_lock=RLock()
 
 @router.get("/{scenario_id}")
+@serialized(runner_lock)
 def get_ablation_results(scenario_id: str):
     """
     Returns comparative performance metrics across B0, B1, B2, and B3
@@ -28,6 +32,7 @@ def get_ablation_results(scenario_id: str):
     return res
 
 @router.post("/run-all")
+@serialized(runner_lock)
 def run_all_ablations():
     """Runs ablation comparison across all three data sources."""
     res_1 = runner.run_ablation_study("events_lldos1")

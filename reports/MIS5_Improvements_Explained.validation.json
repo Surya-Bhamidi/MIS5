@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "report": "reports/MIS5_Improvements_Explained.pdf",
+  "pages": 15,
+  "generated_local": "2026-11-15T22:19:01.477024+05:30",
+  "pdf_sha256": "ed299361c1f35c19a2e73dce971a15558f8540910a64f906d2e648afaf833b89",
+  "input_sha256": {
+    "experiments/operational_improvements/evaluation.json": "346b6ff601fe3283443782946a48fffc95d7299a736a0d38e339416d01139f37",
+    "experiments/operational_improvements/sensor_outages.json": "a7a04884820386aec7403de720a504020b1d4e714f50b33b4b61a7fd0661a7c9",
+    "experiments/operational_improvements/live_benchmark.json": "61e3c43ba0eb2c647f5d06e68e689161c36a69a92e09b7fae8dd3530fdeba0f5",
+    "experiments/operational_improvements/audit.json": "959befd24ae2251a51a15d5ae9357eb37d6a024d603ef6f90d1e20e502b41d5c",
+    "experiments/operational_improvements/test_suite_verification.json": "2107c364f12b6d16672c1b2ce7574d3c6f9f11b45494335fe31ef1a86a6c724a",
+    "experiments/operational_improvements/stress_validation.json": "95a561e0588026f2675141c1ba90f9add7d76c5617734a3eee5688968f6ac259",
+    "experiments/operational_improvements/metrics_verification.json": "18dd5796ac25d1406fecc9ba4c6ed708e54a079e84989ba33d6616f5d5f77b30",
+    "experiments/operational_improvements/frontend_verification.json": "2806133846686fadfe1781e0d402efc7cbd2320ae4d69366455f3e5e88994201",
+    "experiments/operational_improvements/ui_verification.json": "891f8614f78f0d4f20a7c7d7f2bcd75d93e1dd55ea5c765032b662f97da1e6c0",
+    "experiments/operational_improvements/operations_ui_verification.json": "99b7a924f655560b0a5567434de0aeca56387f527c09588d9e9e0acb25be8173",
+    "experiments/operational_improvements/selection_verification.json": "61e2ac7462e77991f0fb66d9848a64d8c234c65a11eaf8c805f05792b9aebbf3",
+    "experiments/operational_improvements/verification.json": "55cb370833f905f0b84e3c2735ffd818598938985250b322cb3fc0def59ba458",
+    "experiments/operational_improvements/release_decision.json": "7f2a7278a1ca62a8537e4bbb43693f231a673cee23a115988acd3778ecaf1b13"
+  },
+  "retained_source_and_evidence_hashes_verified": true,
+  "no_page_overflow": true,
+  "layout": [
+    {
+      "page": 1,
+      "clearance_px": 186.703125,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 2,
+      "clearance_px": 258.890625,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 3,
+      "clearance_px": 91.015625,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 4,
+      "clearance_px": 184.96875,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 5,
+      "clearance_px": 76.125,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 6,
+      "clearance_px": 105.34375,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 7,
+      "clearance_px": 164.6875,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 8,
+      "clearance_px": 247.140625,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 9,
+      "clearance_px": 83.9375,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 10,
+      "clearance_px": 192.21875,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 11,
+      "clearance_px": 192.203125,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 12,
+      "clearance_px": 211.640625,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 13,
+      "clearance_px": 109.34375,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 14,
+      "clearance_px": 55.375,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    },
+    {
+      "page": 15,
+      "clearance_px": 74.71875,
+      "horizontal_overflow": false,
+      "vertical_overflow": false
+    }
+  ],
+  "scope": "Document generation and evidence-integrity checks; experiments were not rerun"
+}

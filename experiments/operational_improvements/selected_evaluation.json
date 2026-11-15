@@ -1,0 +1,4945 @@
+{
+  "scope": "Validation-selected policy on previously inspected research folds; no independent confirmation",
+  "selection_uses_outer_test": false,
+  "protocol": "SELECTION_PROTOCOL.md",
+  "summary": [
+    {
+      "available": "aminer",
+      "horizon": 15,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 8
+      },
+      "baseline": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "negative_warning_minutes": 28,
+        "notifications": 5,
+        "mean_notification_lead_minutes": 4.487894444995455
+      },
+      "previous": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "negative_warning_minutes": 27,
+        "notifications": 5,
+        "mean_notification_lead_minutes": 3.487894444995456
+      },
+      "selected": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "negative_warning_minutes": 28,
+        "notifications": 5,
+        "mean_notification_lead_minutes": 4.487894444995455
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0015745270915354295
+    },
+    {
+      "available": "aminer",
+      "horizon": 30,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 7,
+        "previous_confirmed": 1
+      },
+      "baseline": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 7,
+        "false_warning_episodes": 7,
+        "negative_warning_minutes": 143,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 23.870750000079475
+      },
+      "previous": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "negative_warning_minutes": 144,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 25.154561111662122
+      },
+      "selected": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 7,
+        "false_warning_episodes": 7,
+        "negative_warning_minutes": 143,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 23.870750000079475
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0019992048676140723
+    },
+    {
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 7,
+        "immediate_cooldown_300": 1
+      },
+      "baseline": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "negative_warning_minutes": 35,
+        "notifications": 4,
+        "mean_notification_lead_minutes": 6.9131166676680245
+      },
+      "previous": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "negative_warning_minutes": 33,
+        "notifications": 4,
+        "mean_notification_lead_minutes": 5.913116667668025
+      },
+      "selected": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "negative_warning_minutes": 35,
+        "notifications": 4,
+        "mean_notification_lead_minutes": 6.9131166676680245
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0014589202164587453
+    },
+    {
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 8
+      },
+      "baseline": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 66,
+        "notifications": 13,
+        "mean_notification_lead_minutes": 18.486987500389418
+      },
+      "previous": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 65,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 16.736987500389418
+      },
+      "selected": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 66,
+        "notifications": 13,
+        "mean_notification_lead_minutes": 18.486987500389418
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0015152734696445324
+    },
+    {
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate_cooldown_300": 2,
+        "immediate": 6
+      },
+      "baseline": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 40,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 6.986987500389417
+      },
+      "previous": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "negative_warning_minutes": 39,
+        "notifications": 6,
+        "mean_notification_lead_minutes": 7.429016666942172
+      },
+      "selected": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 40,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 6.486987500389417
+      },
+      "test_regressions": [
+        {
+          "campaign": "fox",
+          "metrics": [
+            "notification_lead_minutes"
+          ]
+        }
+      ],
+      "mean_brier_unchanged": 0.0013437355069259437
+    },
+    {
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 7,
+        "previous_confirmed": 1
+      },
+      "baseline": {
+        "timely_notification": 5,
+        "timely_warning_episode": 5,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 33,
+        "notifications": 14,
+        "mean_notification_lead_minutes": 19.18061666727066
+      },
+      "previous": {
+        "timely_notification": 5,
+        "timely_warning_episode": 5,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "negative_warning_minutes": 29,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 19.780616667270657
+      },
+      "selected": {
+        "timely_notification": 5,
+        "timely_warning_episode": 5,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 33,
+        "notifications": 14,
+        "mean_notification_lead_minutes": 18.98061666727066
+      },
+      "test_regressions": [
+        {
+          "campaign": "santos",
+          "metrics": [
+            "notification_lead_minutes",
+            "episode_lead_minutes"
+          ]
+        }
+      ],
+      "mean_brier_unchanged": 0.0014605679952360484
+    },
+    {
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate_cooldown_300": 2,
+        "immediate": 6
+      },
+      "baseline": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 8,
+        "false_warning_episodes": 8,
+        "negative_warning_minutes": 117,
+        "notifications": 12,
+        "mean_notification_lead_minutes": 9.429016666942173
+      },
+      "previous": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 117,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 7.095683333608839
+      },
+      "selected": {
+        "timely_notification": 3,
+        "timely_warning_episode": 3,
+        "false_notifications": 8,
+        "false_warning_episodes": 8,
+        "negative_warning_minutes": 117,
+        "notifications": 12,
+        "mean_notification_lead_minutes": 9.429016666942173
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0011206261775705024
+    },
+    {
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 7,
+        "previous_confirmed": 1
+      },
+      "baseline": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 116,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 21.236987500389418
+      },
+      "previous": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 115,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 20.236987500389418
+      },
+      "selected": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 116,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 20.986987500389418
+      },
+      "test_regressions": [
+        {
+          "campaign": "shaw",
+          "metrics": [
+            "notification_lead_minutes",
+            "episode_lead_minutes"
+          ]
+        }
+      ],
+      "mean_brier_unchanged": 0.0013407700019799913
+    },
+    {
+      "available": "suricata",
+      "horizon": 15,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 8
+      },
+      "baseline": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "previous": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "selected": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0024735230528156868
+    },
+    {
+      "available": "suricata",
+      "horizon": 30,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 8
+      },
+      "baseline": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "previous": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "selected": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "negative_warning_minutes": 6,
+        "notifications": 1,
+        "mean_notification_lead_minutes": null
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0048344169415156825
+    },
+    {
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 8
+      },
+      "baseline": {
+        "timely_notification": 1,
+        "timely_warning_episode": 1,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 144,
+        "notifications": 6,
+        "mean_notification_lead_minutes": 6.955133334795634
+      },
+      "previous": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 142,
+        "notifications": 4,
+        "mean_notification_lead_minutes": null
+      },
+      "selected": {
+        "timely_notification": 1,
+        "timely_warning_episode": 1,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "negative_warning_minutes": 144,
+        "notifications": 6,
+        "mean_notification_lead_minutes": 6.955133334795634
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.002690774009372193
+    },
+    {
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 8
+      },
+      "baseline": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "negative_warning_minutes": 101,
+        "notifications": 6,
+        "mean_notification_lead_minutes": null
+      },
+      "previous": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "negative_warning_minutes": 100,
+        "notifications": 6,
+        "mean_notification_lead_minutes": null
+      },
+      "selected": {
+        "timely_notification": 0,
+        "timely_warning_episode": 0,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "negative_warning_minutes": 101,
+        "notifications": 6,
+        "mean_notification_lead_minutes": null
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0038972061047289897
+    },
+    {
+      "available": "wazuh",
+      "horizon": 15,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 8
+      },
+      "baseline": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "negative_warning_minutes": 110,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 9.308016667763393
+      },
+      "previous": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 5,
+        "false_warning_episodes": 5,
+        "negative_warning_minutes": 111,
+        "notifications": 7,
+        "mean_notification_lead_minutes": 8.308016667763393
+      },
+      "selected": {
+        "timely_notification": 2,
+        "timely_warning_episode": 2,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "negative_warning_minutes": 110,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 9.308016667763393
+      },
+      "test_regressions": [],
+      "mean_brier_unchanged": 0.0038058796174936307
+    },
+    {
+      "available": "wazuh",
+      "horizon": 30,
+      "campaigns": 8,
+      "selected_policies": {
+        "immediate": 5,
+        "previous_confirmed": 2,
+        "immediate_cooldown_300": 1
+      },
+      "baseline": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 6,
+        "false_warning_episodes": 6,
+        "negative_warning_minutes": 61,
+        "notifications": 14,
+        "mean_notification_lead_minutes": 21.486987500389418
+      },
+      "previous": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "negative_warning_minutes": 57,
+        "notifications": 8,
+        "mean_notification_lead_minutes": 19.986987500389418
+      },
+      "selected": {
+        "timely_notification": 4,
+        "timely_warning_episode": 4,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "negative_warning_minutes": 57,
+        "notifications": 9,
+        "mean_notification_lead_minutes": 20.736987500389418
+      },
+      "test_regressions": [
+        {
+          "campaign": "wilson",
+          "metrics": [
+            "notification_lead_minutes",
+            "episode_lead_minutes"
+          ]
+        }
+      ],
+      "mean_brier_unchanged": 0.004747061554011134
+    }
+  ],
+  "campaigns": [
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate_cooldown_300",
+      "brier": 0.0005311243646048973,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes"
+      ],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 12.722183334827424,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 12.722183334827424,
+        "negative_warning_minutes": 1,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 11.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 11.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 10.722183334827424,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 12.722183334827424,
+        "negative_warning_minutes": 1,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0003799477328409778,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 4
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 11.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 11.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 4
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.00065812813114317,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.00043982215184879437,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 25.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 25.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate_cooldown_300",
+      "brier": 0.0002827202668218251,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0002166671524295047,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 24.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 24.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 23.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 23.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 24.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 24.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0020681907287853404,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0014624824335338325,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 22,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 21,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 22,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0005069027773878682,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.722183334827423,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.722183334827423,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 4.722183334827423,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 4.722183334827423,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.722183334827423,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.722183334827423,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0008210341155218331,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 1,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 1,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0029275443789059676,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.005868432614405852,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.001813554063479001,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "fox",
+      "validation": "harrison",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0024419478374607894,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 26.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 26.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 25.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 25.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 26.722183334827424,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 26.722183334827424,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0009435519090600214,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0006413898814335659,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 11.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 11.955133334795635,
+        "negative_warning_minutes": 2,
+        "notifications": 3
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 29.955133334795633,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 29.955133334795633,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 11.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 11.955133334795635,
+        "negative_warning_minutes": 2,
+        "notifications": 3
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0015404367049876183,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0007324820710056998,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 7,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 7,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0009518033890420477,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0009505602039974221,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0020639306293985236,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.955133334795634,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.955133334795634,
+        "negative_warning_minutes": 4,
+        "notifications": 3
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 3,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.955133334795634,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.955133334795634,
+        "negative_warning_minutes": 4,
+        "notifications": 3
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.003797905688515561,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0009486603993046689,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0008123004592844956,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0023949704400467206,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004662223879091929,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0018994823737683508,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 10.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 10.955133334795635,
+        "negative_warning_minutes": 6,
+        "notifications": 4
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 9.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 9.955133334795635,
+        "negative_warning_minutes": 8,
+        "notifications": 3
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 10.955133334795635,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 10.955133334795635,
+        "negative_warning_minutes": 6,
+        "notifications": 4
+      }
+    },
+    {
+      "campaign": "harrison",
+      "validation": "russellmitchell",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "previous_confirmed",
+      "brier": 0.0032670918016085315,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 3
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.001426507968675004,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.00044730433469739435,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002385801937854622,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 4.104050000508626,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 4.104050000508626,
+        "negative_warning_minutes": 9,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 3.1040500005086265,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 3.1040500005086265,
+        "negative_warning_minutes": 8,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 4.104050000508626,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 4.104050000508626,
+        "negative_warning_minutes": 9,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0003522374513529122,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0014856622425392994,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.00044769458100671393,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002753903924493614,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 11,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 11,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.002022539821121861,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002763714456735071,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 8,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 9,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0009043978328006014,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 3,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.003252249408425372,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.006451331543891873,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 6,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002333344023697081,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 11,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 11,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "russellmitchell",
+      "validation": "santos",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.001298265970914385,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 4,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 5,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.001059017331539431,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.484266666571299,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.484266666571299,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "previous_confirmed",
+      "brier": 0.001480713516872751,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes",
+        "episode_lead_minutes"
+      ],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0014861242625533648,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.002318861870179855,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 16.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 16.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 4
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 15.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 15.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 16.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 16.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 4
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0004633989473003938,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 7.484266666571299,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 7.484266666571299,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 8.4842666665713,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 8.4842666665713,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0012353560717825389,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002786748280132728,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.005110536160491882,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0021739615427856527,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "previous_confirmed",
+      "brier": 0.004794939003960838,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002827295810918083,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.005435807883135353,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.00277000350113064,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "santos",
+      "validation": "shaw",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.005056108635117224,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.484266666571298,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.484266666571298,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0013883383814671706,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 5,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 6,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 5,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0007906001078072056,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate_cooldown_300",
+      "brier": 0.0020721198600206193,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 26,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 25,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 26,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0010866696522809688,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 4,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 3,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 4,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate_cooldown_300",
+      "brier": 0.0012438502475123304,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 10.080599999427795,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 10.080599999427795,
+        "negative_warning_minutes": 18,
+        "notifications": 5
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 19,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 10.080599999427795,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 10.080599999427795,
+        "negative_warning_minutes": 18,
+        "notifications": 5
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "previous_confirmed",
+      "brier": 0.0005570072768115257,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes",
+        "episode_lead_minutes"
+      ],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0019109228097568393,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0021178969333565797,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0017233621897778323,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 19,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 5.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 5.080599999427795,
+        "negative_warning_minutes": 19,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.080599999427795,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.080599999427795,
+        "negative_warning_minutes": 19,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0010119231653485754,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 26.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 26.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 25.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 25.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 26.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 26.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0022424535400588485,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004477298874748892,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0017748762894188733,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "shaw",
+      "validation": "wardbeck",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "immediate_cooldown_300",
+      "brier": 0.0013491203737099956,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 3
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 18.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 18.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.080599999427797,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.080599999427797,
+        "negative_warning_minutes": 0,
+        "notifications": 3
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0005816902784424232,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0007529468789608496,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0005087968153955165,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.001151833644865053,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0004611843868911547,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0010951305852249169,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0016479095199706838,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0009364602260993268,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0009739093685673593,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.001090122732059766,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0022853830194380313,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0039297890537531134,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0010991050213744501,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wardbeck",
+      "validation": "wheeler",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.00069235413701257,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0021949737768046864,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004389864979118443,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002195101500920697,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004415958252200305,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 46,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 46,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 46,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0023301349018910616,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004522216400380736,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 105,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 106,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 105,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.005838446251670457,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 49,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 49,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 49,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.010855497478189268,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 64,
+        "notifications": 3
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 65,
+        "notifications": 3
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 3,
+        "false_warning_episodes": 3,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 64,
+        "notifications": 3
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0021953086990621202,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004390322873281844,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 132,
+        "notifications": 4
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 136,
+        "notifications": 4
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 4,
+        "false_warning_episodes": 4,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 132,
+        "notifications": 4
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0022068753703051594,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004471205716570278,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0165118434392192,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 45,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 46,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 45,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wheeler",
+      "validation": "wilson",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.020733216059281887,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 47,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 48,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 47,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate_cooldown_300",
+      "brier": 0.002624680044813916,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 0.6609000007311503,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 0.6609000007311503,
+        "negative_warning_minutes": 25,
+        "notifications": 2
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 25,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 0.6609000007311503,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 0.6609000007311503,
+        "negative_warning_minutes": 25,
+        "notifications": 2
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0028017765301571987,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 26,
+        "notifications": 4
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 18.66090000073115,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 18.66090000073115,
+        "negative_warning_minutes": 25,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 26,
+        "notifications": 4
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer+suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0008248525187943542,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer+suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0016243226634226706,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0017462550385659067,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.0017015277442065727,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 18.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 18.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "suricata+wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002456139930769361,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 80,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "suricata+wazuh",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.004874330096523606,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 10,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0013103972986628618,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 1.6609000007311503,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 1.6609000007311503,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 0.6609000007311503,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 0.6609000007311503,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 1.6609000007311503,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 1.6609000007311503,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "aminer",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.002168598758654624,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 20.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 20.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 21.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 21.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "suricata",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.0016514124544273138,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "suricata",
+      "horizon": 30,
+      "policy": "immediate",
+      "brier": 0.003379245966528173,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "previous": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      },
+      "selected": {
+        "timely_notification": 0,
+        "notification_lead_minutes": null,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 0,
+        "episode_lead_minutes": null,
+        "negative_warning_minutes": 0,
+        "notifications": 0
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "wazuh",
+      "horizon": 15,
+      "policy": "immediate",
+      "brier": 0.002244828227861451,
+      "test_guardrail_regressions": [],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 7.66090000073115,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 7.66090000073115,
+        "negative_warning_minutes": 48,
+        "notifications": 3
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 6.66090000073115,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 6.66090000073115,
+        "negative_warning_minutes": 47,
+        "notifications": 2
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 7.66090000073115,
+        "false_notifications": 2,
+        "false_warning_episodes": 2,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 7.66090000073115,
+        "negative_warning_minutes": 48,
+        "notifications": 3
+      }
+    },
+    {
+      "campaign": "wilson",
+      "validation": "fox",
+      "available": "wazuh",
+      "horizon": 30,
+      "policy": "previous_confirmed",
+      "brier": 0.0031383876169836927,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes",
+        "episode_lead_minutes"
+      ],
+      "baseline": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 19.66090000073115,
+        "false_notifications": 1,
+        "false_warning_episodes": 1,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 19.66090000073115,
+        "negative_warning_minutes": 1,
+        "notifications": 4
+      },
+      "previous": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 16.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 16.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      },
+      "selected": {
+        "timely_notification": 1,
+        "notification_lead_minutes": 16.66090000073115,
+        "false_notifications": 0,
+        "false_warning_episodes": 0,
+        "timely_warning_episode": 1,
+        "episode_lead_minutes": 16.66090000073115,
+        "negative_warning_minutes": 0,
+        "notifications": 1
+      }
+    }
+  ]
+}

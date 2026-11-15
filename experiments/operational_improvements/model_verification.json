@@ -1,0 +1,58 @@
+{
+  "test": "fox",
+  "train": [
+    "russellmitchell",
+    "santos",
+    "shaw",
+    "wardbeck",
+    "wheeler",
+    "wilson"
+  ],
+  "validation": "harrison",
+  "sha256": "6eb794ec7fa19b4b152ed4e24ccefb88355951c16ada8bcebad18fa2c1fca274",
+  "checks": [
+    {
+      "available": "aminer+suricata+wazuh",
+      "archive_max_error": 0.0,
+      "stream_max_error": 0.0,
+      "seconds": 47.99895409983583
+    },
+    {
+      "available": "aminer+suricata",
+      "archive_max_error": 0.0,
+      "stream_max_error": 0.0,
+      "seconds": 32.52507139998488
+    },
+    {
+      "available": "aminer+wazuh",
+      "archive_max_error": 0.0,
+      "stream_max_error": 0.0,
+      "seconds": 34.09836760000326
+    },
+    {
+      "available": "suricata+wazuh",
+      "archive_max_error": 0.0,
+      "stream_max_error": 0.0,
+      "seconds": 32.54687829990871
+    },
+    {
+      "available": "aminer",
+      "archive_max_error": 0.0,
+      "stream_max_error": 0.0,
+      "seconds": 16.558590099914
+    },
+    {
+      "available": "suricata",
+      "archive_max_error": 0.0,
+      "stream_max_error": 0.0,
+      "seconds": 19.79069670010358
+    },
+    {
+      "available": "wazuh",
+      "archive_max_error": 0.0,
+      "stream_max_error": 0.0,
+      "seconds": 17.80799809983
+    }
+  ],
+  "load_policy": "Trusted locally generated pickle only; never accept uploaded model files"
+}

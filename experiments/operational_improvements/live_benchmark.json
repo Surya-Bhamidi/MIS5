@@ -1,0 +1,148 @@
+{
+  "scope": "Local HTTP service with accelerated archived fox telemetry, induced outages, and a current-time smoke observation; no live sensor deployment or defense",
+  "model_fold": "fox",
+  "model_sha256": "6eb794ec7fa19b4b152ed4e24ccefb88355951c16ada8bcebad18fa2c1fca274",
+  "observations": 180,
+  "http_round_trip": {
+    "samples": 180,
+    "median_ms": 25.518950074911118,
+    "p95_ms": 38.18855000426992,
+    "max_ms": 375.8797999471426
+  },
+  "server_processing": {
+    "samples": 180,
+    "median_ms": 23.322699940763414,
+    "p95_ms": 35.92352982377633,
+    "max_ms": 372.466100146994
+  },
+  "notifications": 5,
+  "receipts_acknowledged": 5,
+  "noop_handlers_completed": 5,
+  "acknowledgment": {
+    "samples": 5,
+    "median_ms": 8.987903594970703,
+    "p95_ms": 26.848077774047848,
+    "max_ms": 30.79676628112793
+  },
+  "noop_completion": {
+    "samples": 5,
+    "median_ms": 16.545534133911133,
+    "p95_ms": 33.974313735961914,
+    "max_ms": 37.13536262512207
+  },
+  "stream_equivalence": [
+    {
+      "available": "aminer+suricata+wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "aminer+suricata",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "aminer+wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "suricata+wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "aminer",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "suricata",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    },
+    {
+      "available": "wazuh",
+      "stream_batch_max_error": 0.0,
+      "bins": 180
+    }
+  ],
+  "outage_checks": [
+    {
+      "available": "aminer+suricata+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "aminer+suricata",
+      "status": "ok",
+      "history_minutes": 6,
+      "passed": true
+    },
+    {
+      "available": "aminer+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "suricata+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "aminer",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "suricata",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    },
+    {
+      "available": "none",
+      "status": "insufficient_sensors",
+      "history_minutes": null,
+      "passed": true
+    },
+    {
+      "available": "aminer+suricata+wazuh",
+      "status": "ok",
+      "history_minutes": 3,
+      "passed": true
+    }
+  ],
+  "current_time_live_smoke_passed": true,
+  "http_predictions_and_actions_verified": true,
+  "dynamic_outage_predictions_verified": true,
+  "warning_profile": "responsive",
+  "paired_inference_optimization": {
+    "previous_eager": {
+      "samples": 180,
+      "median_ms": 42.81010013073683,
+      "p95_ms": 51.0762751335278,
+      "max_ms": 70.12680009938776
+    },
+    "current_selected_only": {
+      "samples": 180,
+      "median_ms": 7.317700074054301,
+      "p95_ms": 9.166295197792348,
+      "max_ms": 17.757999943569303
+    },
+    "median_reduction_percent": 82.90660369467267,
+    "predictions_identical": true,
+    "scope": "Same-process paired inference comparison; no sensor collection or network latency"
+  },
+  "response_effectiveness": "Not measured: acknowledgments and no-op completions are not attack prevention"
+}

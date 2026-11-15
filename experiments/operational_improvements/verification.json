@@ -1,0 +1,26 @@
+{
+  "backend": {
+    "passed": true,
+    "tests": 95,
+    "details": "test_suite_verification.json"
+  },
+  "frontend": {
+    "passed": true,
+    "details": "frontend_verification.json"
+  },
+  "stress": {
+    "passed": true,
+    "experts": 56,
+    "forecast_values": 2007012,
+    "details": "stress_validation.json"
+  },
+  "independent_metrics": {
+    "passed": true,
+    "score_rows": 25440,
+    "aggregate_rows": 3660,
+    "validation_thresholds": 8064,
+    "details": "metrics_verification.json"
+  },
+  "frozen_files_unchanged": 65,
+  "deployment_scope": "Local replay and fault injection; no production attack prevention measured"
+}

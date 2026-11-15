@@ -1,0 +1,10 @@
+{
+  "coverage_percent": 62.5,
+  "coverage_gain_vs_matched_percentage_points": 25.0,
+  "brier_reduction_vs_matched_percent": 0.5379939920857058,
+  "brier_reduction_vs_original_percent": 4.249900878021807,
+  "matched_false_episodes": 1,
+  "hybrid_false_episodes": 5,
+  "matched_average_precision": 0.8312429124295744,
+  "hybrid_average_precision": 0.8275366938532468
+}

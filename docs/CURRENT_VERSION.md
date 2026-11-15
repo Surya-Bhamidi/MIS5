@@ -1,5 +1,10 @@
 # Current research version
 
+This document describes the original frozen research preset. The subsequent
+[operational extension](OPERATIONAL_IMPROVEMENTS.md) implements warning
+confirmation, automatic streaming sensor fallback, and response timing without
+rewriting these historical forecast results.
+
 The current preset is **pooled-calibrated fixed .25 state fusion**, with
 **30-minute early warning** as its primary use case. Further model development
 is deferred. This is a development choice after reviewing test results; it

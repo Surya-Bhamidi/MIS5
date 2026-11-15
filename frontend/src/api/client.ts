@@ -8,7 +8,7 @@ import {
   DefensiveAction,
 } from "../types";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "/api";
 
 export async function fetchScenarios(): Promise<{
   scenarios: ScenarioInfo[];
@@ -17,6 +17,17 @@ export async function fetchScenarios(): Promise<{
 }> {
   const res = await fetch(`${API_BASE}/scenarios`);
   if (!res.ok) throw new Error(`Failed to fetch scenarios: ${res.statusText}`);
+  return res.json();
+}
+
+export async function fetchPipelineBatch(
+  scenarioId: string, ablationMode: AblationMode, signal?: AbortSignal
+): Promise<{ steps: PipelineStepResult[]; total_processed: number }> {
+  const res = await fetch(`${API_BASE}/pipeline/batch`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, signal,
+    body: JSON.stringify({ scenario_id: scenarioId, limit: 350, ablation_mode: ablationMode }),
+  });
+  if (!res.ok) throw new Error(`Could not calculate archived replay (HTTP ${res.status}).`);
   return res.json();
 }
 

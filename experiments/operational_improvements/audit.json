@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "paired_campaign_horizon_sensor_checks": 112,
+  "aggregate_checks": 14,
+  "default_warning_profile": "responsive",
+  "responsive_matches_original_cases": 112,
+  "baseline_matches_original_score_tables": true,
+  "independent_warning_oracle_matches": true,
+  "unchanged_frozen_calibrators": true,
+  "model_fitting_excludes_test_and_validation": true,
+  "refitted_archive_checks": [
+    {
+      "available": "aminer+suricata+wazuh",
+      "archive_max_error": 0.0
+    },
+    {
+      "available": "aminer+suricata",
+      "archive_max_error": 0.0
+    },
+    {
+      "available": "aminer+wazuh",
+      "archive_max_error": 0.0
+    },
+    {
+      "available": "suricata+wazuh",
+      "archive_max_error": 0.0
+    },
+    {
+      "available": "aminer",
+      "archive_max_error": 0.0
+    },
+    {
+      "available": "suricata",
+      "archive_max_error": 0.0
+    },
+    {
+      "available": "wazuh",
+      "archive_max_error": 0.0
+    }
+  ],
+  "dynamic_outage_checks": [
+    {
+      "available": "aminer+suricata+wazuh",
+      "bins": 5,
+      "passed": true
+    },
+    {
+      "available": "aminer+wazuh",
+      "bins": 4,
+      "passed": true
+    },
+    {
+      "available": "wazuh",
+      "bins": 4,
+      "passed": true
+    },
+    {
+      "available": "none",
+      "bins": 2,
+      "passed": true
+    },
+    {
+      "available": "aminer+suricata",
+      "bins": 4,
+      "passed": true
+    },
+    {
+      "available": "suricata",
+      "bins": 4,
+      "passed": true
+    },
+    {
+      "available": "suricata+wazuh",
+      "bins": 4,
+      "passed": true
+    },
+    {
+      "available": "aminer",
+      "bins": 4,
+      "passed": true
+    },
+    {
+      "available": "aminer+suricata+wazuh",
+      "bins": 5,
+      "passed": true
+    }
+  ],
+  "dynamic_stream_batch_max_error": 0.0,
+  "unavailable_sensor_poisoning_has_no_effect": true,
+  "skipped_bucket_and_recovery_verified": true,
+  "input_hashes_verified": 60,
+  "interpretation": {
+    "alarm_claim": "Exploratory 30-minute result; no probability-accuracy gain",
+    "sensor_claim": "Automatic routing is new; existing experts beat a naive zero-fill comparator on one inspected fold",
+    "live_claim": "Local shadow replay and receipt instrumentation only; production mitigation effectiveness not verified"
+  },
+  "source_sha256": {
+    "backend\\research\\audit_operational_improvements.py": "02cbc809f1d1cfa4adc5bf632a14de55a6c1b8851a4111b03693b86e244810d8",
+    "backend\\app\\models\\warning_policy.py": "8a5321bf1b8c9d5bcc24a016c12795412bba9a44218f0ae8892ee30c880cffd6",
+    "backend\\app\\models\\warning_profiles.py": "99654998c5254c4225dfaf1e71116e3891c3c2dd325f55ad8d2293c472a2a6ba",
+    "backend\\app\\routers\\live_router.py": "864c070daf0ca773e3e6693c69ad5f4e801c5b97941f45df988ab55aff9f1a3c",
+    "backend\\research\\streaming_forecast.py": "ab14611f8b6ab9cbae9764e588d2f795ab62bad21a9e18d30e747bbcd3e52be0",
+    "backend\\research\\benchmark_live.py": "ffa270ca071451bcfcc03d2cf90c03c15407175c293a25313665ae1a0b8262f9",
+    "backend\\tests\\test_operational_improvements.py": "b583f66ff673cfdb21ddb94a6908428a8200ada22399174a6bec4af4e45fc01f"
+  }
+}

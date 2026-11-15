@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Layers, CheckCircle2, AlertTriangle, ShieldCheck, Zap } from "lucide-react";
+import { Layers, Zap } from "lucide-react";
 import { AblationResult } from "../types";
 import { fetchAblationResults } from "../api/client";
 
@@ -8,24 +8,16 @@ interface AblationComparisonProps {
 }
 
 export const AblationComparison: React.FC<AblationComparisonProps> = ({ scenarioId }) => {
-  const [data, setData] = useState<AblationResult | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState<{ scenario: string; data: AblationResult } | null>(null);
+  const data = response?.scenario === scenarioId ? response.data : null;
 
   useEffect(() => {
-    loadAblation();
+    let active = true;
+    fetchAblationResults(scenarioId).then(data => {
+      if (active) setResponse({ scenario: scenarioId, data });
+    }).catch(error => { if (active) console.error(error); });
+    return () => { active = false; };
   }, [scenarioId]);
-
-  const loadAblation = async () => {
-    setLoading(true);
-    try {
-      const res = await fetchAblationResults(scenarioId);
-      setData(res);
-    } catch (e) {
-      console.error(e);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const configs = [
     {
@@ -142,7 +134,7 @@ export const AblationComparison: React.FC<AblationComparisonProps> = ({ scenario
                 {c.id === "B0" && "• Lacks uncertainty bounds; fragile against stealthy evasion."}
                 {c.id === "B1" && "• Provides probabilistic posteriors, but no sequence memory."}
                 {c.id === "B2" && "• Models kill-chain trajectory, but uses rigid heuristics."}
-                {c.id === "B3" && "• Optimal balance of false-positive cost vs. attack disruption."}
+                {c.id === "B3" && "• Selects among four actions using assumed expected utilities."}
               </div>
             </div>
           );

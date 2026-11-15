@@ -1,28 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { FlaskConical, RefreshCw, CheckCircle2, AlertCircle, BarChart2, ShieldAlert, Cpu } from "lucide-react";
+import { FlaskConical, RefreshCw, CheckCircle2 } from "lucide-react";
 import { fetchAllExperiments, rerunExperiments } from "../api/client";
 
 export const ExperimentReports: React.FC = () => {
   const [data, setData] = useState<Record<string, any>>({});
   const [activeRq, setActiveRq] = useState<"RQ1" | "RQ2" | "RQ3" | "RQ4" | "RQ5">("RQ1");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [rerunning, setRerunning] = useState(false);
 
   useEffect(() => {
-    loadExperiments();
+    let active = true;
+    fetchAllExperiments().then(result => { if (active) setData(result); })
+      .catch(error => { if (active) console.error(error); })
+      .finally(() => { if (active) setLoading(false); });
+    return () => { active = false; };
   }, []);
-
-  const loadExperiments = async () => {
-    setLoading(true);
-    try {
-      const res = await fetchAllExperiments();
-      setData(res);
-    } catch (e) {
-      console.error(e);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const handleRerun = async () => {
     setRerunning(true);
@@ -55,14 +47,14 @@ export const ExperimentReports: React.FC = () => {
               Empirical Evaluation & Research Questions (RQ1 – RQ5)
             </h2>
             <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginTop: "2px" }}>
-              Rigorous experimental validation across inference accuracy, temporal prediction, decision utility, out-of-distribution robustness, and explainability provenance.
+              Earlier phase-classification results with assumed utilities. Saved results may predate runtime fixes; they do not verify the current AIT forecasts or real defensive effectiveness.
             </p>
           </div>
         </div>
 
         <button
           onClick={handleRerun}
-          disabled={rerunning}
+          disabled={rerunning || loading}
           className="cyber-btn cyber-btn-primary"
           style={{ fontSize: "0.8rem", padding: "8px 16px" }}
         >

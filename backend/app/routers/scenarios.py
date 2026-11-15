@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Query
-from pydantic import BaseModel
+from pydantic import BaseModel,Field,ConfigDict,field_validator
 from typing import List, Dict, Any, Optional
 
 from app.config import DB_PATH, THREAT_STATES, PHASE_LABELS
@@ -10,10 +10,17 @@ router = APIRouter(prefix="/api/scenarios", tags=["Scenarios"])
 db = Database(DB_PATH)
 
 class SyntheticGenRequest(BaseModel):
-    noise_rate: float = 0.08
-    missing_alert_rate: float = 0.05
-    n_steps: int = 120
-    run_id: str = "custom_run"
+    model_config=ConfigDict(extra='forbid')
+    noise_rate: float = Field(.08,ge=0,le=1,allow_inf_nan=False)
+    missing_alert_rate: float = Field(.05,ge=0,le=1,allow_inf_nan=False)
+    n_steps: int = Field(120,ge=1,le=5000,strict=True)
+    run_id: str = Field('custom_run',min_length=1,max_length=128)
+
+    @field_validator('run_id')
+    @classmethod
+    def nonblank(cls,value):
+        if not value.strip():raise ValueError('Run ID cannot be blank')
+        return value
 
 @router.get("")
 def list_scenarios():

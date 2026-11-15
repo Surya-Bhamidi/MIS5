@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { X, Search, CheckCircle, Database, GitBranch, Cpu, Code, Copy, Check } from "lucide-react";
+import { X, Search, CheckCircle, Database, GitBranch, Cpu, Copy, Check } from "lucide-react";
 import { ProvenanceTrace } from "../types";
 
 interface ExplainabilityModalProps {

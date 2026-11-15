@@ -1,6 +1,7 @@
 import numpy as np
 from typing import List, Dict, Any, Optional
 import logging
+import math
 
 from app.config import THREAT_STATES, DEFENSIVE_ACTIONS
 from app.ingestion.normalizer import EventNormalizer
@@ -69,6 +70,10 @@ class CyberPipeline:
         - B2: BN + HMM
         - B3: Full BN + HMM + Decision Network
         """
+        timestamp=event.get('timestamp')
+        if not isinstance(timestamp,(int,float)) or not math.isfinite(timestamp):raise ValueError('Alert timestamp must be finite')
+        if self.history_events and timestamp<self.history_events[-1]['timestamp']:
+            raise ValueError('Alerts must be chronological; reset before replaying an earlier time')
         self.step_counter += 1
         self.history_events.append(event)
         if len(self.history_events) > 30:
@@ -78,6 +83,7 @@ class CyberPipeline:
         features = EventNormalizer.extract_window_features(self.history_events, event)
         sig = features["signature_category"]
         self.history_observations.append(sig)
+        if len(self.history_observations)>15:self.history_observations.pop(0)
 
         # Stage 2: Bayesian Network Inference
         bn_result = self.bn.infer_threat_state(features)
@@ -89,6 +95,7 @@ class CyberPipeline:
         is_internal_pivot = src_ip.startswith("172.16.")
 
         # Forward filter step
+        prior_dominant_state=THREAT_STATES[int(np.argmax(self.current_hmm_belief))]
         hmm_posterior, evidence_prob = self.hmm.forward_filter_step(
             prev_belief=self.current_hmm_belief,
             observation=sig
@@ -169,7 +176,7 @@ class CyberPipeline:
             "window_evidence": features,
             "bn_attributions": bn_result["feature_attributions"],
             "hmm_transition": {
-                "prior_dominant_state": THREAT_STATES[int(np.argmax(self.current_hmm_belief))],
+                "prior_dominant_state": prior_dominant_state,
                 "observation": sig,
                 "evidence_probability": round(evidence_prob, 6),
                 "next_step_projection": projections[0] if projections else {},
@@ -205,7 +212,7 @@ class CyberPipeline:
         sig = features.get("signature_category", "")
         port = str(event.get("dst_port", ""))
         
-        if sig == "DDOS_FLOOD" or int(port) > 4000 if port.isdigit() else False:
+        if sig == "DDOS_FLOOD" or (port.isdigit() and int(port)>4000):
             action = "Isolate"
             state = "ActiveAttack"
             desc = "Static signature rule: Flooding traffic matched -> Quarantine Host."

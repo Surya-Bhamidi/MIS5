@@ -1,4 +1,5 @@
 import sqlite3
+from contextlib import contextmanager
 import json
 from pathlib import Path
 from typing import List, Dict, Any, Optional
@@ -7,6 +8,7 @@ import logging
 from app.config import DB_PATH
 
 logger = logging.getLogger(__name__)
+EVENT_TABLES = frozenset({'events_lldos1','events_lldos2','events_synthetic'})
 
 SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS events_lldos1 (
@@ -84,6 +86,10 @@ CREATE TABLE IF NOT EXISTS experiment_results (
 """
 
 class Database:
+    @staticmethod
+    def validate_table(table_name):
+        if table_name not in EVENT_TABLES:raise ValueError('Unknown event table')
+
     def __init__(self, db_path: Path = DB_PATH):
         self.db_path = db_path
         self.init_db()
@@ -93,18 +99,33 @@ class Database:
         conn.row_factory = sqlite3.Row
         return conn
 
+    @contextmanager
+    def connection(self):
+        """Commit/rollback the transaction and always release the connection."""
+        conn = self.get_connection()
+        try:
+            with conn:
+                yield conn
+        finally:
+            conn.close()
+
     def init_db(self):
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
-        with self.get_connection() as conn:
+        with self.connection() as conn:
             conn.executescript(SCHEMA_SQL)
             conn.commit()
 
     def insert_events(self, table_name: str, events: List[Dict[str, Any]], run_id: Optional[str] = None):
         """Batch inserts normalized event dictionaries into specified table."""
+        self.validate_table(table_name)
+        if table_name=='events_synthetic' and (not isinstance(run_id,str) or not run_id.strip() or len(run_id)>128):
+            raise ValueError('Synthetic writes require a nonempty run ID of at most 128 characters')
         if not events:
+            if table_name=='events_synthetic':
+                with self.connection() as conn:conn.execute('DELETE FROM events_synthetic WHERE run_id=?',(run_id,))
             return
 
-        with self.get_connection() as conn:
+        with self.connection() as conn:
             if run_id and table_name == "events_synthetic":
                 conn.execute("DELETE FROM events_synthetic WHERE run_id = ?", (run_id,))
             else:
@@ -125,11 +146,8 @@ class Database:
                 {', :run_id' if run_id and table_name == 'events_synthetic' else ''}
             )
             """
-            for e in events:
-                if run_id and table_name == "events_synthetic":
-                    e["run_id"] = run_id
-
-            conn.executemany(sql, events)
+            rows=[{**event,'run_id':run_id} for event in events] if table_name=='events_synthetic' else events
+            conn.executemany(sql, rows)
             conn.commit()
 
     def get_events(
@@ -140,7 +158,10 @@ class Database:
         run_id: Optional[str] = None,
         phase: Optional[int] = None
     ) -> List[Dict[str, Any]]:
-        with self.get_connection() as conn:
+        self.validate_table(table_name)
+        if limit is not None and (not isinstance(limit,int) or isinstance(limit,bool) or limit<0):raise ValueError('Invalid event limit')
+        if not isinstance(offset,int) or isinstance(offset,bool) or offset<0:raise ValueError('Invalid event offset')
+        with self.connection() as conn:
             query = f"SELECT * FROM {table_name} WHERE 1=1"
             params = []
             if run_id and table_name == "events_synthetic":
@@ -158,7 +179,8 @@ class Database:
             return [dict(row) for row in cur.fetchall()]
 
     def get_event_count(self, table_name: str, run_id: Optional[str] = None) -> int:
-        with self.get_connection() as conn:
+        self.validate_table(table_name)
+        with self.connection() as conn:
             query = f"SELECT COUNT(*) FROM {table_name}"
             params = []
             if run_id and table_name == "events_synthetic":
@@ -168,7 +190,7 @@ class Database:
             return cur.fetchone()[0]
 
     def save_experiment_result(self, rq_name: str, metrics: Dict[str, Any]):
-        with self.get_connection() as conn:
+        with self.connection() as conn:
             conn.execute(
                 "INSERT INTO experiment_results (rq_name, metrics_json) VALUES (?, ?) "
                 "ON CONFLICT(rq_name) DO UPDATE SET metrics_json = excluded.metrics_json, created_at = CURRENT_TIMESTAMP",
@@ -177,7 +199,7 @@ class Database:
             conn.commit()
 
     def get_experiment_result(self, rq_name: str) -> Optional[Dict[str, Any]]:
-        with self.get_connection() as conn:
+        with self.connection() as conn:
             cur = conn.execute("SELECT metrics_json FROM experiment_results WHERE rq_name = ?", (rq_name,))
             row = cur.fetchone()
             if row:
@@ -185,6 +207,6 @@ class Database:
             return None
 
     def get_all_experiment_results(self) -> Dict[str, Any]:
-        with self.get_connection() as conn:
+        with self.connection() as conn:
             cur = conn.execute("SELECT rq_name, metrics_json FROM experiment_results")
             return {row["rq_name"]: json.loads(row["metrics_json"]) for row in cur.fetchall()}

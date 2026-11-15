@@ -1,48 +1,45 @@
 import React, { useState, useEffect } from "react";
-import { GitBranch, Shield, AlertTriangle, TrendingDown, ArrowRight, DollarSign } from "lucide-react";
+import { GitBranch } from "lucide-react";
 import { ThreatState, DefensiveAction, WhatIfResult } from "../types";
 import { simulateWhatIf } from "../api/client";
 
 interface WhatIfSimulatorProps {
   currentBelief: Record<ThreatState, number>;
+  initialAction?: DefensiveAction;
 }
 
-export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief }) => {
-  const [selectedAction, setSelectedAction] = useState<DefensiveAction>("Isolate");
-  const [simResult, setSimResult] = useState<WhatIfResult | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [customBelief, setCustomBelief] = useState<Record<ThreatState, number>>({ ...currentBelief });
+export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief, initialAction = "Isolate" }) => {
+  const [selectedAction, setSelectedAction] = useState<DefensiveAction>(initialAction);
+  const sourceKey = JSON.stringify(currentBelief);
+  const [draft, setDraft] = useState<{ source: string; belief: Record<ThreatState, number> } | null>(null);
+  const customBelief = draft?.source === sourceKey ? draft.belief : currentBelief;
+  const requestKey = JSON.stringify([selectedAction, customBelief]);
+  const [response, setResponse] = useState<{ key: string; result: WhatIfResult } | null>(null);
+  const [error, setError] = useState<{ key: string; message: string } | null>(null);
+  const simResult = response?.key === requestKey ? response.result : null;
+  const currentError = error?.key === requestKey ? error.message : null;
 
   useEffect(() => {
-    setCustomBelief({ ...currentBelief });
-  }, [currentBelief]);
-
-  useEffect(() => {
-    runSimulation(selectedAction, customBelief);
-  }, [selectedAction]);
-
-  const runSimulation = async (action: DefensiveAction, belief: Record<ThreatState, number>) => {
-    setLoading(true);
-    try {
-      const res = await simulateWhatIf(belief, action, "Monitor");
-      setSimResult(res);
-    } catch (e) {
-      console.error(e);
-    } finally {
-      setLoading(false);
-    }
-  };
+    let active = true;
+    const [action, belief] = JSON.parse(requestKey) as [DefensiveAction, Record<ThreatState, number>];
+    simulateWhatIf(belief, action, "Monitor").then(result => {
+      if (active) { setResponse({ key: requestKey, result }); setError(null); }
+    }).catch(() => {
+      if (active) setError({ key: requestKey, message: "The illustrative simulation could not be calculated." });
+    });
+    return () => { active = false; };
+  }, [requestKey]);
 
   const handleSliderChange = (state: ThreatState, val: number) => {
     const updated = { ...customBelief, [state]: val / 100 };
     // Normalize sum to 1
     const total = Object.values(updated).reduce((a, b) => a + b, 0);
+    if (total <= 0) return;
     const normalized: any = {};
     for (const [k, v] of Object.entries(updated)) {
       normalized[k] = total > 0 ? v / total : 0;
     }
-    setCustomBelief(normalized);
-    runSimulation(selectedAction, normalized);
+    setDraft({ source: sourceKey, belief: normalized });
   };
 
   return (
@@ -53,10 +50,10 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
           <GitBranch size={22} color="var(--accent-purple)" />
           <div>
             <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#ffffff" }}>
-              What-If Counterfactual Defensive Simulator
+              Illustrative What-If Simulator
             </h2>
             <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginTop: "2px" }}>
-              Simulate hypothetical interventions against internal probabilistic models. Compare future projected loss trajectories and risk reduction vs. a passive monitoring baseline.
+              Compare modeled losses under assumed action effects. No defense is executed, and actual prevention or financial savings are not measured.
             </p>
           </div>
         </div>
@@ -111,13 +108,12 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
               </h3>
               <button
                 onClick={() => {
-                  setCustomBelief({ ...currentBelief });
-                  runSimulation(selectedAction, currentBelief);
+                  setDraft(null);
                 }}
                 className="cyber-btn cyber-btn-secondary"
                 style={{ fontSize: "0.7rem", padding: "3px 8px" }}
               >
-                Reset to Live
+                Reset to Observed Belief
               </button>
             </div>
 
@@ -152,11 +148,11 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
               {/* Stat Badges */}
               <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "12px" }}>
                 <div className="glass-card" style={{ padding: "14px", textAlign: "center" }}>
-                  <div style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>Threat Mitigation</div>
+                  <div style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>Assumed Mitigation</div>
                   <div style={{ fontSize: "1.3rem", fontWeight: 800, color: "var(--accent-emerald)", marginTop: "4px" }}>
                     {simResult.threat_mitigation_rate}
                   </div>
-                  <div style={{ fontSize: "0.68rem", color: "var(--text-muted)", marginTop: "2px" }}>Progression Arrested</div>
+                  <div style={{ fontSize: "0.68rem", color: "var(--text-muted)", marginTop: "2px" }}>Model assumption, not measured</div>
                 </div>
 
                 <div className="glass-card" style={{ padding: "14px", textAlign: "center" }}>
@@ -168,11 +164,11 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
                 </div>
 
                 <div className="glass-card" style={{ padding: "14px", textAlign: "center" }}>
-                  <div style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>Net Loss Prevented</div>
+                  <div style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>Modeled Loss Difference</div>
                   <div style={{ fontSize: "1.3rem", fontWeight: 800, color: "var(--accent-purple)", marginTop: "4px" }}>
-                    ${simResult.net_loss_prevented}
+                    {simResult.net_loss_prevented}
                   </div>
-                  <div style={{ fontSize: "0.68rem", color: "var(--text-muted)", marginTop: "2px" }}>5-Step Projected Savings</div>
+                  <div style={{ fontSize: "0.68rem", color: "var(--text-muted)", marginTop: "2px" }}>Model units over 5 steps</div>
                 </div>
               </div>
 
@@ -198,11 +194,12 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
                     const hypo = simResult.loss_trajectories.hypothetical[idx];
                     const maxLoss = Math.max(
                       ...simResult.loss_trajectories.baseline.map((b) => b.cumulative_loss),
-                      100
+                      ...simResult.loss_trajectories.hypothetical.map((b) => b.cumulative_loss),
+                      1
                     );
 
-                    const baseHeight = Math.min(100, Math.max(10, (base.cumulative_loss / maxLoss) * 100));
-                    const hypoHeight = Math.min(100, Math.max(5, (hypo.cumulative_loss / maxLoss) * 100));
+                    const baseHeight = (base.cumulative_loss / maxLoss) * 100;
+                    const hypoHeight = (hypo.cumulative_loss / maxLoss) * 100;
 
                     return (
                       <div key={base.step} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", height: "100%", justifyContent: "flex-end" }}>
@@ -216,7 +213,7 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
                               borderRadius: "4px 4px 0 0",
                               transition: "height 0.4s ease",
                             }}
-                            title={`Step ${base.step} With ${selectedAction}: $${hypo.cumulative_loss}`}
+                            title={`Step ${base.step} With ${selectedAction}: ${hypo.cumulative_loss} model units`}
                           />
                           {/* Baseline Bar */}
                           <div
@@ -227,7 +224,7 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
                               borderRadius: "4px 4px 0 0",
                               transition: "height 0.4s ease",
                             }}
-                            title={`Step ${base.step} Baseline (No Action): $${base.cumulative_loss}`}
+                            title={`Step ${base.step} Baseline (Monitor): ${base.cumulative_loss} model units`}
                           />
                         </div>
                         <span style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>
@@ -239,13 +236,13 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({ currentBelief 
                 </div>
 
                 <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", lineHeight: "1.4" }}>
-                  <strong style={{ color: "#ffffff" }}>Key Insight:</strong> Executing <span style={{ color: "var(--accent-purple)", fontWeight: 600 }}>{selectedAction}</span> reduces the unmitigated attack progression probability from <span className="mono" style={{ color: "var(--accent-red)" }}>{(simResult.original_threat_mass * 100).toFixed(1)}%</span> down to <span className="mono" style={{ color: "var(--accent-emerald)" }}>{(simResult.residual_threat_mass * 100).toFixed(1)}%</span>, resulting in a net projected risk reduction of <span className="mono" style={{ color: "var(--accent-emerald)", fontWeight: 700 }}>${simResult.net_loss_prevented}</span> over the next 5 kill-chain steps.
+                  <strong style={{ color: "#ffffff" }}>Illustrative assumptions:</strong> The configured effectiveness for <span style={{ color: "var(--accent-purple)", fontWeight: 600 }}>{selectedAction}</span> maps the modeled threat mass from {(simResult.original_threat_mass * 100).toFixed(1)}% to {(simResult.residual_threat_mass * 100).toFixed(1)}%. The projected loss difference is {simResult.net_loss_prevented} model units. No defense was executed, and no actual prevention or financial saving was measured.
                 </div>
               </div>
             </>
           ) : (
             <div className="glass-card" style={{ padding: "40px", textAlign: "center", color: "var(--text-muted)" }}>
-              Running counterfactual projection...
+              {currentError || "Running illustrative projection..."}
             </div>
           )}
         </div>

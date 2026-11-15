@@ -1,0 +1,9 @@
+model,mode,setting,campaigns,strict_warned,false_episodes
+Original counts-only,temporal_boosting,All 8 campaigns,8,4,19
+Original duration/tree fusion,conditional_fusion,All 8 campaigns,8,4,4
+Matched pooled counts-only,pooled_counts,All 8 campaigns,8,3,1
+Current fixed 25% state blend,pooled_fixed_blend,All 8 campaigns,8,5,5
+Original counts-only,temporal_boosting,Without wheeler (7 campaigns),7,4,2
+Original duration/tree fusion,conditional_fusion,Without wheeler (7 campaigns),7,4,3
+Matched pooled counts-only,pooled_counts,Without wheeler (7 campaigns),7,3,1
+Current fixed 25% state blend,pooled_fixed_blend,Without wheeler (7 campaigns),7,5,5

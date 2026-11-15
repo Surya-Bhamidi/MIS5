@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "results": {
+    "build": {
+      "command": "npm run build",
+      "exit_code": 0,
+      "output": "\n> frontend@0.0.0 build\n> tsc -b && vite build\n\nvite v8.3.0 building client environment for production...\ntransforming...\n\u00e2\u0153\u201c 1891 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.82 kB \u00e2\u201d\u201a gzip:  0.49 kB\ndist/assets/index-CuD6SEd3.css   13.94 kB \u00e2\u201d\u201a gzip:  3.75 kB\ndist/assets/index-DOdG8i9O.js   322.87 kB \u00e2\u201d\u201a gzip: 92.67 kB\n\n\u00e2\u0153\u201c built in 406ms\n"
+    },
+    "lint": {
+      "command": "npm run lint",
+      "exit_code": 0,
+      "output": "\n> frontend@0.0.0 lint\n> oxlint\n\n"
+    }
+  },
+  "source_sha256": {
+    "frontend/src/App.css": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c",
+    "frontend/src/App.tsx": "f2fde4277cdaf0356da6a2dbf500090b49550a0cd06b2dd7e30af3abc4c98d2c",
+    "frontend/src/index.css": "106d7faed0ad5c8bfbeaed939d1a3ca2ff540ebec6286c19c06cdccc4b92139c",
+    "frontend/src/LegacyDashboard.tsx": "1e82603a5df407a355f37d9d9de7e66d8f831bd51ffe97cc939666151e5fdf3d",
+    "frontend/src/main.tsx": "6e9e5807fcbd48b75a96db5cbef36c996262196be42e6d4760dc86babbe61ad2",
+    "frontend/src/OperationalResults.tsx": "ec357e632620b2b59576224a21b1299dae4e5879aac911cd86ac1d2fc6c28554",
+    "frontend/src/research.css": "5567493775632ec298bdf2faa567e334a680b91d65840583893a7568c2c8206c",
+    "frontend/src/api/client.ts": "299b3f2e22e0ac4742b4da60a148d4c330d6467d9047fddb0e33a59ce9ef72ef",
+    "frontend/src/assets/hero.png": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+    "frontend/src/assets/react.svg": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5",
+    "frontend/src/assets/vite.svg": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f",
+    "frontend/src/components/AblationComparison.tsx": "a9cae060932c89ed94e27ee760074679382146cc38bd6ee31ca1a45ca636bb02",
+    "frontend/src/components/AttackGraph.tsx": "363c4b27e0c9fba09dfa82052cc89fe67b015996de1b52852a48c06905f8db11",
+    "frontend/src/components/BeliefDistribution.tsx": "3bbdc648fa648f51e3a4f50c31b05a76c7d43148cdcd40d92bc911446b7a8260",
+    "frontend/src/components/ExperimentReports.tsx": "7cbc9b8df577e4d3320d2951ef80f105b2e8d8aa6ac2c82f263296851785efdf",
+    "frontend/src/components/ExplainabilityModal.tsx": "f6380690a828f5360b15af9a1e13e26ed9290e2b9b29feb49470ad6840bc6ff7",
+    "frontend/src/components/Header.tsx": "1ce896952899c9f0a430d03a4d6a6811218b3af55420979438e0111e9b6a51d4",
+    "frontend/src/components/LiveFeed.tsx": "c8893045446be6f69e7ea692bf352e54cf524d2f8085e17479c6dc5820ca889f",
+    "frontend/src/components/RecommendationCard.tsx": "2baf41acfb6f120d2419c335e4fc993beabe6512a320137bce4e30957467a6ae",
+    "frontend/src/components/WhatIfSimulator.tsx": "36e701756468063b4bdb22e266724f3e78ca61f56760131b0c38f879f3227b43",
+    "frontend/src/types/index.ts": "285e125c96770e1be3d43621cd7478033703642072f1b6abeb16b9a577954d63",
+    "frontend/package.json": "330198b65b76a286cc46e169ca3e3ef09a0ce27ed9a84aaca09f2deb34cd294a",
+    "frontend/package-lock.json": "926e6ed0f93f1c41bcebee44a67fe686378c9030f310a834d2fca9d1d2a065c2",
+    "frontend/vite.config.ts": "d3e8a175a444317be8faa03be82a3cedeb1168b98e81c2326a698947330328ad",
+    "frontend/tsconfig.json": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+    "frontend/tsconfig.app.json": "3e139c64e15c2f8eefafdf8b88eb04b4775b28b8e7956e98ed919deeada27580",
+    "frontend/tsconfig.node.json": "d366cc0827139db39c61815f22491bbfda56c654354a42ad7795143d314e45e8",
+    "frontend/index.html": "6bd1a1057245dc8bd94256595a9f2db5320fcd50e3af643683cc7e5ed2d78510"
+  },
+  "changed_sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "cases": 112,
+  "candidate_tables_reconstructed": true,
+  "selection_matches_validation_only_ranking": true,
+  "test_regressions": [
+    {
+      "campaign": "fox",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 15,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes"
+      ]
+    },
+    {
+      "campaign": "santos",
+      "available": "aminer+suricata+wazuh",
+      "horizon": 30,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes",
+        "episode_lead_minutes"
+      ]
+    },
+    {
+      "campaign": "shaw",
+      "available": "aminer+wazuh",
+      "horizon": 30,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes",
+        "episode_lead_minutes"
+      ]
+    },
+    {
+      "campaign": "wilson",
+      "available": "wazuh",
+      "horizon": 30,
+      "test_guardrail_regressions": [
+        "notification_lead_minutes",
+        "episode_lead_minutes"
+      ]
+    }
+  ],
+  "selection_promoted": false,
+  "reason": "Candidate does not preserve every evaluated constraint; retain immediate default and optional confirmed profile"
+}

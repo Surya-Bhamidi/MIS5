@@ -1,5 +1,5 @@
 import React from "react";
-import { BarChart3, HelpCircle, Activity } from "lucide-react";
+import { BarChart3 } from "lucide-react";
 import { ThreatState } from "../types";
 
 interface BeliefDistributionProps {

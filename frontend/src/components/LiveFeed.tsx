@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, Pause, StepForward, RotateCcw, FastForward, Radio } from "lucide-react";
+import { Play, Pause, StepForward, RotateCcw, Radio } from "lucide-react";
 import { AlertEvent } from "../types";
 
 interface LiveFeedProps {
@@ -27,7 +27,6 @@ export const LiveFeed: React.FC<LiveFeedProps> = ({
   onSelectAlert,
   loading,
 }) => {
-  const currentAlert = alerts[currentIndex];
 
   return (
     <div className="glass-card" style={{ display: "flex", flexDirection: "column", height: "100%", overflow: "hidden" }}>
@@ -35,7 +34,7 @@ export const LiveFeed: React.FC<LiveFeedProps> = ({
       <div style={{ padding: "12px 18px", borderBottom: "1px solid var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <Radio size={18} color="var(--accent-cyan)" />
-          <span style={{ fontSize: "0.9rem", fontWeight: 600, color: "#ffffff" }}>Live Alert Ingestion Stream</span>
+          <span style={{ fontSize: "0.9rem", fontWeight: 600, color: "#ffffff" }}>Archived Alert Replay</span>
           <span className="badge badge-cyan mono">
             {alerts.length > 0 ? `${currentIndex + 1} / ${alerts.length}` : "0 / 0"}
           </span>
