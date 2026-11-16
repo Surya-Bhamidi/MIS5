@@ -1,0 +1,140 @@
+import { lazy, Suspense, useEffect, useRef, useState } from 'react';
+import { Activity, ArrowDownToLine, ArrowLeft, ArrowRight, AudioLines, BookOpen, ChartNoAxesCombined, Check, ChevronDown, ChevronRight, CircleHelp, Clock3, Database, Eye, GitBranch, Layers3, Maximize2, Minimize2, Network, Pause, Play, Radio, RotateCcw, Shield, ShieldCheck, SkipForward, Sparkles, Target, Unplug, X } from 'lucide-react';
+import ForecastChart from './demo/ForecastChart';
+import { CAMPAIGNS, SENSORS, campaignName, downloadReport, percent, sensorName, useEvidence } from './demo/evidence';
+import type { Overview, Replay, Source } from './demo/evidence';
+import './showcase.css';
+
+const ResearchDashboard = lazy(() => import('./App'));
+type Page = 'demo' | 'comparison' | 'method' | 'research';
+const units = [
+  { label: '01 / OBSERVE', title: 'Connect the evidence', name: 'Multi-sensor inputs', icon: Radio, copy: 'AMiner, Suricata and Wazuh provide complementary network and host alerts. Past-only counts and trailing averages summarize the available evidence.', detail: 'Unavailable sensors are omitted. With no sensors, the system abstains.' },
+  { label: '02 / INFER', title: 'Reason under uncertainty', name: 'Bayesian Network', icon: Network, copy: 'A Bayesian Network relates detector evidence to latent attack stages, providing observation likelihoods without treating every alert as a certain attack.', detail: 'Unit 1 · probabilistic evidence integration' },
+  { label: '03 / TRACK', title: 'Follow attack progression', name: 'Hidden Markov Model', icon: GitBranch, copy: 'Causal forward filtering tracks attack-stage beliefs over time. Each estimate uses only information available up to that minute.', detail: 'Unit 2 · temporal state estimation' },
+  { label: '04 / FORECAST', title: 'Look ahead, at six horizons', name: 'Calibrated hybrid forecast', icon: ChartNoAxesCombined, copy: 'The frozen preset combines 75% counts-only forecasts with 25% counts-and-state forecasts, then applies pooled calibration and coherent horizon probabilities.', detail: '1, 2, 5, 10, 15 and 30 minute forecasts' },
+  { label: '05 / RECOMMEND', title: 'Weigh the response', name: 'Decision Network', icon: ShieldCheck, copy: 'Compare monitoring, restriction, blocking and isolation by modeled expected loss, including assumed response delay, effectiveness and disruption cost.', detail: 'Unit 3 · decision support; no defense is executed' },
+];
+
+function Guide({ onClose, onStart }: { onClose: () => void; onStart: () => void }) {
+  const ref = useRef<HTMLDialogElement>(null);
+  useEffect(() => { ref.current?.showModal(); }, []);
+  return <dialog ref={ref} className="demo-guide" onCancel={onClose} onClick={event => { if (event.target === event.currentTarget) onClose(); }}>
+    <div className="demo-guide-top"><span className="demo-kicker">YOUR 3-MINUTE WALKTHROUGH</span><button className="demo-icon-button" aria-label="Close presentation guide" onClick={onClose}><X size={20}/></button></div>
+    <span className="demo-guide-symbol"><ShieldCheck size={30}/></span><h2>A clear story, from signal to decision.</h2><p>Use the real saved campaign evidence to demonstrate how MIS5 forecasts successful privilege escalation.</p>
+    <ol><li><strong>Replay the Fox campaign</strong><span>Start playback, then jump to the first timely warning. Explain the risk curve and its frozen threshold.</span></li><li><strong>Explore uncertainty</strong><span>Compare 15- and 30-minute horizons. Toggle sensor inputs to see the corresponding archived expert, or turn all off to see abstention.</span></li><li><strong>Explain the decision</strong><span>Compare modeled response losses. Then open model comparison to discuss coverage, probability error and false alarms.</span></li></ol>
+    <div className="demo-guide-note"><Eye size={17}/><span>Archived research replay. The outcome marker is retrospective, and response effects are assumed.</span></div><button className="demo-button primary" onClick={onStart}><Play size={16}/> Start the walkthrough <ArrowRight size={16}/></button>
+  </dialog>;
+}
+
+export default function Showcase() {
+  const [page, setPage] = useState<Page>('demo');
+  const [campaign, setCampaign] = useState('fox');
+  const [horizon, setHorizon] = useState(30);
+  const [sensors, setSensors] = useState<string[]>([...SENSORS]);
+  const [source, setSource] = useState<Source>('saved');
+  const [presenting, setPresenting] = useState(false);
+  const [guide, setGuide] = useState(false);
+  const [speed, setSpeed] = useState(2);
+  const available = SENSORS.filter(s => sensors.includes(s)).join('+') || 'none';
+  const key = `${campaign}-${horizon}-${available}-${source}`;
+  const [playback, setPlayback] = useState({ key: '', index: 0, playing: false });
+  const overview = useEvidence<Overview>(`overview-${horizon}-${available}`, `/api/research/overview?horizon=${horizon}&available=${encodeURIComponent(available)}`, source);
+  const replay = useEvidence<Replay>(`replay-${campaign}-${horizon}-${available}`, `/api/research/replay/${campaign}?horizon=${horizon}&available=${encodeURIComponent(available)}`, source, available !== 'none');
+  const data = replay.data;
+  const firstWarning = data?.points.findIndex(p => p.episode_start && p.minutes_before <= horizon) ?? -1;
+  const defaultIndex = firstWarning >= 0 ? Math.max(0, firstWarning - 5) : Math.max(0, (data?.points.length ?? 1) - 31);
+  const index = Math.min(playback.key === key ? playback.index : defaultIndex, Math.max(0, (data?.points.length ?? 1) - 1));
+  const playing = playback.key === key && playback.playing && index < (data?.points.length ?? 0) - 1 && page === 'demo';
+  const point = data?.points[index];
+  const hi = data?.horizons.indexOf(horizon) ?? 0;
+  const hybrid = overview.data?.models.find(m => m.mode === 'pooled_fixed_blend');
+  const go = (next: Page) => { setPage(next); setPlayback(p => ({ ...p, playing: false })); window.scrollTo({ top: 0, behavior: 'instant' }); };
+  const seek = (i: number) => setPlayback({ key, index: i, playing: false });
+  const selectCampaign = (value: string) => { setCampaign(value); setPlayback({ key: '', index: 0, playing: false }); };
+  const selectHorizon = (value: number) => { setHorizon(value); setPlayback({ key: '', index: 0, playing: false }); };
+  const selectSource = (value: Source) => { setSource(value); setPlayback({ key: '', index: 0, playing: false }); };
+  useEffect(() => {
+    if (!playing || !data) return;
+    const timer = window.setInterval(() => setPlayback(p => ({ ...p, index: Math.min(p.index + speed, data.points.length - 1) })), 500);
+    return () => window.clearInterval(timer);
+  }, [playing, data, speed]);
+  useEffect(() => {
+    const listener = (event: KeyboardEvent) => { if (event.key === 'Escape') setPresenting(false); };
+    window.addEventListener('keydown', listener);
+    return () => window.removeEventListener('keydown', listener);
+  }, []);
+  const begin = () => {
+    setGuide(false); setPage('demo'); setCampaign('fox'); setHorizon(30); setSensors([...SENSORS]);
+    setPlayback({ key: `fox-30-aminer+suricata+wazuh-${source}`, index: 135, playing: true });
+  };
+  const toggleSensor = (sensor: string) => { setSensors(s => s.includes(sensor) ? s.filter(v => v !== sensor) : [...s, sensor]); setPlayback({ key: '', index: 0, playing: false }); };
+  const error = overview.error || replay.error;
+  const assetBase = source === 'saved' ? '/demo/plots/' : '/api/research/assets/';
+
+  if (page === 'research') return <div className="showcase-research"><div className="showcase-research-back"><button onClick={() => go('demo')}><ArrowLeft size={16}/> Back to demonstration</button><span>Detailed research dashboard · requires the local Python API</span></div><Suspense fallback={<p className="demo-empty">Opening research dashboard…</p>}><ResearchDashboard/></Suspense></div>;
+
+  return <div className={`showcase ${presenting ? 'is-presenting' : ''}`}>
+    <a className="demo-skip" href="#demo-main">Skip to content</a>
+    <aside className="demo-sidebar">
+      <a className="demo-logo" aria-label="MIS5 demonstration home" href="#demo" onClick={event => { event.preventDefault(); go('demo'); }}><span className="demo-logo-mark"><ShieldCheck size={25} strokeWidth={1.7}/></span><span>MIS<span className="demo-logo-five">5</span><small>EARLY WARNING SYSTEM</small></span></a>
+      <span className="demo-nav-label">WORKSPACE</span>
+      <nav aria-label="Main navigation">
+        <button aria-label="Interactive demo" className={page === 'demo' ? 'selected' : ''} onClick={() => go('demo')} aria-current={page === 'demo' ? 'page' : undefined}><Activity size={19}/><span>Interactive demo</span><span className="demo-nav-dot"/></button>
+        <button aria-label="Model comparison" className={page === 'comparison' ? 'selected' : ''} onClick={() => go('comparison')} aria-current={page === 'comparison' ? 'page' : undefined}><ChartNoAxesCombined size={19}/><span>Model comparison</span></button>
+        <button aria-label="How it works" className={page === 'method' ? 'selected' : ''} onClick={() => go('method')} aria-current={page === 'method' ? 'page' : undefined}><Layers3 size={19}/><span>How it works</span></button>
+      </nav>
+      <div className="demo-sidebar-divider"/><span className="demo-nav-label">EXPLORE FURTHER</span>
+      <nav aria-label="Resources"><button aria-label="Research dashboard" onClick={() => go('research')}><BookOpen size={18}/><span>Research dashboard</span></button><a aria-label="Research metrics" href={`${assetBase}metrics.csv`} download><ArrowDownToLine size={18}/><span>Research metrics</span></a></nav>
+      <div className="demo-sidebar-bottom"><div className="demo-presentation-card"><span className="demo-presentation-icon"><Sparkles size={19}/></span><h3>Built for the big picture.</h3><p>A guided tour from uncertain signals to informed decisions.</p><button onClick={() => setGuide(true)}>Presentation guide <ArrowRight size={15}/></button></div><div className="demo-evidence-status"><span/><div>Frozen research evidence<small>AIT · 8 campaign folds</small></div><ShieldCheck size={17}/></div><div className="demo-project"><span>M5</span><div>MIS5 Project<small>Probabilistic cyber defense</small></div></div></div>
+    </aside>
+
+    <div className="demo-workspace">
+      <header className="demo-topbar"><div className="demo-breadcrumb">Workspace <ChevronRight size={14}/><strong>{page === 'demo' ? 'Interactive demo' : page === 'comparison' ? 'Model comparison' : 'How it works'}</strong><span className="demo-preview-badge">RESEARCH PREVIEW</span></div><div className="demo-topbar-actions"><label className="demo-source"><Database size={14}/><select aria-label="Evidence source" value={source} onChange={event => selectSource(event.target.value as Source)}><option value="saved">Saved evidence</option><option value="api">Local Python API</option></select><ChevronDown size={12}/></label><span className="demo-top-divider"/><button className="demo-icon-button" aria-label={presenting ? 'Exit presentation view' : 'Enter presentation view'} title="Toggle presentation view (Escape to exit)" onClick={() => setPresenting(v => !v)}>{presenting ? <Minimize2 size={17}/> : <Maximize2 size={17}/>}</button><button className="demo-icon-button" aria-label="Open presentation guide" onClick={() => setGuide(true)}><CircleHelp size={18}/></button></div></header>
+      <main id="demo-main" className="demo-main">
+        <section className="demo-page-heading"><div><div className="demo-kicker"><span/> PROBABILISTIC CYBERATTACK EARLY WARNING</div><h1>{page === 'demo' ? <>See the warning.<span> Before the impact.</span></> : page === 'comparison' ? <>The evidence behind<span> the warning.</span></> : <>From uncertain signals<span> to informed decisions.</span></>}</h1><p>{page === 'demo' ? 'Explore how multi-sensor evidence becomes a forecast — and a better-informed response.' : page === 'comparison' ? 'Explore the measured tradeoffs across the frozen eight-campaign evaluation.' : 'Three probabilistic models. One transparent path from observation to response.'}</p></div><button className="demo-button" onClick={() => { if (overview.data) downloadReport(overview.data, data, campaign, horizon, available); }} disabled={!overview.data}><ArrowDownToLine size={16}/> Export summary</button></section>
+
+        <div className="demo-filters"><div className="demo-campaign-picker"><span className="demo-input-icon"><Target size={18}/></span><label htmlFor="demo-campaign">Attack campaign</label><select id="demo-campaign" value={campaign} onChange={event => selectCampaign(event.target.value)}>{CAMPAIGNS.map(c => <option value={c} key={c}>{campaignName(c)}</option>)}</select><ChevronDown size={14}/><span className="demo-ait-label">AIT DATASET</span></div><div className="demo-horizon-picker"><span>Forecast horizon</span><div role="group" aria-label="Forecast horizon">{[15, 30].map(h => <button key={h} className={horizon === h ? 'active' : ''} aria-pressed={horizon === h} onClick={() => selectHorizon(h)}>{h} min</button>)}</div></div><span className="demo-replay-badge"><span/> Archived campaign replay</span></div>
+
+        {error && <div className="demo-error" role="alert"><Unplug size={20}/><div><strong>Evidence is unavailable</strong><p>{error}</p></div><button className="demo-button" onClick={() => { overview.retry(); replay.retry(); }}>Retry</button>{source === 'api' && <button className="demo-button primary" onClick={() => selectSource('saved')}>Use saved evidence</button>}</div>}
+        {!overview.data && !error && <div className="demo-loading" role="status"><span/> Loading campaign evidence…</div>}
+
+        <section className="demo-stats" aria-label="Selected research results">
+          <article><div className="demo-stat-label">Forecast window <Clock3 size={16}/></div><strong>{horizon}<small> minutes</small></strong><span>Before successful root access</span><div className="demo-stat-bottom"><span className="demo-mini-dot"/> Six calibrated horizons</div></article>
+          <article><div className="demo-stat-label">Timely warning coverage <Target size={16}/></div><strong>{hybrid ? hybrid.strict_warned : '—'}<small> / {hybrid?.campaigns ?? '8'} campaigns</small></strong><span>{hybrid ? `${percent(hybrid.strict_warned / hybrid.campaigns)} with a timely new warning` : 'Awaiting sensor evidence'}</span><div className="demo-stat-bottom"><span className="demo-stat-tag">EVALUATED</span> Frozen hybrid preset</div></article>
+          <article><div className="demo-stat-label">False warning episodes <Activity size={16}/></div><strong>{hybrid?.false_episodes ?? '—'}<small> episodes</small></strong><span>Outside the target outcome window</span><div className="demo-stat-bottom"><span className="demo-amber-dot"/> Alarm burden across 8 campaigns</div></article>
+          <article><div className="demo-stat-label">Available sensors <Radio size={16}/></div><strong>{sensors.length}<small> / 3 enabled inputs</small></strong><span>{sensors.length ? sensors.map(sensorName).join(' · ') : 'No sensor evidence available'}</span><div className="demo-stat-bottom"><span className={`demo-mini-dot ${!sensors.length ? 'off' : ''}`}/>{sensors.length ? 'Availability-specific expert' : 'Forecast abstained'}</div></article>
+        </section>
+
+        {page === 'demo' && <>
+          <div className="demo-analysis-grid"><section className="demo-panel demo-forecast-panel"><div className="demo-panel-heading"><div><h2><span className="demo-panel-icon"><AudioLines size={18}/></span>Attack risk forecast</h2><p>Probability of successful root access within {horizon} minutes</p></div><span className={`demo-status-pill ${point?.warning ? 'warning' : ''}`}><span/>{!sensors.length ? 'ABSTAINED' : point?.warning ? 'WARNING ACTIVE' : 'MONITORING'}</span></div>
+            {!sensors.length ? <div className="demo-abstention"><Unplug size={36}/><h3>No sensors. No guesswork.</h3><p>Enable at least one sensor to load its archived forecast. MIS5 abstains when there is no available evidence.</p><button className="demo-button primary" onClick={() => { setSensors([...SENSORS]); setPlayback({ key: '', index: 0, playing: false }); }}>Restore all sensors</button></div> : data && point ? <><div className="demo-risk-headline"><div><strong>{percent(point.risk[hi])}</strong><span>forecast risk <span className="demo-risk-separator">/</span> <b>{point.minutes_before.toFixed(1)} min</b> before outcome</span></div><div className="demo-chart-legend"><span><i/>Forecast</span><span><i/>Threshold</span></div></div><ForecastChart replay={data} index={index} horizon={horizon} onSeek={seek}/><div className="demo-playback"><button className={`demo-play ${playing ? 'playing' : ''}`} onClick={() => setPlayback({ key, index: index >= data.points.length - 1 ? 0 : index, playing: !playing })} aria-label={playing ? 'Pause replay' : 'Play replay'}>{playing ? <Pause size={16} fill="currentColor"/> : <Play size={16} fill="currentColor"/>}<span>{playing ? 'Pause' : 'Play replay'}</span></button><button className="demo-icon-button" title="Reset replay" aria-label="Reset replay" onClick={() => seek(0)}><RotateCcw size={16}/></button><input type="range" min={0} max={data.points.length-1} value={index} onChange={event => seek(Number(event.target.value))} aria-label="Replay timeline"/><select aria-label="Playback speed" value={speed} onChange={event => setSpeed(Number(event.target.value))}><option value={1}>1×</option><option value={2}>2×</option><option value={5}>5×</option><option value={10}>10×</option></select><button className="demo-jump" onClick={() => seek(firstWarning)} disabled={firstWarning < 0}><SkipForward size={15}/><span>Jump to warning</span></button></div><div className="demo-replay-footer"><span><span className={`demo-mini-dot ${!playing ? 'paused' : ''}`}/>{playing ? 'REPLAY RUNNING' : 'REPLAY PAUSED'}</span><span>{new Date(point.timestamp*1000).toISOString().slice(11, 19)} UTC <span className="demo-muted-divider">/</span> {index+1} of {data.points.length} observations</span></div></> : <div className="demo-chart-loading" role="status">{error ? 'Select saved evidence or retry to load the forecast.' : 'Loading archived forecasts…'}</div>}
+          </section>
+
+          <aside className="demo-right-column"><section className="demo-panel demo-sensors-panel"><div className="demo-panel-heading"><h2>Sensor evidence</h2><span className="demo-tiny-label">{sensors.length} OF 3 AVAILABLE</span></div><p>Choose the evidence the model can see.</p><div className="demo-sensor-list">{SENSORS.map((sensor, i) => <button key={sensor} role="switch" aria-checked={sensors.includes(sensor)} aria-label={`${sensorName(sensor)} sensor`} onClick={() => toggleSensor(sensor)}><span className={`demo-sensor-icon sensor-${i}`}>{i === 0 ? <Activity size={18}/> : i === 1 ? <Network size={18}/> : <Shield size={18}/>}</span><span><strong>{sensorName(sensor)}</strong><small>{['Anomaly detection', 'Network intrusion alerts', 'Host security alerts'][i]}</small></span><span className={`demo-toggle ${sensors.includes(sensor) ? 'on' : ''}`}><i/></span></button>)}</div><div className="demo-sensor-foot"><ShieldCheck size={13}/> Missing inputs use the matching sensor expert.</div></section>
+            <section className="demo-panel demo-horizons-panel"><div className="demo-panel-heading"><h2>Risk across horizons</h2><Clock3 size={15}/></div><p>One moment. Six views of what comes next.</p><div className="demo-horizon-bars">{[1, 2, 5, 10, 15, 30].map((h, j) => <div key={h} className={h === horizon ? 'current' : ''}><span>{h} min</span><div><i style={{ width: `${(point?.risk[j] ?? 0)*100}%` }}/></div><strong>{point ? percent(point.risk[j]) : '—'}</strong></div>)}</div></section>
+          </aside></div>
+
+          <div className="demo-bottom-grid"><section className="demo-panel demo-response"><div className="demo-panel-heading"><div><h2><ShieldCheck size={18}/>A response worth considering</h2><p>Decision Network · lowest modeled expected loss</p></div><span className="demo-small-pill">ADVISORY ONLY</span></div><div className="demo-response-content"><div className="demo-recommendation"><span className="demo-recommendation-icon"><ShieldCheck size={26}/></span><div><span>RECOMMENDED ACTION</span><strong>{point?.recommended_action ?? 'Abstain'}</strong><p>{point ? 'Based on forecast risk, assumed costs and response delay.' : 'Waiting for available sensor evidence.'}</p></div></div><div className="demo-losses">{(data?.actions ?? ['Monitor', 'Restrict', 'Block', 'Isolate']).map((action, i) => <div key={action} className={point?.recommended_action === action ? 'best' : ''}><span>{action}{point?.recommended_action === action && <Check size={12}/>}</span><strong>{point?.modeled_losses[i].toFixed(2) ?? '—'}</strong></div>)}</div></div><div className="demo-response-note">Expected loss in model units. Damage: 20 · effectiveness multiplier: 0.8 · disruption multiplier: 1. No defense is executed.</div></section>
+            <section className="demo-insight"><span className="demo-kicker"><Sparkles size={14}/> THE BIG PICTURE</span><h2>Uncertainty, made actionable.</h2><p>Evidence becomes a probability. Probabilities become a decision. Explore how the three model units work together.</p><button onClick={() => go('method')}>Follow the pipeline <ArrowRight size={16}/></button><div className="demo-insight-orbit" aria-hidden="true"><ShieldCheck size={44} strokeWidth={1}/></div></section></div>
+
+          <section className="demo-panel demo-campaigns"><div className="demo-panel-heading"><div><h2>Eight campaigns. Different outcomes.</h2><p>Explore timely warnings and misses across the archived evaluation.</p></div><button className="demo-text-button" onClick={() => go('comparison')}>Compare models <ArrowRight size={15}/></button></div><div className="demo-campaign-grid">{CAMPAIGNS.map(name => { const score = overview.data?.campaigns.find(c => c.name === name)?.hybrid; return <button key={name} className={campaign === name ? 'active' : ''} title={campaignName(name)} onClick={() => selectCampaign(name)}><div><span className="demo-campaign-initial">{campaignName(name).slice(0, 1)}</span><ChevronRight size={14}/></div><strong>{campaignName(name)}</strong><span className={score?.strict_warning_recall ? 'timely' : 'missed'}><i/>{score ? score.strict_warning_recall ? `${score.strict_lead_minutes?.toFixed(1)} min lead` : 'No timely warning' : 'No forecast'}</span></button>; })}</div></section>
+        </>}
+
+        {page === 'comparison' && <>
+          <section className="demo-panel demo-comparison"><div className="demo-panel-heading"><div><h2>What changes when stage evidence is added?</h2><p>{horizon}-minute forecasts · {sensors.length ? sensors.map(sensorName).join(' + ') : 'No sensor evidence'}</p></div><a className="demo-button" href={`${assetBase}metrics.csv`} download><ArrowDownToLine size={15}/> Full-sensor CSV</a></div><div className="demo-table-wrap"><table><thead><tr><th>Forecast model</th><th>Timely coverage</th><th>Brier × 1,000 <small>↓ better</small></th><th>False episodes <small>↓ better</small></th><th>Avg. precision <small>↑ better</small></th></tr></thead><tbody>{overview.data?.models.map(m => <tr key={m.mode} className={m.mode === 'pooled_fixed_blend' ? 'current-model' : ''}><td><i style={{ background: m.color }}/>{m.label}{m.mode === 'pooled_fixed_blend' && <span>PRESET</span>}</td><td><b>{m.strict_warned}/{m.campaigns}</b><div className="demo-coverage-bar"><i style={{ width: `${m.strict_warned/m.campaigns*100}%`, background: m.color }}/></div></td><td>{(m.mean_brier*1000).toFixed(4)}</td><td>{m.false_episodes}</td><td>{m.mean_ap.toFixed(4)}</td></tr>)}</tbody></table>{!sensors.length && <div className="demo-empty">No comparison is produced without sensor evidence. Restore inputs in the demo to continue.</div>}</div><p className="demo-table-note">Matched counts uses the same pooled calibration. Timely coverage means a new warning starts within the forecast window before the outcome.</p></section>
+          <div className="demo-comparison-notes"><article><span className="demo-kicker">WHAT THE RESULTS SHOW</span><h2>Useful gains. Real tradeoffs.</h2><p>At 30 minutes with all sensors, the current hybrid warns on 5/8 campaigns with 5 false episodes. Original counts warns on 4/8 with 19 false episodes; matched counts warns on 3/8 with 1 false episode.</p><p>More coverage comes with more alarm burden against matched counts. The false-alarm improvement over original counts is dominated by one campaign.</p></article><article><span className="demo-kicker">WHAT REMAINS UNPROVEN</span><h2>Keep the scope in view.</h2><p>The preset was selected after inspecting these eight campaigns. This is exploratory evidence. At 15 minutes, probability error is worse than the original counts baseline; external CAM transfer gives 0/3 timely warnings.</p><p>Responses use assumed costs and effectiveness. Real attack prevention has not been measured.</p></article></div>
+          <section className="demo-panel"><div className="demo-panel-heading"><div><h2>Figures for your presentation</h2><p>Fixed full-sensor, 30-minute figures from the project’s verified results.</p></div></div><div className="demo-plot-grid">{[['01_timely_warning_coverage', 'Timely warning coverage'], ['02_probability_error', 'Probability error'], ['03_alarm_tradeoff', 'Coverage and alarm tradeoff']].map(([name, title]) => <article key={name}><a href={`${assetBase}${name}.png`} target="_blank" rel="noreferrer"><img src={`${assetBase}${name}.png`} alt={title} loading="lazy"/></a><div><strong>{title}</strong><a href={`${assetBase}${name}.pdf`} download>PDF <ArrowDownToLine size={13}/></a></div></article>)}</div></section>
+        </>}
+
+        {page === 'method' && <>
+          <section className="demo-method-intro"><div><span className="demo-kicker">THE FROZEN RESEARCH PRESET</span><h2>Observe. Infer. Forecast. Decide.</h2><p>MIS5 combines complementary sensor evidence with probabilistic attack-stage estimates to forecast a defined harmful outcome: successful privilege escalation.</p><div><span><Check size={14}/> Past-only evidence</span><span><Check size={14}/> Calibrated probabilities</span><span><Check size={14}/> Explicit response costs</span></div></div><div className="demo-fusion-visual"><div><span>COUNTS FORECAST</span><strong>75<small>%</small></strong></div><span>+</span><div><span>STATE BRANCH</span><strong>25<small>%</small></strong></div><span className="demo-fusion-caption">Fixed blend · all six horizons</span></div></section>
+          <section className="demo-method-flow" aria-label="Model pipeline">{units.map((unit, i) => <article key={unit.name}><div className="demo-method-number"><unit.icon size={23}/><span>{unit.label}</span>{i < units.length-1 && <ArrowRight size={18}/>}</div><div><span className="demo-method-unit">{unit.name}</span><h2>{unit.title}</h2><p>{unit.copy}</p><small>{unit.detail}</small></div></article>)}</section>
+          <section className="demo-panel demo-method-scope"><div><Eye size={24}/><h2>Designed to be inspectable.</h2><p>The presentation uses saved, pre-outcome forecasts and published scores. It does not retrain models, connect to production sensors or execute a defense. Switching sensor availability selects an existing expert’s archived forecasts.</p></div><div><Database size={24}/><h2>Evidence you can take with you.</h2><p>Export a summary of the selected configuration, download the presentation figures, or open the detailed research dashboard with the Python backend running.</p><button className="demo-text-button" onClick={() => go('comparison')}>Explore the measured results <ArrowRight size={15}/></button></div></section>
+        </>}
+
+        <footer className="demo-footer"><span><ShieldCheck size={14}/> MIS5 · Probabilistic Cyberattack Early Warning</span><span>Exploratory research <i/> Saved pre-outcome forecasts <i/> No defense executed</span></footer>
+      </main>
+    </div>
+    {guide && <Guide onClose={() => setGuide(false)} onStart={begin}/>}
+  </div>;
+}

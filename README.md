@@ -70,7 +70,7 @@ Read the [full selective-fusion comparison](experiments/selective_fusion/REPORT.
 | `data/README.md` | Instructions for obtaining local dataset inputs. |
 | `third_party/pard_ssm/` | Pinned author-code audit material, retaining its original license and source manifest. |
 
-The default dashboard reads the current frozen AIT forecasts, campaign scores and comparisons directly. It supports 15-/30-minute comparisons, seven sensor configurations, pre-outcome campaign replay, six-horizon risk inspection, modeled response recommendations and plot downloads. Replay does not retrain models or execute defenses. The earlier DARPA/synthetic phase-classification interface remains accessible through **Earlier demo**; its outputs are separate from the verified research results.
+The default interface is a presentation workspace with saved AIT forecasts, campaign scores and comparisons. It supports 15-/30-minute comparisons, seven sensor configurations, pre-outcome campaign replay, six-horizon risk inspection, modeled response recommendations, plot downloads and a guided demonstration. Bundled evidence lets the presentation run with just the frontend; use **Local Python API** to read directly from the backend. **Research dashboard** opens the retained detailed view, including **Earlier demo** for the separate DARPA/synthetic interface. Replay does not retrain models or execute defenses.
 
 ## Implemented operational improvements
 
@@ -146,7 +146,17 @@ This copies the chosen artifacts and refreshes their hashes without training or 
 
 ### Run the demonstration dashboard
 
-Start the API from the repository root:
+For a presentation using bundled, checksum-checked-at-export evidence, only the frontend is required:
+
+```powershell
+cd frontend
+npm ci
+npm run dev
+```
+
+Open `http://127.0.0.1:5173` and choose **Presentation guide**. The saved-evidence demo works without the Python API or raw datasets. See [frontend instructions](frontend/README.md) for playback, presentation view and evidence export.
+
+To use **Local Python API** or the detailed **Research dashboard**, start the API from the repository root:
 
 ```powershell
 python -m uvicorn app.main:app --app-dir backend --reload --port 8000
